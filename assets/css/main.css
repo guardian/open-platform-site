@@ -34,7 +34,7 @@
 
 body {
     -webkit-font-smoothing: antialiased;
-    background: black;
+    background: #262626;
     color: white;
 }
 
@@ -67,8 +67,19 @@ body {
     border: 1px solid;
     border-color: white;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     margin-right: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    -moz-transition: all .35s ease;
+    -webkit-transition: all .35s ease;
+    -o-transition: all .35s ease;
+    transition: all .35s ease
+}
+
+.landing a:hover, a:focus, a:active {
+    background: #FFF;
+    color: #262626;
 }
 
 .landing p {
