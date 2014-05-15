@@ -1,0 +1,171 @@
+<html>
+<head>
+	<META http-equiv="Content-Style-Type" content="text/css">
+	<link rel="stylesheet" type="text/css" href="../css/jp.css" />
+	<script type="text/javascript">
+	function toggle(id) {
+	    elem = document.getElementById(id);
+	    if (elem.style.display == 'block') {
+		    // hide the item
+		    elem.style.display = 'none';
+	    } else {
+		    elem.style.display = 'block';
+	    };
+	}
+	</script>
+</head>
+
+<body>
+	<div class="title">
+		<p class="heading">Guardian's Open Platform</p>
+		<p class="subHeading">The Content API</p>
+		<p>
+			The Guardian's content API is the tool we use to drive our website and apps, and you can make use of it too. 
+		</p>
+	</div>
+	
+	<div class="docs">
+		<p>
+			If you don't already have one, you'll need to <a href="get-a-key.html">get an access key</a> for the API. After that you can begin to write your own queries and use our data in your own applications.
+		</p>
+		<p>
+			We offer four endpoints that you can interact with to retrieve our content;
+		<ul>
+			<li>
+				<a href="#" onclick="toggle('search-helper'); return false;">/search</a>
+			</li>
+			<li>
+				<a href="#" onclick="toggle('tags-helper'); return false;">/tags</a>
+			</li>
+			<li>
+				<a href="#" onclick="toggle('sections-helper'); return false;">/sections</a>
+			</li>
+			<li>
+				<a href="#" onclick="toggle('item-helper'); return false;">/ (root)</a>
+			</li>
+		</ul>
+		</p>
+
+		<p>We make use of access tiers that control which content can be retrieved from the API. There's more information about that <a href="#" onclick="toggle('tier-helper'); return false;">here</a>.</p>
+
+		<p>You can control how much data is returned in the responses to your queries. For more information about what's available and how to request it, <a href="#" onclick="toggle('fields-helper'); return false;">click here</a>.</p>
+	</div>
+	
+
+	<div class="hidden" id="search-helper">
+		<p>
+			The /search endpoint with no <a href="#search-parameters-helper">parameters</a> will return a paginated list of the most recent items, the default results will contain 10 items. <a href="http://content.guardianapis.com/search" target="_blank">Try it</a>.
+		</p>
+		<p>
+			<a href="#" onclick="toggle('advanced-docs-search'); return false;">Show advanced search help</a>
+		</p>
+	</div>
+
+	<div class="hidden" id="advanced-docs-search">
+		<p>
+			Here's where we go into depth over the use of the /search endpoint. Ideally, we'd display the in-depth docs that Mario and Gideon compiled into here: <a href="https://github.com/guardian/content-api-docs/blob/gh-pages/docs/content_search.md">/docs/content_search.md</a>
+		</p>
+	</div>
+
+
+	
+	<div class="hidden" id="tags-helper">
+		<p>
+			The /tags endpoint with no <a href="#tags-parameters-helper">parameters</a> will return a paginated list of tags. <a href="http://content.guardianapis.com/tags">Try it</a>.
+		</p>
+		<p>
+			<a href="#" onclick="toggle('tags-helper'); return false;">What's a tag</a>?
+		</p>
+		<p>
+			<a href="#" onclick="toggle('advanced-docs-tags'); return false;">Show advanced tags help</a>
+		</p>
+	</div>
+	
+
+	<div class="hidden" id="advanced-docs-tags">
+		Advanced tags help here
+	</div>
+
+
+	<div class="hidden" id="sections-helper"></a>
+		<p>
+			The /tags endpoint with no <a href="#sections-parameters-helper">parameters</a> will return a paginated list of sections. <a href="http://content.guardianapis.com/sections">Try it</a>.
+		</p>
+		<p>
+			<a href="#" onclick="toggle('section-helper'); return false;">What's a section</a>?
+		</p>
+		<p>
+			<a href="#" onclick="toggle('advanced-docs-sections'); return false;">Show advanced sections help</a>
+		</p>
+	</div>
+
+
+	<div class="hidden" id="advanced-docs-sections">
+		Advanced sections help here
+	</div>
+	
+
+
+	<div class="hidden" id="item-helper"></a>
+		<p>
+			The / (root) endpoint is used to retrieve a specific piece of content, using its ID.
+		</p>
+		<p>
+			<a href="#" onclick="toggle('advanced-docs-item'); return false;">Show advanced /(root) help</a>
+		</p>
+	</div>
+
+
+	<div class="hidden" id="advanced-docs-item">
+		Advanced item help here
+	</div>
+
+
+	<div class="hidden" id="tags-helper">
+		<a name="tag-helper"></a>
+		<p>What's a tag?</p>
+		<p>
+			A tag is a piece of data that we use to categorise our content. We use many different tags so understanding what they mean is important, and with new ones being added all the time you'll want to make sure to keep up to date with the changes.
+		</p>
+		<p>For example, this article: <a href="http://content.guardianapis.com/lifeandstyle/2014/may/14/recycling-saving-energy-reducing-waste-how-is-it-going-for-you">/lifeandstyle/2014/may/14/recycling-saving-energy-reducing-waste-how-is-it-going-for-you</a> contains many tags including;
+			<ul>
+				<li>environment/recycling</li>
+				<li>environment/plasticbags</li>
+				<li>environment/energyefficiency</li>
+			</ul>
+		</p>
+		<p>
+			You can use these tags in your own queries to find other content that has the same tags.
+		</p>
+	</div>
+	
+
+	<div class="hidden" id="section-helper">
+		<p>What's a section?</p>
+		<p>
+			We use sections to logically group content. For example, you'll find that within our Technology section, technologically-oriented content will be clustered such as items covering games, iPhone, Sony, Google and others.
+		</p>
+		<p>
+			For example: <a href="http://content.guardianapis.com/technology">/technology</a> contains technology-related content.
+		</p>
+	</div>
+
+
+	<div class="hidden" id="tier-helper">
+		<p>User Tiers: What are they and how do they work?</p>
+		<p>
+			Some data is available only to our commercial partners. If you require access to this data, please contact our syndication department to discuss your needs.
+		</p>
+	</div>
+
+
+	<div class="hidden" id="fields-helper">
+		<p>Requesting more details: How to use fields.</p>
+		<p>
+			Explain how to use fields!
+		</p>
+	</div>
+
+</body>
+</html>
+
