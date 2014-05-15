@@ -49,7 +49,7 @@ gulp.task('css', function() {
 
 gulp.task('fonts', function() {
   return gulp.src(src.fonts)
-    .pipe(gulp.dest(out.css))
+    .pipe(gulp.dest(out.fonts))
     .pipe(connect.reload());
 });
 
