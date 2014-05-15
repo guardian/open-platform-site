@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 
-var concat = require('gulp-concat');
+//var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
 var minifyCSS = require('gulp-minify-css');
@@ -10,7 +10,7 @@ var opn = require('opn')
 var src = {
   scripts: '../assets/js/*',
   images: '../assets/img/*',
-  css: '../assets/css/*'
+  css: '../assets/css/main.css'
 };
 
 var out = {
@@ -24,7 +24,7 @@ gulp.task('scripts', function() {
   /* Minify and concat */
   return gulp.src(src.scripts)
     .pipe(uglify())
-    .pipe(concat('all.min.js'))
+    //.pipe(concat('all.min.js'))
     .pipe(gulp.dest(out.scripts))
     .pipe(connect.reload());
 });
@@ -40,9 +40,9 @@ gulp.task('images', function() {
 gulp.task('css', function() {
   return gulp.src(src.css)
     .pipe(minifyCSS(opts))
-    .pipe(concat('all.min.css'))
-    .pipe(gulp.dest(out.css)
-    .pipe(connect.reload()))
+    //.pipe(concat('all.min.css'))
+    .pipe(gulp.dest(out.css))
+    .pipe(connect.reload());
 });
 
 gulp.task('connect', function() {
