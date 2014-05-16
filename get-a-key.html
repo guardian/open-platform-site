@@ -5,59 +5,13 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   	<link rel="stylesheet" type="text/css" href="assets/css/semantic.css">
   	<script type='text/javascript' src='assets/js/knockout-3.1.0.js'></script>
-  	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 
+  	<script type='text/javascript' src='assets/js/commercial-form.js'></script>
+  	
   
 </head>
 <body>
-	<script type="text/javascript">
-	    $(document).ready(function() {
-	    	var viewModel = {
-
-	    		contactName : ko.observable("Name"),
-	    		email : ko.observable("Email"),
-				productDetails : ko.observable("Name of Product / URL"),
-				company : ko.observable("Company"),
-	
-
-		        doSomething : function(formElement) {
-		            // ... now do something
-		            var self = this;
-		            contactName = self.contactName();
-		            email = self.email();
-					productDetails = self.productDetails();
-					company = self.company();
-					$.ajax({
-					  type: 'POST',
-					  url: "https://mandrillapp.com/api/1.0/messages/send.json",
-					  data: {
-					    'key': 'todo',
-					    'message': {
-					      'from_email': email,
-					      'to': [
-					          {
-					            'email': 'to-do',
-					            'name': 'todo',
-					            'type': 'to'
-					          }	
-					        ],
-					      'autotext': 'true',
-					      'subject': 'New syndication request',
-					      'html': 'Please contact the following company for rights-managed access to Content API Name: ' + contactName + 'Email:' + email +'Product:' + productDetails + 'Company:' + company
-					    }
-					  }
-					 }).done(function(response) {
-					   console.log(response); // if you're into that sorta thing
-					});
-
-		        }
-	    	};
-	    
-    	ko.applyBindings(viewModel);
-		});
-
-	</script>
-	
 	
 	<div class="ui two column middle aligned relaxed grid basic segment">
 		<div class="center aligned column">
@@ -68,7 +22,7 @@
 	   	 Or
 		</div>
 	<div class="column">
-		<form class="ui form segment" data-bind="submit: doSomething">
+		<form class="ui form segment" data-bind="submit: postForm">
 			<h2 class="ui header">Commercial Access</h2>	
 	      	<div class="field">
 	        <label>Name</label>
