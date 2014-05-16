@@ -23,14 +23,33 @@
 		        doSomething : function(formElement) {
 		            // ... now do something
 		            var self = this;
-		            contactName = self.contactName;
-		            email = self.email;
-					productDetails = self.productDetails;
-					company = self.company;
+		            contactName = self.contactName();
+		            email = self.email();
+					productDetails = self.productDetails();
+					company = self.company();
+					$.ajax({
+					  type: 'POST',
+					  url: "https://mandrillapp.com/api/1.0/messages/send.json",
+					  data: {
+					    'key': 'todo',
+					    'message': {
+					      'from_email': email,
+					      'to': [
+					          {
+					            'email': 'to-do',
+					            'name': 'todo',
+					            'type': 'to'
+					          }	
+					        ],
+					      'autotext': 'true',
+					      'subject': 'New syndication request',
+					      'html': 'Please contact the following company for rights-managed access to Content API Name: ' + contactName + 'Email:' + email +'Product:' + productDetails + 'Company:' + company
+					    }
+					  }
+					 }).done(function(response) {
+					   console.log(response); // if you're into that sorta thing
+					});
 
-
-		            alert(contactName());
-		            alert("hello");
 		        }
 	    	};
 	    
