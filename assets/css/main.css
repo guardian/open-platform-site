@@ -77,10 +77,10 @@ a {
     margin-right: 10px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    -moz-transition: all .35s ease;
+    /*-moz-transition: all .35s ease;
     -webkit-transition: all .35s ease;
     -o-transition: all .35s ease;
-    transition: all .35s ease
+    transition: all .35s ease*/
 }
 
 .landing a:hover, a:focus, a:active {
