@@ -34,16 +34,25 @@
 
 body {
     -webkit-font-smoothing: antialiased;
-    background: #262626;
+    background: #262626 url('../img/london.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
     color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white
 }
 
 .landing {
     font-family: 'Source Sans Pro',sans-serif;
     width: 600px;
+    height: 100%;
     margin: 0 auto;
     font-size: 20px;
     text-align: center;
+    background: rgba(0, 0, 0, 0.28);
 }
 
 .gfont {
@@ -62,11 +71,9 @@ body {
 }
 
 .landing a {
-    text-decoration: none;
     padding: 10px;
     border: 1px solid;
     border-color: white;
-    color: white;
     font-size: 14px;
     margin-right: 10px;
     letter-spacing: 2px;
@@ -85,4 +92,25 @@ body {
 .landing p {
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+.landing p.nav {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.footer {
+    margin-top: 100px;
+    width: 600px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px; 
+}
+
+.footer a {
+    border-bottom: white 1px solid;
 }
