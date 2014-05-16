@@ -31,7 +31,6 @@
   font-stretch: normal;
 }
 
-
 body {
     -webkit-font-smoothing: antialiased;
     background: #262626 url('../img/london.jpg') no-repeat center;
@@ -94,9 +93,14 @@ a {
     margin-bottom: 5px;
 }
 
-.landing p.nav {
+.landing ul.nav {
     margin-top: 30px;
     margin-bottom: 30px;
+    list-style: none;
+}
+
+.landing ul.nav li {
+    display: inline-block;
 }
 
 .footer {
@@ -113,4 +117,58 @@ a {
 
 .footer a {
     border-bottom: white 1px solid;
+}
+
+@media only screen and (max-width: 992px) {
+  
+  body {
+     background-image: url('../img/london-square.jpg')
+  }
+
+  .landing {
+    font-size: 14px;
+    width: 400px;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .gfont {
+    font-size: 60px;
+  }
+
+  .landing h1 {
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+  
+  .landing a {
+    font-size: 8px;
+    margin-right: 5px;
+    letter-spacing: 2px;
+  }
+
+  .footer {
+    width: 400px;
+    font-size: 8px;
+  }
+
+}
+
+@media only screen and (max-width: 640px) {
+    
+    .landing ul {
+        width: 180px;
+        margin: 0 auto;
+    }
+
+    .landing ul.nav li {
+        display: inherit;
+        margin-bottom: 20px;
+    }
+
+    .landing a {
+        width: 150px;
+        min-width: 150px;
+        display: block;
+    }
 }
