@@ -6,13 +6,19 @@ $(document).ready(function() {
 				productDetails : ko.observable(""),
 				company : ko.observable(""),
 	
-
 		        postForm : function(formElement) {
 		            var self = this;
 		            contactName = self.contactName();
 		            email = self.email();
 					productDetails = self.productDetails();
 					company = self.company();
+					
+					html = 'Please contact the following company for syndicaton access to the Content API ' + 
+							'<p>Name: ' + contactName + '</p>' +
+							'<p>Email: ' + email + '</p>' +
+							'<p>Product details : ' + productDetails + '</p>' +
+							'<p>Company: ' + company + '</p>';
+
 					$.ajax({
 					  type: 'POST',
 					  url: "https://mandrillapp.com/api/1.0/messages/send.json",
@@ -23,13 +29,13 @@ $(document).ready(function() {
 					      'to': [
 					          {
 					            'email': 'to-do',
-					            'name': 'to-do',
+					            'name': 'Guardian - syndication',
 					            'type': 'to'
 					          }	
 					        ],
 					      'autotext': 'true',
 					      'subject': 'New syndication request',
-					      'html': 'Please contact the following company for rights-managed access to Content API Name: ' + contactName + 'Email:' + email +'Product:' + productDetails + 'Company:' + company
+					      'html': html
 					    }
 					  }
 					 }).done(function(response) {
