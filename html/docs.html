@@ -1,22 +1,56 @@
+<!DOCTYPE html>
 <html>
 <head>
-	<META http-equiv="Content-Style-Type" content="text/css">
-	<link rel="stylesheet" type="text/css" href="../css/jp.css" />
-	<script type="text/javascript">
-	function toggle(id) {
-	    elem = document.getElementById(id);
-	    if (elem.style.display == 'block') {
-		    // hide the item
-		    elem.style.display = 'none';
-	    } else {
-		    elem.style.display = 'block';
-	    };
+  <!-- Standard Meta -->
+  <META http-equiv="Content-Style-Type" content="text/css">
+  <title>Guardian Content API Documentation</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/jp.css" />
+
+  <link rel="shortcut icon" type="image/png" href="http://assets.guim.co.uk/images/favicons/32x32.acab77410710f9d30ed2d70afb2dd615.ico">
+  <link rel="stylesheet" type="text/css" href="../css/all.min.css">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="../js/all.min.js"></script>
+	
+  <script type="text/javascript">
+	function activate(context, level) {
+		// hide all one-only elements
+		$( ".one-only" ).css( "display", "none" );
+		// display one-only elements for 'context' less than 'level'
+		for(i=0; i<level - 1; i++){
+			$ ( ".one-only.for-" + context + ".level-" + (i + 1)).css( "display", "block" );
+		}
+		// display one-only element for 'context' and 'level'
+		$ ( ".one-only.for-" + context + ".level-" + level).css( "display", "block" );
 	}
-	</script>
+
+	function deactivate(context, level) {
+		// for this 'context', deactivate everything <= 'level'	
+		maxLevel = 0;
+		for(l=0; l<10; l++){
+			// if there's nothing for 'context' at 'maxLevel' stop searching
+			elem = $ ( ".one-only.for-" + context + ".level-" + l )
+			if ( elem ) {
+				maxLevel = l;
+			} else {
+				break;
+			}
+		}
+		// hide everything > level
+		for(i=maxLevel; i>level-1; i--){
+			$ ( ".one-only.for-" + context + ".level-" + i).css( "display", "none" );
+		}
+	}	
+
+  </script>
 </head>
 
+
 <body>
-	<div class="title">
+	<div class="title static">
 		<p class="heading">Guardian's Open Platform</p>
 		<p class="subHeading">The Content API</p>
 		<p>
@@ -24,7 +58,7 @@
 		</p>
 	</div>
 	
-	<div class="docs">
+	<div class="docs static">
 		<p>
 			If you don't already have one, you'll need to <a href="get-a-key.html">get an access key</a> for the API. After that you can begin to write your own queries and use our data in your own applications.
 		</p>
@@ -32,102 +66,131 @@
 			We offer four endpoints that you can interact with to retrieve our content;
 		<ul>
 			<li>
-				<a href="#" onclick="toggle('search-helper'); return false;">/search</a>
+				<a href="#" onclick="activate('search', 1); return false;">/search</a>
 			</li>
 			<li>
-				<a href="#" onclick="toggle('tags-helper'); return false;">/tags</a>
+				<a href="#" onclick="activate('tags', 1); return false;">/tags</a>
 			</li>
 			<li>
-				<a href="#" onclick="toggle('sections-helper'); return false;">/sections</a>
+				<a href="#" onclick="activate('sections', 1); return false;">/sections</a>
 			</li>
 			<li>
-				<a href="#" onclick="toggle('item-helper'); return false;">/ (root)</a>
+				<a href="#" onclick="activate('item', 1); return false;">/ (root)</a>
 			</li>
 		</ul>
 		</p>
 
-		<p>We make use of access tiers that control which content can be retrieved from the API. There's more information about that <a href="#" onclick="toggle('tier-helper'); return false;">here</a>.</p>
+		<p>We make use of access tiers that control which content can be retrieved from the API. There's more information about that <a href="#" onclick="activate('tier', 1); return false;">here</a>.</p>
 
-		<p>You can control how much data is returned in the responses to your queries. For more information about what's available and how to request it, <a href="#" onclick="toggle('fields-helper'); return false;">click here</a>.</p>
+		<p>You can control how much data is returned in the responses to your queries. For more information about what's available and how to request it, <a href="#" onclick="activate('fields-helper', 0); return false;">click here</a>.</p>
 	</div>
 	
 
-	<div class="hidden" id="search-helper">
+	<div class="hidden one-only for-search level-1" id="search-helper">
 		<p>
 			The /search endpoint with no <a href="#search-parameters-helper">parameters</a> will return a paginated list of the most recent items, the default results will contain 10 items. <a href="http://content.guardianapis.com/search" target="_blank">Try it</a>.
 		</p>
 		<p>
-			<a href="#" onclick="toggle('advanced-docs-search'); return false;">Show advanced search help</a>
+			<a href="#" onclick="activate('search', 2); return false;">Show advanced search help</a>
+		</p>
+		<p>
+			<a href="#" onclick="deactivate('search', 1); return false;">close</a>
 		</p>
 	</div>
 
-	<div class="hidden" id="advanced-docs-search">
+	<div class="hidden one-only for-search level-2" id="advanced-docs-search">
 		<p>
 			Here's where we go into depth over the use of the /search endpoint. Ideally, we'd display the in-depth docs that Mario and Gideon compiled into here: <a href="https://github.com/guardian/content-api-docs/blob/gh-pages/docs/content_search.md">/docs/content_search.md</a>
+		</p>
+		<p>
+			<a href="#" onclick="deactivate('search', 2); return false;">close</a>
 		</p>
 	</div>
 
 
 	
-	<div class="hidden" id="tags-helper">
+	<div class="hidden one-only for-tags level-1" id="tags-1">
 		<p>
 			The /tags endpoint with no <a href="#tags-parameters-helper">parameters</a> will return a paginated list of tags. <a href="http://content.guardianapis.com/tags">Try it</a>.
 		</p>
 		<p>
-			<a href="#" onclick="toggle('tags-helper'); return false;">What's a tag</a>?
+			<a href="#" onclick="activate('tags-helper', 0); return false;">What's a tag</a>?
 		</p>
 		<p>
-			<a href="#" onclick="toggle('advanced-docs-tags'); return false;">Show advanced tags help</a>
+			<a href="#" onclick="activate('tags', 2); return false;">Show advanced tags help</a>
+		</p>
+		<p>
+			<a href="#" onclick="deactivate('tags', 1); return false;">close</a>
 		</p>
 	</div>
 	
 
-	<div class="hidden" id="advanced-docs-tags">
-		Advanced tags help here
-	</div>
-
-
-	<div class="hidden" id="sections-helper"></a>
+	<div class="hidden one-only for-tags level-2" id="tags-2">
 		<p>
-			The /tags endpoint with no <a href="#sections-parameters-helper">parameters</a> will return a paginated list of sections. <a href="http://content.guardianapis.com/sections">Try it</a>.
+			Advanced tags help here
 		</p>
 		<p>
-			<a href="#" onclick="toggle('section-helper'); return false;">What's a section</a>?
-		</p>
-		<p>
-			<a href="#" onclick="toggle('advanced-docs-sections'); return false;">Show advanced sections help</a>
+			<a href="#" onclick="deactivate('tags', 2); return false;">close</a>			
 		</p>
 	</div>
 
 
-	<div class="hidden" id="advanced-docs-sections">
-		Advanced sections help here
+	<div class="hidden one-only for-sections level-1" id="sections-1"></a>
+		<p>
+			The /sections endpoint with no <a href="#sections-parameters-helper">parameters</a> will return a paginated list of sections. <a href="http://content.guardianapis.com/sections">Try it</a>.
+		</p>
+		<p>
+			<a href="#" onclick="activate('sections-helper', 0); return false;">What's a section</a>?
+		</p>
+		<p>
+			<a href="#" onclick="activate('sections', 2); return false;">Show advanced sections help</a>
+		</p>
+		<p>
+			<a href="#" onclick="deactivate('sections', 1); return false;">close</a>
+		</p>
+
+	</div>
+
+
+	<div class="hidden one-only for-sections level-2" id="sections-2">
+		<p>
+			Advanced sections help here
+		</p>
+		<p>
+			<a href="#" onclick="deactivate('sections', 2); return false;">close</a>
+		</p>
 	</div>
 	
 
-
-	<div class="hidden" id="item-helper"></a>
+	<div class="hidden one-only for-item level-1" id="item-1"></a>
 		<p>
 			The / (root) endpoint is used to retrieve a specific piece of content, using its ID.
 		</p>
 		<p>
-			<a href="#" onclick="toggle('advanced-docs-item'); return false;">Show advanced /(root) help</a>
+			<a href="#" onclick="activate('item', 2); return false;">Show advanced /(root) help</a>
+		</p>
+		<p>
+			<a href="#" onclick="deactivate('item', 1); return false;">close</a>
 		</p>
 	</div>
 
 
-	<div class="hidden" id="advanced-docs-item">
-		Advanced item help here
+	<div class="hidden one-only for-item level-2" id="item-2">
+		<p>
+			Advanced item help here
+		</p>
+		<p>
+			<a href="#" onclick="deactivate('item', 2); return false;">close</a>
+		</p>
 	</div>
 
 
-	<div class="hidden" id="tags-helper">
-		<a name="tag-helper"></a>
+	<div class="hidden one-only for-tags-helper level-0" id="tags-helper">
 		<p>What's a tag?</p>
 		<p>
 			A tag is a piece of data that we use to categorise our content. We use many different tags so understanding what they mean is important, and with new ones being added all the time you'll want to make sure to keep up to date with the changes.
 		</p>
-		<p>For example, this article: <a href="http://content.guardianapis.com/lifeandstyle/2014/may/14/recycling-saving-energy-reducing-waste-how-is-it-going-for-you">/lifeandstyle/2014/may/14/recycling-saving-energy-reducing-waste-how-is-it-going-for-you</a> contains many tags including;
+		<p>For example, this article: <a href="http://content.guardianapis.com/lifeandstyle/2014/may/14/recycling-saving-energy-reducing-waste-how-is-it-going-for-you" target="_blank">/lifeandstyle/2014/may/14/recycling-saving-energy-reducing-waste-how-is-it-going-for-you</a> contains many tags including;
 			<ul>
 				<li>environment/recycling</li>
 				<li>environment/plasticbags</li>
@@ -137,10 +200,13 @@
 		<p>
 			You can use these tags in your own queries to find other content that has the same tags.
 		</p>
+		<p>
+			<a href="#" onclick="activate('tags', 1); return false;">close</a>
+		</p>		
 	</div>
 	
 
-	<div class="hidden" id="section-helper">
+	<div class="hidden one-only for-sections-helper level-0" id="sections-helper">
 		<p>What's a section?</p>
 		<p>
 			We use sections to logically group content. For example, you'll find that within our Technology section, technologically-oriented content will be clustered such as items covering games, iPhone, Sony, Google and others.
@@ -148,22 +214,31 @@
 		<p>
 			For example: <a href="http://content.guardianapis.com/technology">/technology</a> contains technology-related content.
 		</p>
+		<p>
+			<a href="#" onclick="activate('sections', 1); return false;">close</a>
+		</p>		
 	</div>
 
 
-	<div class="hidden" id="tier-helper">
+	<div class="hidden one-only for-tier-helper level-0" id="tier-helper">
 		<p>User Tiers: What are they and how do they work?</p>
 		<p>
 			Some data is available only to our commercial partners. If you require access to this data, please contact our syndication department to discuss your needs.
 		</p>
+		<p>
+			<a href="#" onclick="deactivate('tier-helper', 0); return false;">close</a>
+		</p>		
 	</div>
 
 
-	<div class="hidden" id="fields-helper">
+	<div class="hidden one-only for-fields-helper" id="fields-helper">
 		<p>Requesting more details: How to use fields.</p>
 		<p>
 			Explain how to use fields!
 		</p>
+		<p>
+			<a href="#" onclick="deactivate('fields-helper', 0); return false;">close</a>
+		</p>		
 	</div>
 
 </body>
