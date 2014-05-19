@@ -1,10 +1,10 @@
 $(document).ready(function() {
 	    	var viewModel = {
 
-	    		contactName : ko.observable("Name"),
-	    		email : ko.observable("Email"),
-				productDetails : ko.observable("Name of Product / URL"),
-				company : ko.observable("Company"),
+	    		contactName : ko.observable(""),
+	    		email : ko.observable(""),
+				productDetails : ko.observable(""),
+				company : ko.observable(""),
 	
 
 		        postForm : function(formElement) {

@@ -6,10 +6,7 @@
   	<link rel="stylesheet" type="text/css" href="assets/css/semantic.css">
   	<script type='text/javascript' src='assets/js/knockout-3.1.0.js'></script>
 	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-
   	<script type='text/javascript' src='assets/js/commercial-form.js'></script>
-  	
-  
 </head>
 <body>
 	
@@ -45,7 +42,7 @@
 	      <div class="field">
 	        <label>Name of Product / URL</label>
 	        <div class="ui left labeled icon input">
-	          <input type="text" data-bind="value: contactName"/>
+	          <input type="text" data-bind="value: productDetails"/>
 	          <div class="ui corner label">
 	            <i class="asterisk icon"></i>
 	          </div>
@@ -54,7 +51,7 @@
 	       <div class="field">
 	        <label>Company</label>
 	        <div class="ui left labeled icon input">
-	          <input type="text" placeholder="Company">
+	          <input type="text" data-bind:"value: company">
 	          <div class="ui corner label">
 	            <i class="asterisk icon"></i>
 	          </div>
@@ -63,8 +60,6 @@
 	      <button class="ui blue submit button" type="submit">Submit</button>
 	    </div>
 	</form>
-	  </div>
 	</div>
-
-	
+	</div>
 </body>
