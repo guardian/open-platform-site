@@ -63,7 +63,34 @@
 			If you don't already have one, you'll need to <a href="get-a-key.html">get an access key</a> for the API. After that you can begin to write your own queries and use our data in your own applications.
 		</p>
 		<p>
-			We offer four endpoints that you can interact with to retrieve our content;
+			We make use of access tiers to control which content can be retrieved from the API and the tier you require will depend on the content you intend to serve through your application. <a href="#" onclick="activate('tiers-helper', 0); return false;">Read more</a>.
+		</p>
+
+		<div class="hidden one-only for-tiers-helper level-0" id="tiers-helper">
+			<p>
+				There are two tiers for public consumption: Developer and Rights-managed.
+			</p>
+			<p class='h2'>Developer:</p>
+			<p>
+				As a developer you'll have access to content which is not reserved for the rights-managed tier. At this level you'll get all the fields and metadata you'll need to construct most types of applications.
+			</p>
+			<p>
+				However, you will find that some or all of the media elements that you'll see on our website will not be provided in the API's responses to developer tier requests. If you require access to this data please contact our commercial department to discuss ways in which we may be able to help you.
+			</p>
+			<p class='h2'>Rights-managed:</p>
+			<p>
+				As a rights-managed user, you will have access to everything in the developer tier plus the rich media elements that we display on our site and in our mobile apps.
+			</p>
+			<p>
+				If your application needs to make use of this additional content, you will need to obtain a rights-managed access key. Please contact our commercial department to discuss the nature of your intended application and the specifics of the rights-management controls.
+			</p>
+			<p>
+				<a href="#" onclick="deactivate('tiers-helper', 0); return false;">close</a>
+			</p>
+		</div>
+
+		<p>
+			We provide four endpoints through which you can retrieve our content;
 		<ul>
 			<li>
 				<a href="#" onclick="activate('search', 1); return false;">/search</a>
@@ -80,11 +107,25 @@
 		</ul>
 		</p>
 
-		<p>We make use of access tiers that control which content can be retrieved from the API. There's more information about that <a href="#" onclick="activate('tier', 1); return false;">here</a>.</p>
 
 		<p>You can control how much data is returned in the responses to your queries. For more information about what's available and how to request it, <a href="#" onclick="activate('fields-helper', 0); return false;">click here</a>.</p>
 	</div>
-	
+
+
+	<div class="hidden one-only for-fields-helper level-0" id="fields-helper">
+		<p>
+			Our content contains many different fields, and by default none of these are included in API responses to your requests.
+		</p>
+		<p>
+			You can ask for only the specific fields that you're interested in, and that's what we'd recommend you do to reduce the amount of parsing you'll have to perform otherwise.
+		</p>
+		<p>
+			However, if you just want everything that's available to your <a href="#" onclick="activate('tiers-helper',0); return false;">access tier</a> you can simply request all fields.
+		</p>
+		<p>
+			<a href="#" onclick="deactivate('fields-helper', 0); return false;">close</a>
+		</p>
+	</div>
 
 	<div class="hidden one-only for-search level-1" id="search-helper">
 		<p>
