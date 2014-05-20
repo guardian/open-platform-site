@@ -45,7 +45,8 @@
 			We make use of access tiers to control which content can be retrieved from the API and the tier you require will depend on the content you intend to serve through your application. <a href="#" onclick="activate('tiers-helper', 0); return false;">Read more</a>.
 		</p>
 
-		<div class="hidden one-only ui raised segment for-tiers-helper level-0" id="tiers-helper">
+		<div class="hidden closeable one-only ui raised segment for-tiers-helper level-0" id="tiers-helper">
+			<div class="close-gadget"><a href="#" onclick="deactivate('tiers-helper', 0); return false;"><img src="../img/close-gadget.png" /></a></div>
 			<p>
 				There are two tiers for public consumption: Developer and Rights-managed.
 			</p>
@@ -91,7 +92,8 @@
 	</div>
 
 
-	<div class="hidden one-only ui raised segment for-fields-helper level-0" id="fields-helper">
+	<div class="hidden closeable one-only ui raised segment for-fields-helper level-0" id="fields-helper">
+		<div class="close-gadget"><a href="#" onclick="deactivate('fields-helper', 0); return false;"><img src="../img/close-gadget.png" /></a></div>
 		<p>
 			Our content contains many different fields, and by default none of these are included in API responses to your requests.
 		</p>
@@ -107,7 +109,8 @@
 	</div>
 
 
-	<div class="hidden one-only ui raised segment for-search level-1" id="search-helper">
+	<div class="hidden closeable one-only ui raised segment for-search level-1" id="search-helper">
+		<div class="close-gadget"><a href="#" onclick="deactivate('search', 1); return false;"><img src="../img/close-gadget.png" /></a></div>
 		<p>
 			The /search endpoint with no <a href="#search-parameters-helper">parameters</a> will return a paginated list of the most recent items, the default results will contain 10 items. <a href="http://content.guardianapis.com/search" target="_blank">Try it</a>.
 		</p>
@@ -119,10 +122,8 @@
 		</p>
 	</div>
 
-	<div class="hidden one-only ui raised segment for-search level-2" id="advanced-docs-search">
-		<p>
-			<a href="#" onclick="deactivate('search', 2); return false;">close</a>
-		</p>
+	<div class="hidden closeable one-only ui raised segment for-search level-2" id="advanced-docs-search">
+		<div class="close-gadget"><a href="#" onclick="deactivate('search', 2); return false;"><img src="../img/close-gadget.png" /></a></div>
 		<div class="doccontent" segment-data-file="content_search"></div>
 		<p>
 			<a href="#" onclick="deactivate('search', 2); return false;">close</a>
@@ -131,7 +132,8 @@
 
 
 	
-	<div class="hidden one-only ui raised segment for-tags level-1" id="tags-1">
+	<div class="hidden closeable one-only ui raised segment for-tags level-1" id="tags-1">
+		<div class="close-gadget"><a href="#" onclick="deactivate('tags', 1); return false;"><img src="../img/close-gadget.png" /></a></div>
 		<p>
 			The /tags endpoint with no <a href="#tags-parameters-helper">parameters</a> will return a paginated list of tags. <a href="http://content.guardianapis.com/tags">Try it</a>.
 		</p>
@@ -146,10 +148,8 @@
 		</p>
 	</div>
 	
-	<div class="hidden one-only ui raised segment for-tags level-2" id="tags-2">
-		<p>
-			<a href="#" onclick="deactivate('tags', 2); return false;">close</a>
-		</p>
+	<div class="hidden closeable one-only ui raised segment for-tags level-2" id="tags-2">
+		<div class="close-gadget"><a href="#" onclick="deactivate('tags', 2); return false;"><img src="../img/close-gadget.png" /></a></div>
 		<div class="doccontent" segment-data-file="tag_search"></div>
 		<p>
 			<a href="#" onclick="deactivate('tags', 2); return false;">close</a>
@@ -157,7 +157,8 @@
 	</div>
 
 
-	<div class="hidden one-only ui raised segment for-sections level-1" id="sections-1"></a>
+	<div class="hidden closeable one-only ui raised segment for-sections level-1" id="sections-1"></a>
+		<div class="close-gadget"><a href="#" onclick="deactivate('sections', 1); return false;"><img src="../img/close-gadget.png" /></a></div>
 		<p>
 			The /sections endpoint with no <a href="#sections-parameters-helper">parameters</a> will return a paginated list of sections. <a href="http://content.guardianapis.com/sections">Try it</a>.
 		</p>
@@ -177,10 +178,8 @@
 
 	</div>
 
-	<div class="hidden one-only ui raised segment for-sections level-2" id="sections-2">
-		<p>
-			<a href="#" onclick="deactivate('sections', 2); return false;">close</a>
-		</p>
+	<div class="hidden closeable one-only ui raised segment for-sections level-2" id="sections-2">
+		<div class="close-gadget"><a href="#" onclick="deactivate('sections', 2); return false;"><img src="../img/close-gadget.png" /></a></div>
 		<div class="doccontent" segment-data-file="section_search"></div>
 		<p>
 			<a href="#" onclick="deactivate('sections', 2); return false;">close</a>
@@ -188,7 +187,9 @@
 	</div>
 	
 
-	<div class="hidden one-only ui raised segment for-item level-1" id="item-1"></a>
+	<div class="hidden closeable one-only ui raised segment for-item level-1" id="item-1"></a>
+		<div class="close-gadget"><a href="#" onclick="deactivate('item', 1); return false;"><img src="../img/close-gadget.png" /></a></div>
+
 		<p>
 			The / (root) endpoint, sometimes also referred to as the item endpoint, is used to retrieve a specific piece of content, using its unique id.
 		</p>
@@ -218,10 +219,8 @@
 	</div>
 
 
-	<div class="hidden one-only ui raised segment for-item level-2" id="item-2">
-		<p>
-			<a href="#" onclick="deactivate('item', 2); return false;">close</a>
-		</p>
+	<div class="hidden closeable one-only ui raised segment for-item level-2" id="item-2">
+		<div class="close-gadget"><a href="#" onclick="deactivate('item', 2); return false;"><img src="../img/close-gadget.png" /></a></div>
 		<div class="doccontent" segment-data-file="item_search"></div>
 		<p>
 			<a href="#" onclick="deactivate('item', 2); return false;">close</a>
@@ -229,7 +228,8 @@
 	</div>
 
 
-	<div class="hidden one-only ui raised segment for-tags-helper level-0" id="tags-helper">
+	<div class="hidden closeable one-only ui raised segment for-tags-helper level-0" id="tags-helper">
+		<div class="close-gadget"><a href="#" onclick="activate('tags', 1); return false;"><img src="../img/close-gadget.png" /></a></div>
 		<p>What's a tag?</p>
 		<p>
 			A tag is a piece of data that we use to categorise our content. We use many different tags so understanding what they mean is important, and with new ones being added all the time you'll want to make sure to keep up to date with the changes.
@@ -250,7 +250,8 @@
 	</div>
 	
 
-	<div class="hidden one-only ui raised segment for-sections-helper level-0" id="sections-helper">
+	<div class="hidden closeable one-only ui raised segment for-sections-helper level-0" id="sections-helper">
+		<div class="close-gadget"><a href="#" onclick="activate('sections', 1); return false;"><img src="../img/close-gadget.png" /></a></div>
 		<p>What's a section?</p>
 		<p>
 			We use sections to logically group our content. For example, you'll find that within our Technology section, technologically-oriented content will be clustered such as items covering games, iPhone, Sony, Google and others.
@@ -264,7 +265,8 @@
 	</div>
 
 
-	<div class="hidden one-only ui raised segment for-tier-helper level-0" id="tier-helper">
+	<div class="hidden closeable one-only ui raised segment for-tier-helper level-0" id="tier-helper">
+		<div class="close-gadget"><a href="#" onclick="deactivate('tier-helper', 0); return false;"><img src="../img/close-gadget.png" /></a></div>
 		<p>User Tiers: What are they and how do they work?</p>
 		<p>
 			Some data is available only to our commercial partners. If you require access to this data, please contact our syndication department to discuss your needs.
@@ -275,7 +277,8 @@
 	</div>
 
 
-	<div class="hidden one-only ui raised segment for-fields-helper" id="fields-helper">
+	<div class="hidden closeable one-only ui raised segment for-fields-helper" id="fields-helper">
+		<div class="close-gadget"><a href="#" onclick="deactivate('fields-helper', 0); return false;"><img src="../img/close-gadget.png" /></a></div>
 		<p>Requesting more details: How to use fields.</p>
 		<p>
 			Explain how to use fields!

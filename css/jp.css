@@ -9,3 +9,14 @@
 .panel {
 	background-color: #FFFFFF;
 }
+
+.closeable {
+   position: relative 
+}
+
+.close-gadget 
+{ 
+   position: absolute; 
+   right: 5px; 
+   top: 5px;
+} 
