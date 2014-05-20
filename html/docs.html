@@ -10,10 +10,10 @@
   <link rel="stylesheet" type="text/css" href="../css/jp.css" />
 
   <link rel="shortcut icon" type="image/png" href="http://assets.guim.co.uk/images/favicons/32x32.acab77410710f9d30ed2d70afb2dd615.ico">
-  <link rel="stylesheet" type="text/css" href="../css/jp.css">
   <link rel="stylesheet" type="text/css" href="../css/lib-docco.css">
   <link rel="stylesheet" type="text/css" href="../css/lib-semantic.css">
   <link rel="stylesheet" type="text/css" href="../css/start.css">
+  <link rel="stylesheet" type="text/css" href="../css/jp.css">
 
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -23,8 +23,6 @@
   <script src="../js/lib-jquery.address.js"></script>
   <script src="../js/lib-markdown.js"></script>
   <script src="../js/lib-semantic.js"></script>
-  <script src="../js/start.js"></script>
-
   <script src="../js/activateDeactivate.js"></script>
 
 </head>
@@ -47,7 +45,7 @@
 			We make use of access tiers to control which content can be retrieved from the API and the tier you require will depend on the content you intend to serve through your application. <a href="#" onclick="activate('tiers-helper', 0); return false;">Read more</a>.
 		</p>
 
-		<div class="hidden one-only for-tiers-helper level-0" id="tiers-helper">
+		<div class="hidden one-only ui raised segment for-tiers-helper level-0" id="tiers-helper">
 			<p>
 				There are two tiers for public consumption: Developer and Rights-managed.
 			</p>
@@ -93,7 +91,7 @@
 	</div>
 
 
-	<div class="hidden one-only for-fields-helper level-0" id="fields-helper">
+	<div class="hidden one-only ui raised segment for-fields-helper level-0" id="fields-helper">
 		<p>
 			Our content contains many different fields, and by default none of these are included in API responses to your requests.
 		</p>
@@ -108,7 +106,8 @@
 		</p>
 	</div>
 
-	<div class="hidden one-only for-search level-1" id="search-helper">
+
+	<div class="hidden one-only ui raised segment for-search level-1" id="search-helper">
 		<p>
 			The /search endpoint with no <a href="#search-parameters-helper">parameters</a> will return a paginated list of the most recent items, the default results will contain 10 items. <a href="http://content.guardianapis.com/search" target="_blank">Try it</a>.
 		</p>
@@ -120,10 +119,11 @@
 		</p>
 	</div>
 
-	<div class="hidden one-only for-search level-2" id="advanced-docs-search">
+	<div class="hidden one-only ui raised segment for-search level-2" id="advanced-docs-search">
 		<p>
-			Here's where we go into depth over the use of the /search endpoint. Ideally, we'd display the in-depth docs that Mario and Gideon compiled into here: <a href="https://github.com/guardian/content-api-docs/blob/gh-pages/docs/content_search.md">/docs/content_search.md</a>
+			<a href="#" onclick="deactivate('search', 2); return false;">close</a>
 		</p>
+		<div class="doccontent" segment-data-file="content_search"></div>
 		<p>
 			<a href="#" onclick="deactivate('search', 2); return false;">close</a>
 		</p>
@@ -131,7 +131,7 @@
 
 
 	
-	<div class="hidden one-only for-tags level-1" id="tags-1">
+	<div class="hidden one-only ui raised segment for-tags level-1" id="tags-1">
 		<p>
 			The /tags endpoint with no <a href="#tags-parameters-helper">parameters</a> will return a paginated list of tags. <a href="http://content.guardianapis.com/tags">Try it</a>.
 		</p>
@@ -146,21 +146,25 @@
 		</p>
 	</div>
 	
-
-	<div class="hidden one-only for-tags level-2" id="tags-2">
+	<div class="hidden one-only ui raised segment for-tags level-2" id="tags-2">
 		<p>
-			Advanced tags help here
+			<a href="#" onclick="deactivate('tags', 2); return false;">close</a>
 		</p>
+		<div class="doccontent" segment-data-file="tag_search"></div>
 		<p>
-			<a href="#" onclick="deactivate('tags', 2); return false;">close</a>			
+			<a href="#" onclick="deactivate('tags', 2); return false;">close</a>
 		</p>
 	</div>
 
 
-	<div class="hidden one-only for-sections level-1" id="sections-1"></a>
+	<div class="hidden one-only ui raised segment for-sections level-1" id="sections-1"></a>
 		<p>
 			The /sections endpoint with no <a href="#sections-parameters-helper">parameters</a> will return a paginated list of sections. <a href="http://content.guardianapis.com/sections">Try it</a>.
 		</p>
+		<h2>Construction</h2>
+		<code>
+		content.guardianapis.com/sections?api-key=my-api-key	
+		</code>			
 		<p>
 			<a href="#" onclick="activate('sections-helper', 0); return false;">What's a section</a>?
 		</p>
@@ -173,20 +177,37 @@
 
 	</div>
 
-
-	<div class="hidden one-only for-sections level-2" id="sections-2">
+	<div class="hidden one-only ui raised segment for-sections level-2" id="sections-2">
 		<p>
-			Advanced sections help here
+			<a href="#" onclick="deactivate('sections', 2); return false;">close</a>
 		</p>
+		<div class="doccontent" segment-data-file="section_search"></div>
 		<p>
 			<a href="#" onclick="deactivate('sections', 2); return false;">close</a>
 		</p>
 	</div>
 	
 
-	<div class="hidden one-only for-item level-1" id="item-1"></a>
+	<div class="hidden one-only ui raised segment for-item level-1" id="item-1"></a>
 		<p>
-			The / (root) endpoint is used to retrieve a specific piece of content, using its ID.
+			The / (root) endpoint, sometimes also referred to as the item endpoint, is used to retrieve a specific piece of content, using its unique id.
+		</p>
+
+		<h2>Construction</h2>
+		<code>
+		content.guardianapis.com/<strong>id</strong>?api-key=my-api-key[&amp;show-fields=&lt;list of fields&gt;|fieldName|all][&amp;show-tags=&lt;list of tags&gt;|tagName|all][&amp;show-elements=&lt;list of element types&gt;|element type|all][&amp;show-references=&lt;list of references&gt;|specific reference|all][&amp;show-story-package=true|false][&amp;show-editors-picks=true|false][&amp;show-most-viewed=true|false][&amp;show-related-content=true|false][&amp;hide-recent-content=true|false]
+		</code>
+
+		<h2>Example</h2>
+		<code>
+		http://content.guardianapis.com/<strong>business/2014/feb/18/uk-inflation-falls-below-bank-england-target</strong>?api-key=my-api-key
+		</code>
+
+		<p>
+		This request will retrieve the single content item identified by its id (<code>business/2014/...-target</code>), shown in bold. In this example that would be an article, but you can also retrieve other content types such as a specific tag or section.
+		</p>
+
+		<p>
 		</p>
 		<p>
 			<a href="#" onclick="activate('item', 2); return false;">Show advanced /(root) help</a>
@@ -197,15 +218,18 @@
 	</div>
 
 
-	<div class="hidden one-only for-item level-2" id="item-2">
-		<div segment-data-file="item_search"></div>
+	<div class="hidden one-only ui raised segment for-item level-2" id="item-2">
+		<p>
+			<a href="#" onclick="deactivate('item', 2); return false;">close</a>
+		</p>
+		<div class="doccontent" segment-data-file="item_search"></div>
 		<p>
 			<a href="#" onclick="deactivate('item', 2); return false;">close</a>
 		</p>
 	</div>
 
 
-	<div class="hidden one-only for-tags-helper level-0" id="tags-helper">
+	<div class="hidden one-only ui raised segment for-tags-helper level-0" id="tags-helper">
 		<p>What's a tag?</p>
 		<p>
 			A tag is a piece of data that we use to categorise our content. We use many different tags so understanding what they mean is important, and with new ones being added all the time you'll want to make sure to keep up to date with the changes.
@@ -226,13 +250,13 @@
 	</div>
 	
 
-	<div class="hidden one-only for-sections-helper level-0" id="sections-helper">
+	<div class="hidden one-only ui raised segment for-sections-helper level-0" id="sections-helper">
 		<p>What's a section?</p>
 		<p>
-			We use sections to logically group content. For example, you'll find that within our Technology section, technologically-oriented content will be clustered such as items covering games, iPhone, Sony, Google and others.
+			We use sections to logically group our content. For example, you'll find that within our Technology section, technologically-oriented content will be clustered such as items covering games, iPhone, Sony, Google and others.
 		</p>
 		<p>
-			For example: <a href="http://content.guardianapis.com/technology">/technology</a> contains technology-related content.
+			For example: <a href="http://content.guardianapis.com/technology" target="_blank">/technology</a> contains technology-related content (link opens in a new tab/window).
 		</p>
 		<p>
 			<a href="#" onclick="activate('sections', 1); return false;">close</a>
@@ -240,7 +264,7 @@
 	</div>
 
 
-	<div class="hidden one-only for-tier-helper level-0" id="tier-helper">
+	<div class="hidden one-only ui raised segment for-tier-helper level-0" id="tier-helper">
 		<p>User Tiers: What are they and how do they work?</p>
 		<p>
 			Some data is available only to our commercial partners. If you require access to this data, please contact our syndication department to discuss your needs.
@@ -251,7 +275,7 @@
 	</div>
 
 
-	<div class="hidden one-only for-fields-helper" id="fields-helper">
+	<div class="hidden one-only ui raised segment for-fields-helper" id="fields-helper">
 		<p>Requesting more details: How to use fields.</p>
 		<p>
 			Explain how to use fields!

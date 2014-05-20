@@ -5,3 +5,7 @@
 .block-visible {
  	display:block; 
 }
+
+.panel {
+	background-color: #FFFFFF;
+}
