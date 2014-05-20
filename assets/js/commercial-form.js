@@ -21,25 +21,14 @@ $(document).ready(function() {
 
 					$.ajax({
 					  type: 'POST',
-					  url: "https://mandrillapp.com/api/1.0/messages/send.json",
+					  url: "http://to-do:3000/email",
 					  data: {
-					    'key': 'to-do',
-					    'message': {
-					      'from_email': email,
-					      'to': [
-					          {
-					            'email': 'to-do',
-					            'name': 'Guardian - syndication',
-					            'type': 'to'
-					          }	
-					        ],
-					      'autotext': 'true',
-					      'subject': 'New syndication request',
-					      'html': html
-					    }
+					    'from': email,
+					    'html': html
+					    
 					  }
 					 }).done(function(response) {
-					   console.log(response); 
+					   $('#submitButton').html(response) 
 					});
 
 		        }
