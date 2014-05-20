@@ -1,0 +1,3 @@
+Document score ?!?
+Document the default result response
+Document the item endpoint which seems a bit a mashup of the others

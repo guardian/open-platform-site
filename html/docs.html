@@ -10,42 +10,23 @@
   <link rel="stylesheet" type="text/css" href="../css/jp.css" />
 
   <link rel="shortcut icon" type="image/png" href="http://assets.guim.co.uk/images/favicons/32x32.acab77410710f9d30ed2d70afb2dd615.ico">
-  <link rel="stylesheet" type="text/css" href="../css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/jp.css">
+  <link rel="stylesheet" type="text/css" href="../css/lib-docco.css">
+  <link rel="stylesheet" type="text/css" href="../css/lib-semantic.css">
+  <link rel="stylesheet" type="text/css" href="../css/start.css">
+
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-  <script src="../js/all.min.js"></script>
-	
-  <script type="text/javascript">
-	function activate(context, level) {
-		// hide all one-only elements
-		$( ".one-only" ).css( "display", "none" );
-		// display one-only elements for 'context' less than 'level'
-		for(i=0; i<level - 1; i++){
-			$ ( ".one-only.for-" + context + ".level-" + (i + 1)).css( "display", "block" );
-		}
-		// display one-only element for 'context' and 'level'
-		$ ( ".one-only.for-" + context + ".level-" + level).css( "display", "block" );
-	}
 
-	function deactivate(context, level) {
-		// for this 'context', deactivate everything <= 'level'	
-		maxLevel = 0;
-		for(l=0; l<10; l++){
-			// if there's nothing for 'context' at 'maxLevel' stop searching
-			elem = $ ( ".one-only.for-" + context + ".level-" + l )
-			if ( elem ) {
-				maxLevel = l;
-			} else {
-				break;
-			}
-		}
-		// hide everything > level
-		for(i=maxLevel; i>level-1; i--){
-			$ ( ".one-only.for-" + context + ".level-" + i).css( "display", "none" );
-		}
-	}	
+  <script src="../js/API.js"></script>
+  <script src="../js/lib-highlight.pack.js"></script>
+  <script src="../js/lib-jquery.address.js"></script>
+  <script src="../js/lib-markdown.js"></script>
+  <script src="../js/lib-semantic.js"></script>
+  <script src="../js/start.js"></script>
 
-  </script>
+  <script src="../js/activateDeactivate.js"></script>
+
 </head>
 
 
@@ -217,9 +198,7 @@
 
 
 	<div class="hidden one-only for-item level-2" id="item-2">
-		<p>
-			Advanced item help here
-		</p>
+		<div segment-data-file="item_search"></div>
 		<p>
 			<a href="#" onclick="deactivate('item', 2); return false;">close</a>
 		</p>
