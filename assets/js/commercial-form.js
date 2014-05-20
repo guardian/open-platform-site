@@ -36,14 +36,14 @@ $(document).ready(function() {
 	    
     	ko.applyBindings(viewModel);
 
-    	var commercialUsage = document.getElementById('commercialUsage')
-    	commercialUsage.addEventListener('change', function(){
-    		if (commercialUsage.checked) {
-    			document.getElementById('commercialInputs').style.display = 'block'
-    			document.getElementById('developerInputs').style.display = 'none'
-    		} else {
+    	var developerUse = document.getElementById('developerUse')
+    	developerUse.addEventListener('change', function(){
+    		if (developerUse.checked) {
     			document.getElementById('commercialInputs').style.display = 'none'
     			document.getElementById('developerInputs').style.display = 'block'
+    		} else {
+    			document.getElementById('commercialInputs').style.display = 'block'
+    			document.getElementById('developerInputs').style.display = 'none'
     		}
     	});
 
