@@ -30,8 +30,8 @@
 
 <body>
 	<div class="title static">
-		<p class="heading">Guardian's Open Platform</p>
-		<p class="subHeading">The Content API</p>
+		<h1>Guardian's Open Platform</h1>
+		<h2>The Content API</h2>
 		<p>
 			The Guardian's content API is the tool we use to drive our website and apps, and you can make use of it too. 
 		</p>
@@ -42,22 +42,23 @@
 			If you don't already have one, you'll need to <a href="get-a-key.html">get an access key</a> for the API. After that you can begin to write your own queries and use our data in your own applications.
 		</p>
 		<p>
-			We make use of access tiers to control which content can be retrieved from the API and the tier you require will depend on the content you intend to serve through your application. <a href="#" onclick="activate('tiers-helper', 0); return false;">Read more</a>.
+			We make use of <a href="#" onclick="activate('tiers-helper', 0); return false;">user tiers</a> that are bound to access keys to control which content can be retrieved from the API, and the tier you require will depend on the content you intend to serve through your application.
 		</p>
 
 		<div class="hidden closeable one-only ui raised segment for-tiers-helper level-0" id="tiers-helper">
 			<div class="close-gadget"><a href="#" onclick="deactivate('tiers-helper', 0); return false;"><img src="../img/close-gadget.png" /></a></div>
+			<h2>User Tiers</h2>
 			<p>
 				There are two tiers for public consumption: Developer and Rights-managed.
 			</p>
-			<p class='h2'>Developer:</p>
+			<h3>Developer</h2>
 			<p>
 				As a developer you'll have access to content which is not reserved for the rights-managed tier. At this level you'll get all the fields and metadata you'll need to construct most types of applications.
 			</p>
 			<p>
 				However, you will find that some or all of the media elements that you'll see on our website will not be provided in the API's responses to developer tier requests. If you require access to this data please contact our commercial department to discuss ways in which we may be able to help you.
 			</p>
-			<p class='h2'>Rights-managed:</p>
+			<h3>Rights-managed</h2>
 			<p>
 				As a rights-managed user, you will have access to everything in the developer tier plus the rich media elements that we display on our site and in our mobile apps.
 			</p>
@@ -87,13 +88,19 @@
 		</ul>
 		</p>
 
+		<p>
+			You can take some control over the amount and type of data that is returned in the responses to your queries by using a <a href="#" onclick="activate('show-fields', 1); return false;"><code>show-fields</code></a> parameter in many scenarios.
+		</p>
 
-		<p>You can control how much data is returned in the responses to your queries. For more information about what's available and how to request it, <a href="#" onclick="activate('fields-helper', 0); return false;">click here</a>.</p>
+		<p>
+			If your application needs to regularly poll the API for updated content, there are a few things you should know. Please ensure that you read the <a href="#" onclick="activate('polling', 1); return false;">guide for polling applications</a> before starting.
+		</p>
 	</div>
 
 
-	<div class="hidden closeable one-only ui raised segment for-fields-helper level-0" id="fields-helper">
-		<div class="close-gadget"><a href="#" onclick="deactivate('fields-helper', 0); return false;"><img src="../img/close-gadget.png" /></a></div>
+	<div class="hidden closeable one-only ui raised segment for-show-fields level-1" id="show-fields-1">
+		<div class="close-gadget"><a href="#" onclick="deactivate('show-fields', 1); return false;"><img src="../img/close-gadget.png" /></a></div>
+		<h2><code>show-fields</code></h2>
 		<p>
 			Our content contains many different fields, and by default none of these are included in API responses to your requests.
 		</p>
@@ -101,11 +108,32 @@
 			You can ask for only the specific fields that you're interested in, and that's what we'd recommend you do to reduce the amount of parsing you'll have to perform otherwise.
 		</p>
 		<p>
-			However, if you just want everything that's available to your <a href="#" onclick="activate('tiers-helper',0); return false;">access tier</a> you can simply request all fields.
+			However, if you just want everything that's available to your <a href="#" onclick="activate('tiers-helper',0); return false;">user tier</a> you can simply request all fields.
 		</p>
 		<p>
-			<a href="#" onclick="deactivate('fields-helper', 0); return false;">close</a>
+			As an example, if you visit 
 		</p>
+		<p><code>content.guardianapis.com/technology/2014/may/20/samsung-google-glass-competitor-gear-blink-trademark?api-key=my-api-key&<strong>show-fields=body</strong></code></p>
+		<p>
+			you'll see that the output contains a fields collection with a single member: <strong>body</strong>. There are several fields available to you, depending on your user-tier. See the advanced show-fields help for details.
+		</p>
+		<p>
+			<a href="#" onclick="activate('show-fields', 2); return false;">Show advanced <code>show-fields</code> help</a>
+		</p>
+		<p>
+			<a href="#" onclick="deactivate('show-fields', 1); return false;">close</a>
+		</p>
+	</div>
+
+	<div class="hidden closeable one-only ui raised segment for-show-fields level-2" id="show-fields-2">
+		<div class="close-gadget"><a href="#" onclick="deactivate('show-fields', 2); return false;"><img src="../img/close-gadget.png" /></a></div>
+		<h2>How to use <code>show-fields</code></h2>
+
+		<div class="doccontent" segment-data-file="show_fields"></div>
+
+		<p>
+			<a href="#" onclick="deactivate('show-fields', 2); return false;">close</a>
+		</p>		
 	</div>
 
 
@@ -160,14 +188,57 @@
 	<div class="hidden closeable one-only ui raised segment for-sections level-1" id="sections-1"></a>
 		<div class="close-gadget"><a href="#" onclick="deactivate('sections', 1); return false;"><img src="../img/close-gadget.png" /></a></div>
 		<p>
-			The /sections endpoint with no <a href="#sections-parameters-helper">parameters</a> will return a paginated list of sections. <a href="http://content.guardianapis.com/sections">Try it</a>.
+			The /sections endpoint with no <a href="#sections-parameters-helper">parameters</a> will return a list of sections. <a href="http://content.guardianapis.com/sections" target="_blank">Try it</a>.
 		</p>
 		<h2>Construction</h2>
 		<code>
 		content.guardianapis.com/sections?api-key=my-api-key	
 		</code>			
+		<h2>Example</h2>
 		<p>
-			<a href="#" onclick="activate('sections-helper', 0); return false;">What's a section</a>?
+			The results for the sport section, extracted from the above example query response, are shown below;
+		</p>
+		<pre>
+{
+  "id":"sport",
+  "webTitle":"Sport",
+  "webUrl":"http://www.theguardian.com/sport",
+  "apiUrl":"http://content.guardianapis.com/sport",
+  "editions":[{
+    "id":"sport",
+    "webTitle":"Sport",
+    "webUrl":"http://www.theguardian.com/sport",
+    "apiUrl":"http://content.guardianapis.com/sport",
+    "code":"default"
+  },{
+    "id":"uk/sport",
+    "webTitle":"Sport",
+    "webUrl":"http://www.theguardian.com/uk/sport",
+    "apiUrl":"http://content.guardianapis.com/uk/sport",
+    "code":"uk"
+  },{
+    "id":"us/sport",
+    "webTitle":"Sport",
+    "webUrl":"http://www.theguardian.com/us/sport",
+    "apiUrl":"http://content.guardianapis.com/us/sport",
+    "code":"us"
+  },{
+    "id":"au/sport",
+    "webTitle":"Sport",
+    "webUrl":"http://www.theguardian.com/au/sport",
+    "apiUrl":"http://content.guardianapis.com/au/sport",
+    "code":"au"
+  }]
+}		
+		</pre>
+		<p>
+			Each section in the response has its own id value, and you can see how this can be appended to either our website url to see the web representation, or the api url to see the API's representation of that content (see the webUrl or apiUrl values respectively). 
+		</p>
+		<p>
+			If the apiUrl values shown here were to be requested, the API would recognise them as single-item requests for sections and respond with the content that we store for those sections.
+		</p>
+		<p>
+			<a href="#" onclick="activate('sections-helper', 0); return false;">What is a section</a>?
 		</p>
 		<p>
 			<a href="#" onclick="activate('sections', 2); return false;">Show advanced sections help</a>
@@ -265,28 +336,22 @@
 	</div>
 
 
-	<div class="hidden closeable one-only ui raised segment for-tier-helper level-0" id="tier-helper">
-		<div class="close-gadget"><a href="#" onclick="deactivate('tier-helper', 0); return false;"><img src="../img/close-gadget.png" /></a></div>
-		<p>User Tiers: What are they and how do they work?</p>
+	<div class="hidden closeable one-only ui raised segment for-polling level-1" id="polling-1">
+		<div class="close-gadget"><a href="#" onclick="deactivate('polling', 1); return false;"><img src="../img/close-gadget.png" /></a></div>
+		<h2>Polling Applications</h2>
+		<h3>Things you should know</h3>
 		<p>
-			Some data is available only to our commercial partners. If you require access to this data, please contact our syndication department to discuss your needs.
+			The key that you are assigned for your user tier is rate-limited and as such any applications that depend on making large numbers of requests on a polling basis are likely to exceed their daily quota and thus be prevented from making further requests until the next period begins.
 		</p>
 		<p>
-			<a href="#" onclick="deactivate('tier-helper', 0); return false;">close</a>
-		</p>		
-	</div>
-
-
-	<div class="hidden closeable one-only ui raised segment for-fields-helper" id="fields-helper">
-		<div class="close-gadget"><a href="#" onclick="deactivate('fields-helper', 0); return false;"><img src="../img/close-gadget.png" /></a></div>
-		<p>Requesting more details: How to use fields.</p>
-		<p>
-			Explain how to use fields!
+			If you require an elevated limit on requests-per-day or requests-per-second this may be possible to arrange. Please contact us to discuss the nature of your application and the requests you are intending to make.
 		</p>
 		<p>
-			<a href="#" onclick="deactivate('fields-helper', 0); return false;">close</a>
+			<a href="#" onclick="deactivate('polling', 1); return false;">close</a>
 		</p>		
+
 	</div>
+
 
 </body>
 </html>
