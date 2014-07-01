@@ -1,3 +1,7 @@
+#container {
+    width:70%;
+    margin: 0 auto;
+}
 
 .form {
     width: 50%;
@@ -96,7 +100,7 @@
 
 .niceCheckbox input[type=checkbox]:checked ~ label {
     left: 85px;
-    background:#6E8F83; /* color found manually, dependant on the checkbox place */
+    background:rgb(116, 147, 184); /* color found manually, dependant on the checkbox place */
 }
 
 #commercialInputs {
