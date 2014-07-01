@@ -33,6 +33,7 @@ a {
 
 
 .main ul.nav {
+    margin-top: 0px;
     margin-bottom: 30px;
     list-style: none;
     padding-top: 20px;
