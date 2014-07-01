@@ -47,8 +47,9 @@ a {
 .landing {
     font-family: 'Source Sans Pro',sans-serif;
     width: 600px;
-    height: 100%;
+    overflow:hidden;
     margin: 0 auto;
+    margin-top: 10%; 
     font-size: 20px;
     text-align: center;
     background: rgba(0, 0, 0, 0.28);
