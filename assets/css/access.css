@@ -1,22 +1,76 @@
 #container {
     width:70%;
     margin: 0 auto;
+    text-align: center;
+}
+
+#developer, #commercial {
+    display: none;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.box {
+    display: inline-block;
+    width: 35%;
+    color: black;
+    margin: 3%;
+    cursor: pointer;
+    border: solid rgba(0,0,0,0) 1px;
+}
+
+.box:hover {
+    border: solid rgba(255,255,255,1) 1px;
+    box-shadow: 0 0 1px 1px white;
+}
+
+.box h1 {
+    font-size: 21px;
+    background-color: #B2B0B0;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.box ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    font-size: 13px;
+}
+
+.box ul li {
+    color: #777;
+    line-height: 20px;
+    padding: 15px 30px;
+    background: #f7f7f7;
+    border-bottom: solid 1px #e9e9e9;
+    text-align: left;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid;
+    border-color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Source Sans Pro',sans-serif;
+}
+
+button:hover {
+    background: #FFF;
+    color: #262626;
 }
 
 .form {
-    width: 50%;
-    border-right: 1px solid white;
     text-align: center;
-    float: left;
     font-size: 12px;
-}
-
-.info {
-    float: left;
-    width: 48%; /* not sure exactly why 50% does not work, may be due to the border */
-    padding-left: 10px;
-    letter-spacing: 2px;
-    font-size: 14px;
 }
 
 .form input {
@@ -28,20 +82,6 @@
     width: 80%;
 }
 
-.form button {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0);
-    border: 1px solid;
-    border-color: white;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-family: 'Source Sans Pro',sans-serif;
-    width: 80%;
-}
-
-
 .checkboxWithLabel {
     width: 80%;
     margin: 0 auto;
@@ -50,8 +90,8 @@
 .label {
     float: left;
     width: 50%;
-    text-transform: uppercase;
     margin-top: 12px;
+    font-size: 15px;
 }
 
 .niceCheckbox {
@@ -96,6 +136,23 @@
 
 .niceCheckbox input[type=checkbox]:checked ~ div {
     background: #FFF;
+    color: rgb(116, 147, 184);
+}
+
+.niceCheckbox input[type=checkbox]:checked ~ div:before {
+    content: 'yes';
+    position: absolute;
+    font-size: 15px;
+    top: 10px;
+    right: 50px;
+}
+
+.niceCheckbox input[type=checkbox] ~ div:before {
+    content: 'no';
+    position: absolute;
+    font-size: 15px;
+    top: 10px;
+    right: 50px;
 }
 
 .niceCheckbox input[type=checkbox]:checked ~ label {
@@ -103,6 +160,4 @@
     background:rgb(116, 147, 184); /* color found manually, dependant on the checkbox place */
 }
 
-#commercialInputs {
-    display: none;
-}
+

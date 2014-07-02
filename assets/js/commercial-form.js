@@ -36,15 +36,28 @@ $(document).ready(function() {
 	    
     	ko.applyBindings(viewModel);
 
-    	var developerUse = document.getElementById('developerUse')
-    	developerUse.addEventListener('change', function(){
-    		if (developerUse.checked) {
-    			document.getElementById('commercialInputs').style.display = 'none'
-    			document.getElementById('developerInputs').style.display = 'block'
-    		} else {
-    			document.getElementById('commercialInputs').style.display = 'block'
-    			document.getElementById('developerInputs').style.display = 'none'
-    		}
+    	var developerBox = document.getElementById('developerBox')
+    	developerBox.addEventListener('click', function(){
+    			document.getElementById('boxes').style.display = 'none'
+    			document.getElementById('developer').style.display = 'block'
     	});
+
+        var commercialBox = document.getElementById('commercialBox')
+        commercialBox.addEventListener('click', function(){
+                document.getElementById('boxes').style.display = 'none'
+                document.getElementById('commercial').style.display = 'block'
+        });
+
+        var masheryCheckbox = document.getElementById('mashery')
+        var masheryButton = document.getElementById('masheryAccess')
+        masheryCheckbox.addEventListener('change', function(){
+            if (masheryCheckbox.checked) {
+                masheryButton.textContent = 'Sign in'
+                masheryButton.onclick = function () {window.location='https://secure.mashery.com/login/guardian.mashery.com/'} 
+            } else {
+                masheryButton.textContent = 'Register'
+                masheryButton.onclick = function () {window.location='http://guardian.mashery.com/member/register'}
+            }
+        });
 
 		});

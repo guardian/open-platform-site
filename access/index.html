@@ -25,44 +25,58 @@
 	  	<h1> Get a Key </h1>
 
         <div id="container">
-		<div class="form">
-			<form data-bind="submit: postForm">
-			  	
-			  	<div class="checkboxWithLabel">
-			  	    <div class="label">Developer use</div>
-			  	    <div class="niceCheckbox">
-        		        <input type="checkbox" value="1" id="developerUse" name="" checked/>
-        		        <label for="developerUse"></label>
-        		        <div></div>
-    			    </div>
-    				<div style="clear:both"></div>
-    			</div>
 
-    		  <div id="commercialInputs">
-	              <input type="text" data-bind="value: contactName" placeholder="NAME" required="true"/><br/>
-	              <input type="email" data-bind="value: email" placeholder="EMAIL" required="true"/><br/>
-	              <input type="text" data-bind="value: productDetails" placeholder="PRODUCT NAME" required="true"/><br/>
-	              <input type="text" data-bind="value: company" placeholder="COMPANY"required="true"/><br/>
-	              <button type="submit">GET</button>
-	          </div>
+        <div id="boxes">
+        <div id="developerBox" class="box">
+            <h1>Developer</h1>
+            <ul>
+                <li>Free</li>
+                <li>Up to 25 calls per second</li>
+                <li>Up to 5,000 calls per day</li>
+                <li>Access to article text</li>
+                <li>Access to over 1,600,000 pieces of content</li>
+            </ul>
+        </div>
 
-	          <div id="developerInputs">
-	          	<button type="submit" onclick="window.location='http://guardian.mashery.com'">GO TO MASHERY</button>
-	          	
-	          </div>
-			</form>
-		</div>
+        <div id="commercialBox" class="box">
+            <h1>Commercial</h1>
+            <ul>
+                <li>Enquire</li>
+                <li>Custom throttle limit</li>
+                <li>Custom quota limit</li>
+                <li>Access to article text, images, audio and videos</li>
+                <li>Access to entire Guardian content store</li>
+            </ul>
+        </div>
+	   <div style="clear:both"></div>
+       </div>
 
-		<div class="info">
-			<p> Developer use does not include access to premium content:</p>
-			<ul>
-				<li>images</li>
-				<li>videos</li>
-				<li>content with restricted rights</li>
-			</ul>
-		</div>
-	<div style="clear:both"></div>
-    </div>
+
+       <div id="developer">
+                <div class="checkboxWithLabel">
+                    <div class="label">Have you already a Mashery account?</div>
+                    <div class="niceCheckbox">
+                        <input type="checkbox" value="0" id="mashery" name=""/>
+                        <label for="mashery"></label>
+                        <div></div>
+                    </div>
+                <div style="clear:both"></div>
+                </div>
+                <button id="masheryAccess" type="submit" onclick="window.location='http://guardian.mashery.com/member/register'">Register</button>
+                
+        </div>
+
+        <div id="commercial" class="form">
+            <form data-bind="submit: postForm">
+
+
+                  <input type="text" data-bind="value: contactName" placeholder="NAME" required="true"/><br/>
+                  <input type="email" data-bind="value: email" placeholder="EMAIL" required="true"/><br/>
+                  <input type="text" data-bind="value: productDetails" placeholder="PRODUCT NAME" required="true"/><br/>
+                  <input type="text" data-bind="value: company" placeholder="COMPANY"required="true"/><br/>
+                  <button type="submit">Sign up</button>
+            </form>
+        </div>
 	</div>
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
