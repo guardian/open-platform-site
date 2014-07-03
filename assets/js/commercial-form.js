@@ -36,15 +36,16 @@ $(document).ready(function() {
 	    
     	ko.applyBindings(viewModel);
 
-    	var developerUse = document.getElementById('developerUse')
-    	developerUse.addEventListener('change', function(){
-    		if (developerUse.checked) {
-    			document.getElementById('commercialInputs').style.display = 'none'
-    			document.getElementById('developerInputs').style.display = 'block'
-    		} else {
-    			document.getElementById('commercialInputs').style.display = 'block'
-    			document.getElementById('developerInputs').style.display = 'none'
-    		}
+    	var developerBox = document.getElementById('developerBox')
+    	developerBox.addEventListener('click', function(){
+    			document.getElementById('boxes').style.display = 'none'
+    			document.getElementById('developer').style.display = 'block'
     	});
+
+        var commercialBox = document.getElementById('commercialBox')
+        commercialBox.addEventListener('click', function(){
+                document.getElementById('boxes').style.display = 'none'
+                document.getElementById('commercial').style.display = 'block'
+        });
 
 		});
