@@ -53,28 +53,31 @@
 
 
        <div id="developer">
-                <div class="checkboxWithLabel">
-                    <div class="label">Have you already a Mashery account?</div>
-                    <div class="niceCheckbox">
-                        <input type="checkbox" value="0" id="mashery" name=""/>
-                        <label for="mashery"></label>
-                        <div></div>
-                    </div>
-                <div style="clear:both"></div>
-                </div>
-                <button id="masheryAccess" type="submit" onclick="window.location='http://guardian.mashery.com/member/register'">Register</button>
-                
+                  <p>
+                    <a class="button" href="http://guardian.mashery.com/member/register">Register
+                    </a>
+                  </p>
+
+                  <p class="header">
+                  If you already have a Mashery account, you could just <a class="link" href="https://secure.mashery.com/login/guardian.mashery.com/">sign in</a>.
+                  </p>
+                  <br>
+                  <br>
+                  <br>
+
         </div>
 
         <div id="commercial" class="form">
             <form data-bind="submit: postForm">
 
+                  <p class="header">
+                  If you'd like to request a commercial API key, or want to discuss commercial opportunities in general, please complete this form and we'll get in touch shortly!</p>
 
                   <input type="text" data-bind="value: contactName" placeholder="NAME" required="true"/><br/>
                   <input type="email" data-bind="value: email" placeholder="EMAIL" required="true"/><br/>
                   <input type="text" data-bind="value: productDetails" placeholder="PRODUCT NAME" required="true"/><br/>
                   <input type="text" data-bind="value: company" placeholder="COMPANY"required="true"/><br/>
-                  <button type="submit">Sign up</button>
+                  <button class="button" type="submit">Send</button>
             </form>
         </div>
 	</div>

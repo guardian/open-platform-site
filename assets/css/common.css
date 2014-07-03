@@ -1,5 +1,5 @@
 body {
-    background-color: #214583;
+    background-color: #E0DFDF;
     -webkit-font-smoothing: antialiased;
     color: white;
     width: 100%;
@@ -16,10 +16,10 @@ a {
     width: 100%;
     margin: 0 auto;
     font-size: 20px;
-    background-color: #214583;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #94b1ca), color-stop(100%, #214583));
-    background-image: -webkit-linear-gradient(top, #94b1ca, #214583);
-    background-image: linear-gradient(to bottom, #94b1ca, #214583);
+    background-color: #E0DFDF;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #94b1ca), color-stop(100%, #E0DFDF));
+    background-image: -webkit-linear-gradient(top, #94b1ca, #E0DFDF);
+    background-image: linear-gradient(to bottom, #94b1ca, #E0DFDF);
 }
 
 .main h1 {

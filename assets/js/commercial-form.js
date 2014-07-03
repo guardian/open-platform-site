@@ -48,16 +48,4 @@ $(document).ready(function() {
                 document.getElementById('commercial').style.display = 'block'
         });
 
-        var masheryCheckbox = document.getElementById('mashery')
-        var masheryButton = document.getElementById('masheryAccess')
-        masheryCheckbox.addEventListener('change', function(){
-            if (masheryCheckbox.checked) {
-                masheryButton.textContent = 'Sign in'
-                masheryButton.onclick = function () {window.location='https://secure.mashery.com/login/guardian.mashery.com/'} 
-            } else {
-                masheryButton.textContent = 'Register'
-                masheryButton.onclick = function () {window.location='http://guardian.mashery.com/member/register'}
-            }
-        });
-
 		});
