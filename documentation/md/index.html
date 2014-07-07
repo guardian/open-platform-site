@@ -1,0 +1,194 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+body{
+  color:#444;
+  font-family:Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman',
+              "Hiragino Sans GB", "STXihei", "微软雅黑", serif;
+  font-size:12px;
+  line-height:1.5em;
+  background:#fefefe;
+  width: 45em;
+  margin: 10px auto;
+  padding: 1em;
+  outline: 1300px solid #FAFAFA;
+}
+
+a{ color: #0645ad; text-decoration:none;}
+a:visited{ color: #0b0080; }
+a:hover{ color: #06e; }
+a:active{ color:#faa700; }
+a:focus{ outline: thin dotted; }
+a:hover, a:active{ outline: 0; }
+
+span.backtick {
+  border:1px solid #EAEAEA;
+  border-radius:3px;
+  background:#F8F8F8;
+  padding:0 3px 0 3px;
+}
+
+::-moz-selection{background:rgba(255,255,0,0.3);color:#000}
+::selection{background:rgba(255,255,0,0.3);color:#000}
+
+a::-moz-selection{background:rgba(255,255,0,0.3);color:#0645ad}
+a::selection{background:rgba(255,255,0,0.3);color:#0645ad}
+
+p{
+margin:1em 0;
+}
+
+img{
+max-width:100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+font-weight:normal;
+color:#111;
+line-height:1em;
+}
+h4,h5,h6{ font-weight: bold; }
+h1{ font-size:2.5em; }
+h2{ font-size:2em; border-bottom:1px solid silver; padding-bottom: 5px; }
+h3{ font-size:1.5em; }
+h4{ font-size:1.2em; }
+h5{ font-size:1em; }
+h6{ font-size:0.9em; }
+
+blockquote{
+color:#666666;
+margin:0;
+padding-left: 3em;
+border-left: 0.5em #EEE solid;
+}
+hr { display: block; height: 2px; border: 0; border-top: 1px solid #aaa;border-bottom: 1px solid #eee; margin: 1em 0; padding: 0; }
+
+
+pre , code, kbd, samp { 
+  color: #000; 
+  font-family: monospace; 
+  font-size: 0.88em; 
+  border-radius:3px;
+  background-color: #F8F8F8;
+  border: 1px solid #CCC; 
+}
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 5px 12px;}
+pre code { border: 0px !important; padding: 0;}
+code { padding: 0 3px 0 3px; }
+
+b, strong { font-weight: bold; }
+
+dfn { font-style: italic; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+ul, ol { margin: 1em 0; padding: 0 0 0 2em; }
+li p:last-child { margin:0 }
+dd { margin: 0 0 0 2em; }
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+@media only screen and (min-width: 480px) {
+body{font-size:14px;}
+}
+
+@media only screen and (min-width: 768px) {
+body{font-size:16px;}
+}
+
+@media print {
+  * { background: transparent !important; color: black !important; filter:none !important; -ms-filter: none !important; }
+  body{font-size:12pt; max-width:100%; outline:none;}
+  a, a:visited { text-decoration: underline; }
+  hr { height: 1px; border:0; border-bottom:1px solid black; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
+  pre, blockquote { border: 1px solid #999; padding-right: 1em; page-break-inside: avoid; }
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page :left { margin: 15mm 20mm 15mm 10mm; }
+  @page :right { margin: 15mm 10mm 15mm 20mm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
+</style><title>index</title></head><body><h1 id="getting-started">Getting started</h1>
+<p>The Content API is a public service for accessing all the content the Guardian creates and the collections we have of that content (tags and sections). There are over one and a half million items available published as far back as 1999. This overview will give you some idea of what data is available, how to find what you need, and what you will see when you make a request to us.</p>
+<p>To access the API, you will need to <a href="file:///Users/mchauvin/Code/guardian/open-platform-site/documentation/md/../access">sign up for an API key</a>, which should be sent with every request. Plus, once we have your contact details we will be able to give you notice of any upcoming changes.</p>
+<p>The easiest way to see what data is included is to <a href="file:///Users/mchauvin/Code/guardian/open-platform-site/documentation/md/../explore">explore the data</a>. You can build complex queries quickly and browse the results.</p>
+<p>If your application needs to regularly poll the API for updated content, there are a few things you should know. Please ensure that you read the <a href="#polling">guide for polling applications</a> before starting.</p>
+<h1 id="endpoints">Endpoints</h1>
+<p>We provide several endpoints to retrieve different items:</p>
+<ul>
+<li>Content</li>
+<li>Tags</li>
+<li>Sections</li>
+<li>Single item</li>
+</ul>
+<p>For each endpoint:</p>
+<ul>
+<li>results can be filtered using parameters</li>
+<li>response contains minimal detail by default but more data can be exposed using parameters</li>
+<li>results are returned as paginated list of containing, by default, 10 entries per page</li>
+</ul>
+<h2 id="content">Content</h2>
+<p>The <a href="file:///Users/mchauvin/Code/guardian/open-platform-site/documentation/md/content.html">content endpoint</a> (<code>/search</code>) returns all pieces of content in the API.
+For example, lets see if the Guardian has any content on political debates:</p>
+<p><a href="http://content.guardianapis.com/search?q=debates">http://content.guardianapis.com/search?q=debates</a></p>
+<p>Here the <code>q</code> parameter filters the results to only those that include that search term. In this case, there are many results, so we might want to filter down the response to something more meaningful, specifically looking for political content published in 2014, for example:</p>
+<p><a href="http://content.guardianapis.com/search?q=debate&amp;tag=politics/politics&amp;from-date=2014-01-01">http://content.guardianapis.com/search?q=debate&amp;tag=politics/politics&amp;from-date=2014-01-01</a></p>
+<h2 id="tags">Tags</h2>
+<p>The <a href="file:///Users/mchauvin/Code/guardian/open-platform-site/documentation/md/tag.html">tags endpoint</a> (<code>/tags</code>) returns all tags in the API. All Guardian content is manually categorised using these tags, of which there are nearly 20,000.</p>
+<p>A tag is a piece of data that we use to categorise our content. We use many different tags so understanding what they mean is important, and with new ones being added all the time you'll want to make sure to keep up to date with the changes.</p>
+<p>For example, <a href="http://beta.content.guardianapis.com/lifeandstyle/2014/may/14/recycling-saving-energy-reducing-waste-how-is-it-going-for-you">this article</a> contains many tags including:</p>
+<ul>
+<li><code>environment/recycling</code></li>
+<li><code>environment/plasticbags</code></li>
+<li><code>environment/energyefficiency</code></li>
+</ul>
+<p>You can use these tags in your own queries to find other content that has the same tags.</p>
+<p>For example, <a href="http://beta.content.guardianapis.com/tags?q=green">filtered by the term <code>green</code></a>, shows there are several tags containing the word.
+Finally, tags have types:</p>
+<ul>
+<li><code>keyword</code> -- a word describing what this piece of content is about</li>
+<li><code>series</code> -- the name of a regularly produced content feature, such as podcasts or columns, eg. 'Band of the week'</li>
+<li><code>contributor</code> -- the author or authors of a content item</li>
+<li><code>tone</code> -- the intent of the content, such as feature or obituary</li>
+<li><code>type</code> -- the media type, such as article, poll, video, etc</li>
+<li><code>blog</code> -- the name of one of the Guardian's blogs</li>
+</ul>
+<h2 id="sections">Sections</h2>
+<p>The <a href="file:///Users/mchauvin/Code/guardian/open-platform-site/documentation/md/section.html">sections endpoint</a>(<code>/sections</code>) returns all sections in the API.</p>
+<p>We use sections to logically group our content.</p>
+<p>For example, <a href="http://beta.content.guardianapis.com/technology/2014/jul/07/best-android-apps-games-wear-city-air?show-sections=true">this article</a> contains one sectionm, <code>technology</code>, and you will find that within <a href="http://beta.content.guardianapis.com/technology">our technology section</a>, technologically-related content will be clustered such as items covering games, iPhone, Sony, Google and others.</p>
+<p>Each section in sections endpoint response has its own id value, and you can see how this can be appended to either our website url (<code>webUrl</code>) to see the web representation, or the api url (<code>apiUrl</code>) to see the API's representation of that content.</p>
+<p>If you request <code>apiUrl</code> value, the API would recognise them as single item requests for sections and respond with the content that we store for those sections.</p>
+<h2 id="single-item">Single item</h2>
+<p>The <a href="file:///Users/mchauvin/Code/guardian/open-platform-site/documentation/md/item.html">single item endpoint</a> returns all the data we have for a given single item id. Here the term 'item' refers to either a piece of content, a tag, or a section. The item endpoint matches the paths on theguardian.com. So by replacing the domain theguardian.com with beta.content.guardianapis.com you can see the data associated.</p>
+<p>For example:
+<em> a piece of content: http://content.guardianapis.com/technology/2014/feb/18/doge-such-questions-very-answered
+</em> a tag; http://content.guardianapis.com/world/france
+* a section: http://content.guardianapis.com/lifeandstyle</p>
+<p>The response contains minimal detail by default but more data can be exposed by passing parameters in your request. Many (though not all) of these parameters are shared with the Content endpoint.</p>
+<h1 id="other">Other</h1>
+<h2 id="polling-guide">Polling guide</h2>
+<p>The key that you are assigned is rate-limited and as such any applications that depend on making large numbers of requests on a polling basis are likely to exceed their daily quota and thus be prevented from making further requests until the next period begins.</p>
+<p>If you require an elevated limit on requests-per-day or requests-per-second this may be possible to arrange. Please contact us to discuss the nature of your application and the requests you are intending to make.</p>
+<h2 id="client-libraries">Client libraries</h2>
+<p>We maintain and support officially only one client, the <a href="https://github.com/guardian/content-api-scala-client">Scala client library</a>.</p>
+<p>There is however other client, supported by the community:</p>
+<ul>
+<li><a href="https://github.com/guardian/content-api-haskell-client">Haskell client library</a></li>
+<li><a href="">Ruby client library</a></li>
+</ul>
+<h2 id="resources">Resources</h2>
+<p>The <a href="http://groups.google.com/group/guardian-api-talk/">Guardian API talk board</a> is the best place for questions or to speak to other developers working with the Content API.</p>
+<p>For more information you can find us on Twitter at <a href="https://twitter.com/gdndevelopers">@gdndevelopers</a> or read our <a href="http://www.theguardian.com/info/developer-blog">developer blog</a>.</p></body></html>
