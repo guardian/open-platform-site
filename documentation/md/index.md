@@ -10,7 +10,7 @@ The easiest way to see what data is included is to [explore the data](../explore
 If your application needs to regularly poll the API for updated content, there are a few things you should know. Please ensure that you read the [guide for polling applications](#polling) before starting.
 
 
-# Endpoints
+## Endpoints
 
 We provide several endpoints to retrieve different items:
 
@@ -26,7 +26,7 @@ For each endpoint:
   * results are returned as paginated list of containing, by default, 10 entries per page
 
 
-## Content
+### Content
 
 The [content endpoint](content.html) (`/search`) returns all pieces of content in the API.
 For example, lets see if the Guardian has any content on political debates:
@@ -38,7 +38,7 @@ Here the `q` parameter filters the results to only those that include that searc
 <http://content.guardianapis.com/search?q=debate&tag=politics/politics&from-date=2014-01-01>
 
 
-## Tags
+### Tags
 
 The [tags endpoint](tag.html) (`/tags`) returns all tags in the API. All Guardian content is manually categorised using these tags, of which there are nearly 20,000.
 
@@ -63,7 +63,7 @@ Finally, tags have types:
 * `blog` -- the name of one of the Guardian's blogs
 
 
-## Sections
+### Sections
 
 The [sections endpoint](section.html)(`/sections`) returns all sections in the API.
 
@@ -75,7 +75,7 @@ Each section in sections endpoint response has its own id value, and you can see
 
 If you request `apiUrl` value, the API would recognise them as single item requests for sections and respond with the content that we store for those sections.
 
-## Single item
+### Single item
 
 The [single item endpoint](item.html) returns all the data we have for a given single item id. Here the term 'item' refers to either a piece of content, a tag, or a section. The item endpoint matches the paths on theguardian.com. So by replacing the domain theguardian.com with beta.content.guardianapis.com you can see the data associated.
 
@@ -86,15 +86,15 @@ For example:
 
 The response contains minimal detail by default but more data can be exposed by passing parameters in your request. Many (though not all) of these parameters are shared with the Content endpoint.
 
-# Other
+## Other
 
-## Polling guide
+### Polling guide
 
 The key that you are assigned is rate-limited and as such any applications that depend on making large numbers of requests on a polling basis are likely to exceed their daily quota and thus be prevented from making further requests until the next period begins.
 
 If you require an elevated limit on requests-per-day or requests-per-second this may be possible to arrange. Please contact us to discuss the nature of your application and the requests you are intending to make.
 
-## Client libraries
+### Client libraries
 
 We maintain and support officially only one client, the [Scala client library](https://github.com/guardian/content-api-scala-client).
 
@@ -104,7 +104,7 @@ There is however other client, supported by the community:
  * [Ruby client library]()
 
 
-## Resources
+### Resources
 
 
 The [Guardian API talk board](http://groups.google.com/group/guardian-api-talk/) is the best place for questions or to speak to other developers working with the Content API.
