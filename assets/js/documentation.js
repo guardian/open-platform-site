@@ -3,13 +3,13 @@ $(document).ready(function() {
     var markdownApi = new MarkdownApi();
 
     function renderDoc(name, f) {
-        markdownApi.convert('../../documentation/md/' + name +'.md', f); 
+        markdownApi.convert('../documentation/md/' + name +'.md', f); 
     }
 
     function convertDone(html) {
         var includecommon = $('#doccontent').attr('data-include-common');
         if (includecommon === 'true') {
-            markdownApi.convert('../../documentation/md/common.md', function(commonHtml) {
+            markdownApi.convert('../documentation/md/common.md', function(commonHtml) {
                 updateContent(html, commonHtml);            
             }); 
         } else {
