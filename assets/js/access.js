@@ -1,5 +1,6 @@
 $(document).ready(function() {
-	    	var viewModel = {
+
+            var viewModel = {
 
 	    		contactName : ko.observable(""),
 	    		email : ko.observable(""),
@@ -7,30 +8,39 @@ $(document).ready(function() {
 				company : ko.observable(""),
 	
 		        postForm : function(formElement) {
-		            var self = this;
+                    var self = this;
 		            contactName = self.contactName();
 		            email = self.email();
 					productDetails = self.productDetails();
 					company = self.company();
-					
-					html = 'Please contact the following company for syndicaton access to the Content API ' + 
-							'<p>Name: ' + contactName + '</p>' +
-							'<p>Email: ' + email + '</p>' +
-							'<p>Product details : ' + productDetails + '</p>' +
-							'<p>Company: ' + company + '</p>';
 
 					$.ajax({
 					  type: 'POST',
-					  url: "http://to-do:3000/email",
+					  url: "https://docs.google.com/a/guardian.co.uk/forms/d/17uANiLxLWfX6y3UUrx0MwFGliiCZguT1_Ev7aucgV3I/formResponse",
 					  data: {
-					    'from': email,
-					    'html': html
-					    
-					  }
-					 }).done(function(response) {
-					   $('#submitButton').html(response) 
-					});
+                        'entry.308009798':contactName,
+                        'entry.1638018966':email,
+                        'entry.344332284':productDetails,
+                        'entry.2092951118':company,
+					    'pageHistory': 0
+					  },
 
+					})
+                    .done(function(data, textStatus, jqXHR) {
+                        if (jqXHR.status === 200) {
+                            submissionSucceed();
+                        } else {
+                            submissionFailed();
+                        }
+					})
+                    .fail(function(jqXHR, textStatus, errorThrown) {
+                        if (jqXHR.status === 0) {
+                            /* we receive a CORS error due to missing header a but it works */
+                            submissionSucceed();
+                        } else {
+                           submissionFailed();
+                        }
+                    });
 		        }
 	    	};
 	    
@@ -47,5 +57,14 @@ $(document).ready(function() {
                 document.getElementById('boxes').style.display = 'none'
                 document.getElementById('commercial').style.display = 'block'
         });
+});
 
-		});
+function submissionFailed() {
+    document.getElementById('commercial-form').style.display = 'none'
+    document.getElementById('form-submission-failed').style.display = 'block'
+}
+
+function submissionSucceed() {
+    document.getElementById('commercial-form').style.display = 'none'
+    document.getElementById('form-submission-succeed').style.display = 'block'
+}

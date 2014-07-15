@@ -66,7 +66,7 @@
         </div>
 
         <div id="commercial" class="form">
-            <form data-bind="submit: postForm">
+            <form id="commercial-form" data-bind="submit: postForm">
 
                   <p class="header">
                   If you'd like to request a commercial API key, or want to discuss commercial opportunities in general, please complete this form and we'll get in touch shortly!</p>
@@ -77,6 +77,22 @@
                   <input type="text" data-bind="value: company" placeholder="COMPANY"required="true"/><br/>
                   <button class="button" type="submit">Send</button>
             </form>
+
+            <div id="form-submission-succeed">
+                  <p class="header">
+                  <span class="big">Thanks! We'll contact contact you soon.</span>
+                   If you do not hear from us, or have any question, please contact us by email <a href="mailto:openplatform@guardian.co.uk" class="link">openplatform@guardian.co.uk</a>
+                  </p>
+            </div>
+
+            <div id="form-submission-failed">
+                  <p class="header">
+                  <span class="big">Sorry! An error occured.</span>
+                  <br>
+                  Please contact us by email <a href="mailto:openplatform@guardian.co.uk" class="link" >openplatform@guardian.co.uk</a>
+                  </p>
+            </div>
+
         </div>
 	</div>
     <script>
