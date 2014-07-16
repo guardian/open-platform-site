@@ -93,4 +93,13 @@
     text-align: left;
 }
 
+#form-submission-failed, #form-submission-succeed {
+    display: none;
+}
 
+span.big {
+    display:block;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
