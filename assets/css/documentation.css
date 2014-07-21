@@ -4,7 +4,7 @@
 }
 
 #sidebar {
-    background-color: #214583;
+    background-color: #2479c3;
     height: auto !important;
     width: 200px !important;
     top: 90px !important;
@@ -14,9 +14,18 @@
     color: black;
 }
 
-#doccontent a { 
-    text-decoration: underline;
-    color: black;
+#doccontent a{ 
+    text-decoration: none !important;
+    border-bottom: 1px solid #dcdcdc;
+    color: #005689;
+    cursor: pointer;
+    -webkit-transition: border-color 0.15s ease-out;
+    -moz-transition: border-color 0.15s ease-out;
+    transition: border-color 0.15s ease-out;
+}
+
+#doccontent a:hover, a:focus{ 
+    border-color:#6e99b2;
 }
 
 .ui.page.grid.container {
