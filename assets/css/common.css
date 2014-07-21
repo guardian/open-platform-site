@@ -39,41 +39,46 @@ a {
 
 
 .main ul.nav {
+    padding: 4px;
     margin-top: 0px;
-    margin-bottom: 30px;
-    list-style: none;
-    padding-top: 20px;
-    width: 80%;
+    margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
+    list-style: none;
+    width: 100%;
     text-align: center;
+    background:#214583; 
 }
 
 .main ul.nav li {
+    vertical-align: super;
     display: inline-block;
 }
 
 
 .nav a {
-    padding: 10px;
-    border: 1px solid;
-    border-color: white;
-    font-size: 14px;
+    padding: 2px;
+    /* border: 1px solid; */
+    /* border-color: white; */
+    /* font-size: 14px; */
+    font-size: 16px;
+    font-family: "EgyptianHeadline";
+    font-weight: 900;
     margin-right: 10px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    -moz-transition: all .35s ease;
+    /*letter-spacing: 2px;*/
+    /*text-transform: uppercase;*/
+    /*-moz-transition: all .35s ease;
     -webkit-transition: all .35s ease;
     -o-transition: all .35s ease;
-    transition: all .35s ease;
+    transition: all .35s ease;*/
 }
 
 .nav a:hover, a:focus, a:active {
-    background: #FFF;
-    color: #262626;
+    background: #2479c3;
 }
 
 .nav a.active {
-    background: #FFF;
-    color: #262626;   
+    background: #2479c3;
+    padding-top: 13px;
+    padding-bottom: 13px; 
 }
