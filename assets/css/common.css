@@ -5,6 +5,7 @@ html {
 body {
     background-color: #E0DFDF;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     color: white;
     width: 100%;
