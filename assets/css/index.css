@@ -25,9 +25,9 @@ a {
 }
 
 .gfont {
-    font-family: georgia, serif;
+    font-family: "EgyptianHeadline", "Georgia", serif;
     text-transform: lowercase;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 90px;
     margin-right: 10px;
 }
