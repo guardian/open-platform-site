@@ -38,8 +38,8 @@ a {
 }
 
 
-.main ul.nav {
-    padding: 4px;
+.main ul.nav, .main ul.nav2 {
+    padding: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: auto;
@@ -47,38 +47,37 @@ a {
     list-style: none;
     width: 100%;
     text-align: center;
-    background:#214583; 
+    background:#214583;
+    border-top: 1px solid rgba(255,255,255,0.3);
 }
 
-.main ul.nav li {
-    vertical-align: super;
+.main ul.nav2 {
+    background:#2479c3;
+}
+
+.main ul.nav li, .main ul.nav2 li {
     display: inline-block;
-}
-
-
-.nav a {
-    padding: 2px;
-    /* border: 1px solid; */
-    /* border-color: white; */
-    /* font-size: 14px; */
+    padding: 6px;
     font-size: 16px;
     font-family: "EgyptianHeadline";
     font-weight: 900;
+}
+
+.nav a, .nav2 a {
+    padding: 2px;
     margin-right: 10px;
-    /*letter-spacing: 2px;*/
-    /*text-transform: uppercase;*/
-    /*-moz-transition: all .35s ease;
-    -webkit-transition: all .35s ease;
-    -o-transition: all .35s ease;
-    transition: all .35s ease;*/
 }
 
-.nav a:hover, a:focus, a:active {
-    background: #2479c3;
+.main ul.nav2 li.active {
+    border-right: 1px solid rgba(255,255,255,0.3);
+    padding-bottom: 8px;
+    padding-top: 8px;
 }
 
-.nav a.active {
-    background: #2479c3;
-    padding-top: 13px;
-    padding-bottom: 13px; 
+.main ul.nav2 li a.active {
+    margin-right: 0px;
+}
+
+.main ul.nav2 li.sep {
+    padding: 0px;
 }
