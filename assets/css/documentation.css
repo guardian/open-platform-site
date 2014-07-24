@@ -12,6 +12,9 @@
 
 #doccontent {
     color: black;
+    font-size: 14px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 #doccontent a{ 
@@ -50,10 +53,6 @@ th .ui.icon.button {
     padding: .6em .8em;
 }
 
-
-#doccontent {
-    font-size: 14px;
-}
 
 #doccontent .ui.ribbon.label {
     text-transform: none;
