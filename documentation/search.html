@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="../public/css/lib-normalize.css">
     <link rel="stylesheet" type="text/css" href="../public/css/lib-docco.css">
     <link rel="stylesheet" type="text/css" href="../public/css/lib-semantic.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/font.css">
     <link rel="stylesheet" type="text/css" href="../public/css/common.css">
     <link rel="stylesheet" type="text/css" href="../public/css/documentation.css">
     <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,400italic">
@@ -24,21 +25,23 @@
 
     <div class="main">
         <ul class="nav">
-            <li><a href="../explore">Explore content</a></li>
-            <li><a href="../access">Access API</a></li>
-            <li><a class="active" href="../documentation">Read documentation</a></li>
+            <li><a href="../explore">Explore</a></li>
+            <li><a href="../access">Get Access</a></li>
+            <li><a href="../documentation">Documentation</a></li>
             <li><a href="https://groups.google.com/forum/#!forum/guardian-api-talk">Help Forum</a></li>
         </ul>
 
-        <div class="pushed">
-            <div id="sidebar" class="ui inverted vertical menu sidebar active">
-                <a class="item" href="./" >Getting Started</a>
-                <a class="item active" href="search.html" >Content</a>
-                <a class="item" href="tag.html" >Tags</a>
-                <a class="item" href="section.html">Sections</a>
-                <a class="item" href="item.html">Single Item</a>
-            </div>
+        <ul class="nav2">
+            <li><a href="../documentation" class="active">Read documentation</a></li>
+            <li class="sep">›</li>
+            <li class="active"><a href="search.html" class="active">Content</a></li>
+            <li><a href="./">Getting Started</a></li>
+            <li><a href="tag.html" >Tags</a></li>
+            <li><a href="section.html">Sections</a></li>
+            <li><a href="item.html">Single Item</a></li>
+        </ul>
 
+        <div>
             <div class="ui page grid container">
                 <div class="wide column">
                     <div class="ui raised segment" id="doccontent" data-file="content_search" data-include-common="true">

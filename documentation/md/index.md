@@ -80,6 +80,7 @@ If you request `apiUrl` value, the API would recognise them as single item reque
 The [single item endpoint](item.html) returns all the data we have for a given single item id. Here the term 'item' refers to either a piece of content, a tag, or a section. The item endpoint matches the paths on theguardian.com. So by replacing the domain theguardian.com with beta.content.guardianapis.com you can see the data associated.
 
 For example:
+
 * a piece of content: http://content.guardianapis.com/technology/2014/feb/18/doge-such-questions-very-answered
 * a tag; http://content.guardianapis.com/world/france
 * a section: http://content.guardianapis.com/lifeandstyle

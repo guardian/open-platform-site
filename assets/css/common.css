@@ -5,6 +5,8 @@ html {
 body {
     background-color: #E0DFDF;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
     color: white;
     width: 100%;
     height: 100%;
@@ -36,42 +38,46 @@ a {
 }
 
 
-.main ul.nav {
+.main ul.nav, .main ul.nav2 {
+    padding: 0px;
     margin-top: 0px;
-    margin-bottom: 30px;
-    list-style: none;
-    padding-top: 20px;
-    width: 80%;
+    margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
+    list-style: none;
+    width: 100%;
     text-align: center;
+    background:#214583;
+    border-top: 1px solid rgba(255,255,255,0.3);
 }
 
-.main ul.nav li {
+.main ul.nav2 {
+    background:#2479c3;
+}
+
+.main ul.nav li, .main ul.nav2 li {
     display: inline-block;
+    padding: 6px;
+    font-size: 16px;
+    font-family: "EgyptianHeadline";
+    font-weight: 900;
 }
 
-
-.nav a {
-    padding: 10px;
-    border: 1px solid;
-    border-color: white;
-    font-size: 14px;
+.nav a, .nav2 a {
+    padding: 2px;
     margin-right: 10px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    -moz-transition: all .35s ease;
-    -webkit-transition: all .35s ease;
-    -o-transition: all .35s ease;
-    transition: all .35s ease;
 }
 
-.nav a:hover, a:focus, a:active {
-    background: #FFF;
-    color: #262626;
+.main ul.nav2 li.active {
+    border-right: 1px solid rgba(255,255,255,0.3);
+    padding-bottom: 8px;
+    padding-top: 8px;
 }
 
-.nav a.active {
-    background: #FFF;
-    color: #262626;   
+.main ul.nav2 li a.active {
+    margin-right: 0px;
+}
+
+.main ul.nav2 li.sep {
+    padding: 0px;
 }
