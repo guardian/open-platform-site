@@ -87,9 +87,9 @@ Name  | Description | Type | Accepted values
 ----- | ----------- | ---- | ---------------
  `order-by` | Returns results in the specified order | *String* | See list below
 
-* `newest` - __Default__
+* `newest` - __Default__ in all other cases
 * `oldest`
-* `relevance`  
+* `relevance` - __Default__ where `q` parameter is specified
 
 Name  | Description | Type | Accepted values
 ----- | ----------- | ---- | ---------------
