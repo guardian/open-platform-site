@@ -65,6 +65,7 @@ Name  | Description | Type | Accepted values | Boolean operators
 `tag` | Return only content with those tags | *String* | e.g. technology/apple | true
 `rights` | Return only content with those rights | *String* | syndicatable \| subscription-databases | false
 `ids` | Return only content with those IDs | *String* | e.g. technology/2014/feb/17/flappy-bird-clones-apple-google | false
+`production-office` | Return only content from those production offices | *String* | e.g. aus | true
 
 #### Date options
 
