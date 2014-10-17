@@ -1,1 +1,0 @@
-function MarkdownApi(){this.read=function(t,n){var e,a=new XMLHttpRequest;a.open("GET",t,!0),a.onreadystatechange=function(){4===a.readyState&&(200===a.status||0==a.status)&&(e=a.responseText,n(e))},a.send(null)},this.convert=function(t,n){this.read(t,function(t){var e=markdown.toHTML(t,"Maruku");n(e)})}}
