@@ -1,15 +1,4 @@
-open-platform-site
+Open Platform Site
 ==================
 
-## Running Locally
-
-### Install gulp
-```
-npm install -g gulp
-```
-
-### Run gulp
-```
-cd build
-gulp
-```
+A simple HTML site for the Open Platform.
