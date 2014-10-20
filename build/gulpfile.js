@@ -9,14 +9,14 @@ var opn = require('opn')
 
 var src = {
   scripts: '../assets/js/*',
-  images: '../assets/img/*',
+  images: '../assets/images/*',
   css: '../assets/css/*',
   fonts: '../assets/fonts/*',
 };
 
 var out = {
   scripts: '../public/js',
-  images: '../public/img',
+  images: '../public/images',
   css: '../public/css',
   fonts: '../public/fonts'
 };

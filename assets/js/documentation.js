@@ -22,7 +22,6 @@ $(document).ready(function() {
         var name = $('#doccontent').attr('data-file');
 
         $('#doccontent').empty();
-        $('#doccontent').append('<a href="https://github.com/guardian/open-platform-site/edit/gh-pages/documentation/md/' + name + '.md">Edit me </a>');   
         $('#doccontent').append(html);
         /* include common content */
         if (common !== undefined) {$('#doccontent h2').eq(2).after(common);}
@@ -30,7 +29,7 @@ $(document).ready(function() {
         /* handle special item endpoint */
         if (name === 'item_search') {
                 
-                markdownApi.convert('docs/content_search.md', function(contentHtml) {
+                markdownApi.convert('docs/search.md', function(contentHtml) {
                 
                     var filtersContent = $('<div/>').append(contentHtml).find('h3:contains("Filters")').nextUntil('h3').andSelf();
                     var orderingContent = $('<div/>').append(contentHtml).find('h3:contains("Ordering")').nextUntil('h3').andSelf();
