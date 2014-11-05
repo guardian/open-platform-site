@@ -2,7 +2,7 @@ Content
 =======
 
 ## Endpoint URL
-* `http://beta.content.guardianapis.com/search`
+* `http://content.guardianapis.com/search`
 
 
 ## Example response
@@ -25,7 +25,7 @@ Content
         "webPublicationDate": "2014-02-17T12:05:47Z",
         "webTitle": "Alex Salmond speech – first minister hits back over Scottish independence – live",
         "webUrl": "http://www.theguardian.com/politics/blog/2014/feb/17/alex-salmond-speech-first-minister-scottish-independence-eu-currency-live",
-        "apiUrl": "http://beta.content.guardianapis.com/politics/blog/2014/feb/17/alex-salmond-speech-first-minister-scottish-independence-eu-currency-live"
+        "apiUrl": "http://content.guardianapis.com/politics/blog/2014/feb/17/alex-salmond-speech-first-minister-scottish-independence-eu-currency-live"
         }
     ]}
     }
@@ -190,7 +190,7 @@ Name  | Description | Type | Accepted values
 * `all`
 
 ## Example query
-[http://beta.content.guardianapis.com/search?q=12%20years%20a%20slave&format=json&tag=film/film,tone/reviews&from-date=2010-01-01&show-tags=contributor&show-fields=starRating,headline,thumbnail,short-url&show-refinements=all&order-by=relevance](http://beta.content.guardianapis.com/search?q=12%20years%20a%20slave&format=json&tag=film/film,tone/reviews&from-date=2010-01-01&show-tags=contributor&show-fields=starRating,headline,thumbnail,short-url&order-by=relevance)
+[http://content.guardianapis.com/search?q=12%20years%20a%20slave&format=json&tag=film/film,tone/reviews&from-date=2010-01-01&show-tags=contributor&show-fields=starRating,headline,thumbnail,short-url&show-refinements=all&order-by=relevance](http://content.guardianapis.com/search?q=12%20years%20a%20slave&format=json&tag=film/film,tone/reviews&from-date=2010-01-01&show-tags=contributor&show-fields=starRating,headline,thumbnail,short-url&order-by=relevance)
 
 
 
