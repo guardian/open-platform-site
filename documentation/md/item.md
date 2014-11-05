@@ -8,7 +8,7 @@ Single Item
 
 ### Query
 
-`http://beta.content.guardianapis.com/business/2014/feb/18/uk-inflation-falls-below-bank-england-target`
+`http://content.guardianapis.com/business/2014/feb/18/uk-inflation-falls-below-bank-england-target`
 
 ### Response
 
