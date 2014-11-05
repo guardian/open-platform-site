@@ -2,7 +2,7 @@ Single Item
 =======
 
 ## Endpoint URL
-* `http://beta.content.guardianapis.com/`
+* `http://content.guardianapis.com/`
 
 ## Example
 
