@@ -157,15 +157,16 @@ body.index > p {
     margin: 0 auto;
     padding: 25px;
     background-color: white;
+    line-height: 1.15;
 }
 
 footer {
-    background: #eaeaea;
+    background: #333;
     margin-top: 150px;
-    border-top: 2px solid rgb(41, 32, 87);
     padding: 20px 0;
-    font-family: AgateSans, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    font-family: 'Guardian Text Sans Web', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
     font-size: 13px;
+    color: rgb(220, 220, 220);
 }
 
 footer p {
