@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>The Guardian Open Platform</title>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
-        <link rel="shortcut icon" type="image/png" href="http://assets.guim.co.uk/images/favicons/32x32.250fc306bef36914fafcac2d6cfdef51.ico"/>
-        <link rel="stylesheet" type="text/css" href="font.css"/>
-        <link rel="stylesheet" type="text/css" href="main.css"/>
-    </head>
-    <body class="index">
-        <header>
-            <h1><a href="/"><img class="logo" src="open-platform.svg"/></a></h1>
-        </header>
-        <h2>Build applications with the Guardian. Open to all.</h2>
-        <p>The Open Platform is a suite of services for developing products and applications with the Guardian. Build on top of the same platform that powers <a href="http://www.theguardian.com/">theguardian.com</a>, and integrate your application with our journalism.</p>
-        <p>The principle service of the Open Platform is the <a href="content-api">Content API</a>.</p>
-        <footer>
-            <p>With ♥ from <a href="http://developers.theguardian.com">Guardian Developers</a>. Follow us at <a href="http://twitter.com/openplatform">@openplatform</a></p>
-        </footer>
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-            ga('create', 'UA-52456141-1', 'auto');
-            ga('require', 'displayfeatures');
-            ga('send', 'pageview');
-        </script>
-    </body>
+<head>
+    <title>Guardian Open Platform</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="http://assets.guim.co.uk/images/favicons/32x32.250fc306bef36914fafcac2d6cfdef51.ico"></link>
+    <link rel="stylesheet" type="text/css" href="./public/css/lib-normalize.css"></link>
+    <link rel="stylesheet" type="text/css" href="../public/css/font.css">
+    <link rel="stylesheet" type="text/css" href="./public/css/index.css"></link>
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,400italic"></link>
+</head>
+    <body>
+        <div class="landing">
+        <h1><span class="gfont">g</span>Open Platform</h1>
+            <p>API access to the Guardian's journalism.</p>
+            <p>Updated in real-time.</p>
+            <p>Open to all.</p>
+
+        <ul class="nav">
+            <li><a href="explore">Explore</a></li>
+            <li><a href="access">Get Access</a></li>
+            <li><a href="documentation">Documentation</a></li>
+        </ul>
+    </div>
+    <div class="footer">
+        <p>Crafted with ♥ by <a href="http://developers.theguardian.com">guardian developers</a></p>
+        <p>Photo from <a href="https://twitter.com/TroyHarrisOz">Troy Harris</a></p>
+    </div>
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-52456141-1', 'auto');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+    </script>
+   </body>
 </html>
