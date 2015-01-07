@@ -1,15 +1,8 @@
-open-platform-site
+Open Platform Site
 ==================
 
-## Running Locally
+The Open Platform is a suite of services for developing products and applications with the Guardian. Build on top of the same platform that powers [theguardian.com] (http://theguardian.com/), and integrate your application with our journalism.
 
-### Install gulp
-```
-npm install -g gulp
-```
+Currently, the Open Platform is comprised of only one service, the Content API.
 
-### Run gulp
-```
-cd build
-gulp
-```
+Instructions for building the component parts of the site are contained within their respective Readmes.
