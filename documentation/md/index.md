@@ -102,7 +102,7 @@ We maintain and support officially only one client, the [Scala client library](h
 There is however other client, supported by the community:
 
  * [Haskell client library](https://github.com/guardian/content-api-haskell-client)
- * [Ruby client library]()
+ * [Ruby client library](https://github.com/tomtt/contentapi-ruby)
 
 
 ### Resources
