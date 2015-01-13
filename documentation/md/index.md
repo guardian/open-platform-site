@@ -40,7 +40,7 @@ Here the `q` parameter filters the results to only those that include that searc
 
 ### Tags
 
-The [tags endpoint](tag.html) (`/tags`) returns all tags in the API. All Guardian content is manually categorised using these tags, of which there are nearly 20,000.
+The [tags endpoint](./tag) (`/tags`) returns all tags in the API. All Guardian content is manually categorised using these tags, of which there are nearly 20,000.
 
 A tag is a piece of data that we use to categorise our content. We use many different tags so understanding what they mean is important, and with new ones being added all the time you'll want to make sure to keep up to date with the changes.
 
@@ -65,7 +65,7 @@ Finally, tags have types:
 
 ### Sections
 
-The [sections endpoint](section.html)(`/sections`) returns all sections in the API.
+The [sections endpoint](./section)(`/sections`) returns all sections in the API.
 
 We use sections to logically group our content.
 
@@ -77,7 +77,7 @@ If you request `apiUrl` value, the API would recognise them as single item reque
 
 ### Single item
 
-The [single item endpoint](item.html) returns all the data we have for a given single item id. Here the term 'item' refers to either a piece of content, a tag, or a section. The item endpoint matches the paths on theguardian.com. So by replacing the domain theguardian.com with beta.content.guardianapis.com you can see the data associated.
+The [single item endpoint](./item) returns all the data we have for a given single item id. Here the term 'item' refers to either a piece of content, a tag, or a section. The item endpoint matches the paths on theguardian.com. So by replacing the domain theguardian.com with beta.content.guardianapis.com you can see the data associated.
 
 For example:
 
