@@ -7,7 +7,7 @@ To access the API, you will need to [sign up for an API key](../access), which s
 
 The easiest way to see what data is included is to [explore the data](../explore). You can build complex queries quickly and browse the results.
 
-If your application needs to regularly poll the API for updated content, there are a few things you should know. Please ensure that you read the [guide for polling applications](#polling) before starting.
+If your application needs to regularly poll the API for updated content, there are a few things you should know. Please ensure that you read the guide for polling applications below before starting.
 
 
 ## Endpoints
@@ -28,14 +28,14 @@ For each endpoint:
 
 ### Content
 
-The [content endpoint](content.html) (`/search`) returns all pieces of content in the API.
+The [content endpoint](./content) (`/search`) returns all pieces of content in the API.
 For example, lets see if the Guardian has any content on political debates:
 
-[http://content.guardianapis.com/search?q=debates](http://content.guardianapis.com/search?q=debates)
+[http://content.guardianapis.com/search?q=debates](http://content.guardianapis.com/search?q=debates&api-key=test)
 
 Here the `q` parameter filters the results to only those that include that search term. In this case, there are many results, so we might want to filter down the response to something more meaningful, specifically looking for political content published in 2014, for example:
 
-<http://content.guardianapis.com/search?q=debate&tag=politics/politics&from-date=2014-01-01>
+<http://content.guardianapis.com/search?q=debate&tag=politics/politics&from-date=2014-01-01&api-key=test>
 
 
 ### Tags
@@ -44,7 +44,7 @@ The [tags endpoint](./tag) (`/tags`) returns all tags in the API. All Guardian c
 
 A tag is a piece of data that we use to categorise our content. We use many different tags so understanding what they mean is important, and with new ones being added all the time you'll want to make sure to keep up to date with the changes.
 
-For example, [this article](http://beta.content.guardianapis.com/lifeandstyle/2014/may/14/recycling-saving-energy-reducing-waste-how-is-it-going-for-you) contains many tags including:
+For example, [this article](http://content.guardianapis.com/lifeandstyle/2014/may/14/recycling-saving-energy-reducing-waste-how-is-it-going-for-you?show-tags=all&api-key=test) contains many tags including:
 
  * `environment/recycling`
  * `environment/plasticbags`
@@ -69,7 +69,7 @@ The [sections endpoint](./section)(`/sections`) returns all sections in the API.
 
 We use sections to logically group our content.
 
-For example, [this article](http://beta.content.guardianapis.com/technology/2014/jul/07/best-android-apps-games-wear-city-air?show-sections=true) contains one sectionm, `technology`, and you will find that within [our technology section](http://beta.content.guardianapis.com/technology), technologically-related content will be clustered such as items covering games, iPhone, Sony, Google and others.
+For example, [this article](http://beta.content.guardianapis.com/technology/2014/jul/07/best-android-apps-games-wear-city-air?show-sections=true) contains one section, `technology`, and you will find that within [our technology section](http://beta.content.guardianapis.com/technology), technologically-related content will be clustered such as items covering games, iPhone, Sony, Google and others.
 
 Each section in sections endpoint response has its own id value, and you can see how this can be appended to either our website url (`webUrl`) to see the web representation, or the api url (`apiUrl`) to see the API's representation of that content.
 
@@ -81,9 +81,9 @@ The [single item endpoint](./item) returns all the data we have for a given sing
 
 For example:
 
-* a piece of content: http://content.guardianapis.com/technology/2014/feb/18/doge-such-questions-very-answered
-* a tag; http://content.guardianapis.com/world/france
-* a section: http://content.guardianapis.com/lifeandstyle
+* a piece of content: [http://content.guardianapis.com/technology/2014/feb/18/doge-such-questions-very-answered](http://content.guardianapis.com/technology/2014/feb/18/doge-such-questions-very-answered?api-key=test)
+* a tag; [http://content.guardianapis.com/world/france](http://content.guardianapis.com/world/france?api-key=test)
+* a section: [http://content.guardianapis.com/lifeandstyle](http://content.guardianapis.com/lifeandstyle?api-key=test)
 
 The response contains minimal detail by default but more data can be exposed by passing parameters in your request. Many (though not all) of these parameters are shared with the Content endpoint.
 
