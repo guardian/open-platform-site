@@ -96,4 +96,4 @@ Name  | Description | Type | Accepted values
 
 ## Example
 
-[http://content.guardianapis.com/tags?q=apple&section=technology&show-references=all](http://beta.content.guardianapis.com/tags?q=apple&section=technology&show-references=all&api-key=test)
+[http://content.guardianapis.com/tags?q=apple&section=technology&show-references=all](http://content.guardianapis.com/tags?q=apple&section=technology&show-references=all&api-key=test)
