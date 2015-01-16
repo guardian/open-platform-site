@@ -95,6 +95,10 @@ The key that you are assigned is rate-limited and as such any applications that 
 
 If you require an elevated limit on requests-per-day or requests-per-second this may be possible to arrange. Please contact us to discuss the nature of your application and the requests you are intending to make.
 
+### HTTPS support
+
+The Content API is also available over HTTPS at [https://content.guardianapis.com/](https://content.guardianapis.com/) you are welcome to use this for example where you need to call the Content API on the client-side as part of a secure application.
+
 ### Client libraries
 
 We maintain and support officially only one client, the [Scala client library](https://github.com/guardian/content-api-scala-client).
