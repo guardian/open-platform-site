@@ -28,7 +28,7 @@ For each endpoint:
 
 ### Content
 
-The [content endpoint](./content) (`/search`) returns all pieces of content in the API.
+The [content endpoint](./search) (`/search`) returns all pieces of content in the API.
 For example, lets see if the Guardian has any content on political debates:
 
 [http://content.guardianapis.com/search?q=debates](http://content.guardianapis.com/search?q=debates&api-key=test)
