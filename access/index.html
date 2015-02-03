@@ -58,16 +58,12 @@
 
 
        <div id="developer">
-                  <p>
-                    <a class="button" href="http://guardian.mashery.com/member/register">Register
-                    </a>
-                  </p>
-
                   <p class="head" style="text-align: center">
-                  By applying to register you are deemed to have accepted the <a class="link" href="http://www.theguardian.com/open-platform/terms-and-conditions">Guardian Open Platform terms and conditions</a><br />
+                  <label><input type="checkbox" data-bind="checked: acceptedTerms"> I accept the <a class="link" href="http://www.theguardian.com/open-platform/terms-and-conditions">Guardian Open Platform terms and conditions</a></label><br />
                   </p>
-
-
+                  <p>
+                    <button class="button" data-bind="enable: acceptedTerms, click: registerDeveloper">Register</button>
+                  </p>
         </div>
 
         <div id="commercial" class="form">

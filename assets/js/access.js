@@ -6,7 +6,12 @@ $(document).ready(function() {
 	    		email : ko.observable(""),
 				productDetails : ko.observable(""),
 				company : ko.observable(""),
+        acceptedTerms : ko.observable(false),
 	
+        registerDeveloper : function(formElement) {
+          window.location.href = 'http://guardian.mashery.com/member/register';
+        },
+
 		        postForm : function(formElement) {
                     var self = this;
 		            contactName = self.contactName();

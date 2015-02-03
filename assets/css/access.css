@@ -66,7 +66,7 @@
     font-family: 'Source Sans Pro',sans-serif;
 }
 
-.button:hover {
+.button:hover:enabled {
     background: #FFF;
     color: #262626;
 }
