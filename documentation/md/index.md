@@ -37,6 +37,23 @@ Here the `q` parameter filters the results to only those that include that searc
 
 <http://content.guardianapis.com/search?q=debate&tag=politics/politics&from-date=2014-01-01&api-key=test>
 
+#### Query operators
+
+The `q` parameter supports AND and OR operators. For example:
+
+`debate AND economy` (<http://content.guardianapis.com/search?q=debate%20AND%20economy&tag=politics/politics&from-date=2014-01-01&api-key=test>) returns only content that contains both "debate" and "economy".
+
+The AND operator has a higher precedence than OR, but you can use parentheses to override this behavior. For example:
+
+`debate AND (economy OR immigration OR education)` (<http://content.guardianapis.com/search?q=debate%20AND%20(economy%20OR%20immigration%20education)&tag=politics/politics&from-date=2014-01-01&api-key=test>) returns only content that contains both "debate" and either "economy" or "immigration".
+
+Note that OR is the default operator, so you can omit it if you like. `debate AND (economy immigration education)` will behave the same as the above query.
+
+#### Phrase search
+
+You can also use double quotes to search for exact phrases. For example:
+
+`"mitochondrial donation"` (<http://content.guardianapis.com/search?q="mitochondrial%20donation"&tag=politics/politics&from-date=2014-01-01&api-key=test>) returns only content that contains the phrase "mitochondrial donation".
 
 ### Tags
 
