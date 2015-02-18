@@ -53,7 +53,7 @@ Field  | Description | Type |  |
 
 Name  | Description | Type | Accepted values
 ----- | ----------- | ---- | ---------------
-`q` | Request content containing this free text | *String* | e.g. Sausages
+`q` | Request content containing this free text. Supports AND and OR operators, and exact phrase queries using double quotes. | *String* | e.g. `sausages`, `"pork sausages"`, `sausages AND (mash OR chips)`
 
 ### Filters
 
