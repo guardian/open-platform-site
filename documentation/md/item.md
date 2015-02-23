@@ -51,7 +51,6 @@ Field  | Description | Type | Accepted values |
 `show-story-package` | When `true` display a list of content that is in the has been identified as being about the same story as the requested content item. When a content item is in a package the `hasStoryPackage` field has a value of `true` | *Boolean* | true \| false
 `show-editors-picks` | When `true` display a list of content that is chosen by editors on tags, sections and the home page. This content list represents the main list of content found on the equivalent path on the site | *Boolean* | true \| false
 `show-most-viewed` | When `true` display most viewed content. For overall most viewed set `id` to '/', for section most viewed set `id` to the section id
-`show-related-content` | Content items can show a set of 'related' content. When `true` returns content items related to the main content item  | *Boolean* | true \| false 
-`hide-recent-content` |  When `true` removes the results list from the response. | *Boolean* | true \| false
+`show-related` | Content items can show a set of 'related' content. When `true` returns content items related to the main content item  | *Boolean* | true \| false
 
 
