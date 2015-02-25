@@ -39,9 +39,11 @@ Here the `q` parameter filters the results to only those that include that searc
 
 #### Query operators
 
-The `q` parameter supports AND and OR operators. For example:
+The `q` parameter supports AND, OR and NOT operators. For example:
 
 `debate AND economy` (<http://content.guardianapis.com/search?q=debate%20AND%20economy&tag=politics/politics&from-date=2014-01-01&api-key=test>) returns only content that contains both "debate" and "economy".
+
+`debate AND NOT immigration` (<http://content.guardianapis.com/search?q=debate%20AND%20NOT%20immigration&tag=politics/politics&from-date=2014-01-01&api-key=test>) returns only content that contains "debate" but does not contain "immigration".
 
 The AND operator has a higher precedence than OR, but you can use parentheses to override this behavior. For example:
 
