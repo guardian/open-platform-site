@@ -27,13 +27,13 @@
             <li><a href="https://groups.google.com/forum/#!forum/guardian-api-talk">Help Forum</a></li>
         </ul>
 
-	  	<h1> Get a Key </h1>
+	  	<h1> Get Access</h1>
 
         <div id="container">
 
         <div id="boxes">
-        <div id="developerBox" class="box">
-            <h1>Developer</h1>
+        <div id="developerBox" class="box selectable thin">
+            <h1 class="developer">Developer</h1>
             <ul>
                 <li>Free</li>
                 <li>Up to 12 calls per second</li>
@@ -43,8 +43,8 @@
             </ul>
         </div>
 
-        <div id="commercialBox" class="box">
-            <h1>Commercial</h1>
+        <div id="commercialBox" class="box selectable thin">
+            <h1 class="commercial">Commercial</h1>
             <ul>
                 <li>Enquire</li>
                 <li>Custom throttle limit</li>
@@ -57,7 +57,7 @@
        </div>
 
 
-       <div id="developer">
+       <div id="developer"  class="box padded">
                   <p class="head" style="text-align: center">
                   <label><input type="checkbox" data-bind="checked: acceptedTerms"> I accept the <a class="link" href="http://www.theguardian.com/open-platform/terms-and-conditions">Guardian Open Platform terms and conditions</a></label><br />
                   </p>
@@ -66,16 +66,54 @@
                   </p>
         </div>
 
-        <div id="commercial" class="form">
+        <div id="commercial" class="form box padded">
             <form id="commercial-form" data-bind="submit: postForm">
 
                   <p class="head">
                   If you'd like to request a commercial API key, or want to discuss commercial opportunities in general, please complete this form and we'll get in touch shortly!</p>
-
-                  <input type="text" data-bind="value: contactName" placeholder="NAME" required="true"/><br/>
-                  <input type="email" data-bind="value: email" placeholder="EMAIL" required="true"/><br/>
-                  <input type="text" data-bind="value: productDetails" placeholder="PRODUCT NAME" required="true"/><br/>
-                  <input type="text" data-bind="value: company" placeholder="COMPANY"required="true"/><br/>
+                  
+                  <div class="form-group">
+                    <label for="contactName">Name</label>
+                    <input type="text"  data-bind="value: name"  class="form-control" id="contactName" placeholder="Enter name" required="true"/>
+                  </div>
+                  <div class="form-group">
+                    <label for="emailAddress">Email address</label>
+                    <input type="email"  data-bind="value: email"  class="form-control" id="emailAddress" placeholder="Enter email" required="true"/>
+                  </div>
+                  <div class="form-group">
+                    <label for="productDetails">Product Name</label>
+                    <input type="text"  data-bind="value: productDetails"  class="form-control" id="productDetails" placeholder="Enter product name" required="true"/>
+                  </div>
+                  <div class="form-group">
+                    <label for="productUrl">Product URL</label>
+                    <input type="text"  data-bind="value: productUrl"  class="form-control" id="productUrl" placeholder="Enter product url" required="true"/>
+                  </div>
+                  <div class="form-group">
+                    <label for="productUrl">Company Name</label>
+                    <input type="text"  data-bind="value: company"  class="form-control" id="productUrl" placeholder="Enter company name" required="true"/>
+                  </div>
+                  <div class="form-group">
+                    <label for="businessArea">Business Area</label>
+                    <input type="text"  data-bind="value: businessArea"  class="form-control" id="businessArea" placeholder="Enter business area" />
+                  </div>
+                  <p>To understand your requirements, it would be great if you could answer the following upfront:</p>
+                  <div class="form-group">
+                    <label for="monthlyUsers">Current monthly users</label>
+                    <input type="text"  data-bind="value: monthlyUsers"  class="form-control" id="monthlyUsers" placeholder="Enter monthly users" />
+                  </div>
+                  <div class="form-group">
+                    <label for="commercialModel">What is your commercial model?</label>
+                    <input type="text"  data-bind="value: commercialModel"  class="form-control" id="commercialModel" placeholder="Enter model" />
+                  </div>
+                  <div class="form-group">
+                    <label for="whatContent">What content do you intend to display?</label>
+                    <textarea class="form-control" rows="3" data-bind="value: whatContent" id="whatContent" placeholder="e.g. football match reports" ></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="howManyArticles">How many articles will you display per day on average?</label>
+                    <input type="text"  data-bind="value: howManyArticles"  class="form-control" id="howManyArticles" placeholder="Enter number of articles" />
+                  </div>
+                  <br/>
                   <button class="button" type="submit">Send</button>
             </form>
 

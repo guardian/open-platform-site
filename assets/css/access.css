@@ -1,5 +1,5 @@
 #container {
-    width:90%;
+    width:70%;
     margin: 0 auto;
     text-align: center;
 }
@@ -10,19 +10,30 @@
     margin: 0 auto;
 }
 
+
 .box {
-    display: inline-block;
-    width: 43%;
-    max-width: 320px;
+    background-color: #f6f6f6;
+    border: 3px solid #FFFFFF;
+    display: block;
     color: black;
     margin: 3%;
-    cursor: pointer;
-    border: solid rgba(0,0,0,0) 1px;
+    margin-bottom: 30px;
+
 }
 
-.box:hover {
-    border: solid rgba(255,255,255,1) 1px;
-    box-shadow: 0 0 1px 1px white;
+.box.selectable {
+    display: inline-block;
+    max-width: 320px;
+    margin: 3%;
+    cursor: pointer;
+}
+
+.box.selectable:hover {
+    border: 3px solid #4bc6df;
+}
+
+.box.padded {
+    padding: 30px;
 }
 
 .box h1 {
@@ -40,30 +51,27 @@
     padding: 0;
     list-style: none;
     text-align: left;
-    font-size: 13px;
+    font-size: 11pt;
 }
 
 .box ul li {
     color: #777;
     line-height: 20px;
-    padding: 15px 30px;
-    background: #f7f7f7;
-    border-bottom: solid 1px #e9e9e9;
+    padding: 15px;
     text-align: left;
     white-space: nowrap;
-    overflow-x: scroll; 
 }
 
 .button {
     margin-top: 10px;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0);
-    border: 1px solid;
-    border-color: white;
-    letter-spacing: 2px;
+    padding: 10px 30px 10px 30px;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 12pt;
     font-family: 'Source Sans Pro',sans-serif;
+    color: #fff;
+    background-color: #4bc6df;
+    border: 0;
+    width: 100%;
 }
 
 .button:hover:enabled {
@@ -76,23 +84,32 @@
 }
 
 .form {
-    text-align: center;
-    font-size: 12px;
+    text-align: left;
+    font-size: 11pt;
+    width: 100%;
 }
 
-.form input {
-    padding: 10px;
+.form label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+
+.form input, .form textarea {
+    display: block;
     letter-spacing: 2px;
-    color: black;
+    color: #666666;
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 80%;
+    width: 100%;
+    border: 1px solid #FFFFFF;
+    font-size: 11pt;
 }
 
 .head {
     font-size: 16px;
-    margin-left: 10%;
-    margin-right: 10%;
     text-align: left;
 }
 
