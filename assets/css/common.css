@@ -3,16 +3,11 @@ html {
 }
 
 body {
-    background-color: #E0DFDF;
+    background-color: #FFFFFF;
     text-rendering: optimizeLegibility;
-    color: white;
+    color: #777777;
     width: 100%;
     height: 100%;
-}
-
-a {
-  text-decoration: none;
-  color: white
 }
 
 .header {
@@ -24,6 +19,12 @@ a {
     padding-right: 10%;
     padding-top: 10px;
     padding-bottom: 10px;
+    color: #FFFFFF;
+}
+
+.header a, .nav a, .nav2 a {
+  text-decoration: none;
+  color: white
 }
 
 .open {
@@ -36,17 +37,12 @@ a {
     height: 100%;
     margin: 0 auto;
     font-size: 20px;
-    background-color: #E0DFDF;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #94b1ca), color-stop(100%, #E0DFDF));
-    background-image: -webkit-linear-gradient(top, #94b1ca, #E0DFDF);
-    background-image: linear-gradient(to bottom, #94b1ca, #E0DFDF);
 }
 
 .main h1 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 300;
     letter-spacing: 3px;
-    text-transform: uppercase;
     text-align: center;
 }
 
@@ -108,4 +104,10 @@ a.icon-home {
     display: inline-block;
     background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNSAxOCI+PHBhdGggZD0ibTggMC0xIDAtNyA3IDAgMTAgMSAxIDQgMCAwLTcgNSAwIDAgNyA0IDAgMS0xIDAtMTB6IiBmaWxsPSIjZmZmIiAvPjwvc3ZnPg==') repeat scroll 0% 0% transparent;
     background-repeat: no-repeat;
+}
+
+p.mute
+{
+    color: #888888;
+    margin-bottom: 30px;
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Get a key</title>
+	<title>Guardian Open Platform - Get Access</title>
 	<meta charset="utf-8" />
   	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
@@ -32,6 +32,8 @@
         <div id="container">
 
         <div id="boxes">
+           <p class="head">
+                  The Guardian open platform is open for all to use. However if you're looking to use the content on a commercial product, we need speak to you. Choose the key you wish to apply for:</p>
         <div id="developerBox" class="box selectable thin">
             <h1 class="developer">Developer</h1>
             <ul>
@@ -43,10 +45,10 @@
             </ul>
         </div>
 
-        <div id="commercialBox" class="box selectable thin">
+        <div id="commercialBox" class="box selectable featured thin">
             <h1 class="commercial">Commercial</h1>
             <ul>
-                <li>Enquire</li>
+                <li>On request</li>
                 <li>Custom throttle limit</li>
                 <li>Custom quota limit</li>
                 <li>Access to article text, images, audio and videos</li>
@@ -70,40 +72,41 @@
             <form id="commercial-form" data-bind="submit: postForm">
 
                   <p class="head">
-                  If you'd like to request a commercial API key, or want to discuss commercial opportunities in general, please complete this form and we'll get in touch shortly!</p>
+                  If you'd like to request a commercial API key or want to discuss commercial opportunities, please complete this form and we'll get in touch shortly!</p>
                   
                   <div class="form-group">
-                    <label for="contactName">Name</label>
-                    <input type="text"  data-bind="value: name"  class="form-control" id="contactName" placeholder="Enter name" required="true"/>
+                    <label for="contactName">Name *</label>
+                    <input type="text"  data-bind="value: name"  class="form-control" id="contactName" required="true"/>
                   </div>
                   <div class="form-group">
-                    <label for="emailAddress">Email address</label>
-                    <input type="email"  data-bind="value: email"  class="form-control" id="emailAddress" placeholder="Enter email" required="true"/>
+                    <label for="emailAddress">Email Address *</label>
+                    <input type="email"  data-bind="value: email"  class="form-control" id="emailAddress" required="true"/>
                   </div>
                   <div class="form-group">
                     <label for="productDetails">Product Name</label>
-                    <input type="text"  data-bind="value: productDetails"  class="form-control" id="productDetails" placeholder="Enter product name" required="true"/>
+                    <input type="text"  data-bind="value: productDetails"  class="form-control" id="productDetails" />
                   </div>
                   <div class="form-group">
                     <label for="productUrl">Product URL</label>
-                    <input type="text"  data-bind="value: productUrl"  class="form-control" id="productUrl" placeholder="Enter product url" required="true"/>
+                    <input type="text"  data-bind="value: productUrl"  class="form-control" id="productUrl" />
                   </div>
                   <div class="form-group">
-                    <label for="productUrl">Company Name</label>
-                    <input type="text"  data-bind="value: company"  class="form-control" id="productUrl" placeholder="Enter company name" required="true"/>
+                    <label for="companyName">Company Name *</label>
+                    <input type="text"  data-bind="value: company"  class="form-control" id="companyName" required="true"/>
                   </div>
                   <div class="form-group">
                     <label for="businessArea">Business Area</label>
-                    <input type="text"  data-bind="value: businessArea"  class="form-control" id="businessArea" placeholder="Enter business area" />
+                    <input type="text"  data-bind="value: businessArea"  class="form-control" id="businessArea" />
                   </div>
-                  <p>To understand your requirements, it would be great if you could answer the following upfront:</p>
+                  <br/>
+                  <p class="mute">To understand your requirements, it would be great if you could answer the following upfront:</p>
                   <div class="form-group">
                     <label for="monthlyUsers">Current monthly users</label>
-                    <input type="text"  data-bind="value: monthlyUsers"  class="form-control" id="monthlyUsers" placeholder="Enter monthly users" />
+                    <input type="text"  data-bind="value: monthlyUsers"  class="form-control" id="monthlyUsers"/>
                   </div>
                   <div class="form-group">
                     <label for="commercialModel">What is your commercial model?</label>
-                    <input type="text"  data-bind="value: commercialModel"  class="form-control" id="commercialModel" placeholder="Enter model" />
+                    <input type="text"  data-bind="value: commercialModel"  class="form-control" id="commercialModel" placeholder="e.g. display advertising" />
                   </div>
                   <div class="form-group">
                     <label for="whatContent">What content do you intend to display?</label>
@@ -111,9 +114,9 @@
                   </div>
                   <div class="form-group">
                     <label for="howManyArticles">How many articles will you display per day on average?</label>
-                    <input type="text"  data-bind="value: howManyArticles"  class="form-control" id="howManyArticles" placeholder="Enter number of articles" />
+                    <input type="text"  data-bind="value: howManyArticles"  class="form-control" id="howManyArticles" />
                   </div>
-                  <br/>
+                  <p>* required field</p>
                   <button class="button" type="submit">Send</button>
             </form>
 
