@@ -17,6 +17,7 @@ We provide several endpoints to retrieve different items:
   * Content
   * Tags
   * Sections
+  * Editions
   * Single item
 
 For each endpoint:
@@ -93,6 +94,12 @@ For example, [this article](http://beta.content.guardianapis.com/technology/2014
 Each section in sections endpoint response has its own id value, and you can see how this can be appended to either our website url (`webUrl`) to see the web representation, or the api url (`apiUrl`) to see the API's representation of that content.
 
 If you request `apiUrl` value, the API would recognise them as single item requests for sections and respond with the content that we store for those sections.
+
+### Editions
+
+The [editions endpoint](./editions)(`/editions`) returns all editions in the API.
+
+Editions are the different front main pages of the Guardian site we have. At current we have editions for the United Kingdom, the United States and Australia.
 
 ### Single item
 

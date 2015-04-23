@@ -35,7 +35,7 @@ Field  | Description | Type |  |
 `status` | The status of the response. It refers to the state of the API. Successful calls will receive an "ok" even if your query did not return any results |  *String*
 `total` |  The number of results available for your search overall | *Integer*
 `id` | The id of the section | *String*
-`webTitle` | The title dispkay on the web |  *String*
+`webTitle` | The title displayed on the web |  *String*
 `webUrl` | The URL of the html content | *String*
 `apiUrl` | The URL of the raw content | *String*
 `editions` | The list of existing editions for this section | *String*
