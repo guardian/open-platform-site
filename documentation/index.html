@@ -4,14 +4,11 @@
 	<meta charset="utf-8" />
   	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  	<link rel="shortcut icon" type="image/png" href="http://assets.guim.co.uk/images/favicons/32x32.c6999aedb46bd8aef1ae612fe7011775.ico">
-  	<link rel="stylesheet" type="text/css" href="../public/css/lib-normalize.css">
-    <link rel="stylesheet" type="text/css" href="../public/css/lib-docco.css">
-    <link rel="stylesheet" type="text/css" href="../public/css/lib-semantic.css">
-    <link rel="stylesheet" type="text/css" href="../public/css/font.css">
-    <link rel="stylesheet" type="text/css" href="../public/css/common.css">
- 	<link rel="stylesheet" type="text/css" href="../public/css/documentation.css">
- 	<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,400italic">
+  	<link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/png" href="http://assets.guim.co.uk/images/favicons/32x32.250fc306bef36914fafcac2d6cfdef51.ico"></link>
+    <link rel="stylesheet" type="text/css" href="../public/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/lib-normalize.css"></link>
+    <link rel="stylesheet" type="text/css" href="../public/css/common.css"></link>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script src="../public/js/lib-highlight.pack.js"></script>
     <script src="../public/js/lib-jquery.address.js"></script>
@@ -22,35 +19,50 @@
 
 </head>
 <body>
-
-	<div class="main">
-        <div class="header"><span class="open">open</span>platform</div>
-	    <ul class="nav">
-            <li><a href="../" class="icon-home"></a></li>
-            <li><a href="../explore">Explore</a></li>
-            <li><a href="../access">Get Access</a></li>
-            <li><a href="../documentation">Documentation</a></li>
-            <li><a href="https://groups.google.com/forum/#!forum/guardian-api-talk">Help Forum</a></li>
-        </ul>
-
-        <ul class="nav2">
-            <li><a href="../documentation" class="active">Read documentation</a></li>
-            <li class="sep">›</li>
-            <li class="active"><a href="./" class="active">Getting Started</a></li>
-            <li><a href="./search" >Content</a></li>
-            <li><a href="./tag" >Tags</a></li>
-            <li><a href="./section">Sections</a></li>
-            <li><a href="./item">Single Item</a></li>
-        </ul>
-
-        <div>
-            <div class="ui page grid container">
-                <div class="wide column">
-                    <div class="ui raised segment" id="doccontent" data-file="index" data-include-common="false">
+    <header class="navbar navbar-fixed-top" id="top" role="banner">
+        <div class="container" style="margin-bottom: 0px">
+            <div class="navbar-header">
+              <a href="../" class="navbar-brand"><img src="../public/img/guardian-logo.svg" alt="Guardian"/> <span>/ open platform</span></a>
+            </div>
+            <nav class="collapse navbar-collapse bs-navbar-collapse float-right">
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <a href="../access">get started</a>
+                </li>
+                <li>
+                  <a href="../explore">explore</a>
+                </li>
+                <li>
+                  <a href="../documentation">documentation</a>
+                </li>
+                <li><a href="https://groups.google.com/forum/#!forum/guardian-api-talk">help forum</a></li>
+              </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                     <ul  class="nav nav-pills nav-stacked">                
+                        <li><a href="../documentation">get started</a></li>
+                        <li><a href="./search.html" class="active">content</a></li>
+                        <li><a href="./tag.html" >tags</a></li>
+                        <li><a href="./section.html">sections</a></li>
+                        <li><a href="./edition.html">editions</a></li>
+                        <li><a href="./item.html">single items</a></li>
+                    </ul>          
+                </div>
+                <div class="col-md-9">
+                     <div class="ui page grid">
+                        <div class="wide column">
+                            <div class="ui raised segment" id="doccontent" data-file="index" data-include-common="false">
+                    </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
     </div>
 
   <script>
