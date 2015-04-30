@@ -52,6 +52,16 @@ The AND operator has a higher precedence than OR, but you can use parentheses to
 
 Note that OR is the default operator, so you can omit it if you like. `debate AND (economy immigration education)` will behave the same as the above query.
 
+#### Filters operators
+
+Some filters support AND, OR and NOT operators through a a specific syntax:
+
+* AND: `,`
+* OR: `|`
+* NOT: `-`
+
+Expressions can be grouped using `()`.
+
 #### Phrase search
 
 You can also use double quotes to search for exact phrases. For example:
