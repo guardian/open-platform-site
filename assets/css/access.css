@@ -1,32 +1,52 @@
-#container {
-    width:70%;
-    margin: 0 auto;
-    text-align: center;
-}
+
 
 #developer, #commercial {
     display: none;
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
 }
 
 
 .box {
-    background-color: #f6f6f6;
     border: 3px solid #FFFFFF;
     display: block;
     color: black;
-    margin: 3%;
-    margin-bottom: 30px;
+    padding:20px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+#boxes
+{
+     text-align: center;
+}
+
+#boxes p
+{
+     text-align: left;
+}
+
+.box-grey
+{
+     background-color: #f6f6f6;
+}
+
+.box ul
+{
+    background-color: #f6f6f6;
 }
 
 .box.selectable {
     display: inline-block;
-    width: 40%;
-    margin: 3%;
     cursor: pointer;
     vertical-align: top;
+
 }
+
+.box.selectable h1 {
+    text-align: center;
+}
+
 
 .box.selectable:hover {
     border: 3px solid #4bc6df;

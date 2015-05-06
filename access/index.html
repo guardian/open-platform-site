@@ -46,38 +46,49 @@
 	  	
 
         <div id="container">
-
+        <div class="row">
+        <div class="col-md-12">
+          <h1>Get Started</h1>
+        </div>
+        </div>       
         <div id="boxes">
-           <p class="head" style="text-align:center">
+            <div class="row">
+            <div class="col-md-12">
+              <p>Our open platform is open for all, for non-commercial use. Choose the key you wish to apply for:</p>
+            </div>
+            </div>    
+            
+            <div class="row">
+            <div id="developerBox" class="col-md-6 box selectable">
+              <div>
+                  <h1 class="developer">Developer</h1>
+                  <ul>
+                      <li>Free</li>
+                      <li>Up to 12 calls per second</li>
+                      <li>Up to 5,000 calls per day</li>
+                      <li>Access to article text</li>
+                      <li>Access to over 1,740,000 pieces of content</li>
+                  </ul>
+              </div>
+            </div>
+            <div id="commercialBox" class="col-md-6 box selectable featured" >
+              <div >
+                  <h1 class="commercial">Commercial</h1>
+                  <ul>
+                      <li>On request</li>
+                      <li>Custom throttle limit</li>
+                      <li>Custom quota limit</li>
+                      <li>Access to article text, images, audio and videos</li>
+                      <li>Access to entire Guardian content store</li>
+                  </ul>
+              </div>
+            </div>
+            </div>
 
-            <h1> Get Access</h1>
-                  The Guardian open platform is open for all, for non-commercial use. Choose the key you wish to apply for:</p>
-        <div id="developerBox" class="box selectable thin">
-            <h1 class="developer">Developer</h1>
-            <ul>
-                <li>Free</li>
-                <li>Up to 12 calls per second</li>
-                <li>Up to 5,000 calls per day</li>
-                <li>Access to article text</li>
-                <li>Access to over 1,740,000 pieces of content</li>
-            </ul>
-        </div>
-
-        <div id="commercialBox" class="box selectable featured thin">
-            <h1 class="commercial">Commercial</h1>
-            <ul>
-                <li>On request</li>
-                <li>Custom throttle limit</li>
-                <li>Custom quota limit</li>
-                <li>Access to article text, images, audio and videos</li>
-                <li>Access to entire Guardian content store</li>
-            </ul>
-        </div>
-	   <div style="clear:both"></div>
        </div>
 
 
-       <div id="developer"  class="box padded">
+       <div id="developer"  class="box padded box-grey">
                   <p class="head" style="text-align: center">
                   <label><input type="checkbox" data-bind="checked: acceptedTerms"> I accept the <a class="link" href="http://www.theguardian.com/open-platform/terms-and-conditions">Guardian Open Platform terms and conditions</a></label><br />
                   </p>
@@ -86,7 +97,7 @@
                   </p>
         </div>
 
-        <div id="commercial" class="form box padded">
+        <div id="commercial" class="form box padded box-grey">
             <form id="commercial-form" data-bind="submit: postForm">
 
                   <p class="head">
