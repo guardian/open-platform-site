@@ -55,19 +55,7 @@ $(document).ready(function() {
         var tables5 = $( "tr").filter(function() {return $(this).children().length == 5 });
         var tables4 = $( "tr").filter(function() {return $(this).children().length <= 4 });
 
-        tables4.find( "th:nth-child(1)" ).addClass('three wide');
-        tables4.find( "th:nth-child(2)" ).addClass('seven wide');
-        tables4.find( "th:nth-child(3)" ).addClass('two wide');
-        tables4.find( "th:nth-child(4)" ).addClass('four wide');
-
-
-        tables5.find( "th:nth-child(1)" ).addClass('three wide');
-        tables5.find( "th:nth-child(2)" ).addClass('five wide');
-        tables5.find( "th:nth-child(3)" ).addClass('two wide');
-        tables5.find( "th:nth-child(4)" ).addClass('three wide');
-        tables5.find( "th:nth-child(5)" ).addClass('three wide');
-
-
+        
         renderDoc('types', function(html){
             $('tr th:contains("Type")').attr('data-html', html).attr('data-title', ' ');
             $('tr th:contains("Type")').append('<div class="ui mini icon button"><i class="down triangle basic icon"></i></div>');
