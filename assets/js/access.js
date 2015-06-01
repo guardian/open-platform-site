@@ -84,11 +84,13 @@ $(document).ready(function() {
 });
 
 function submissionFailed() {
-    document.getElementById('commercial-form').style.display = 'none'
-    document.getElementById('form-submission-failed').style.display = 'block'
+    document.getElementById('commercial-form').style.display = 'none';
+    document.getElementById('form-submission-failed').style.display = 'block';
+    document.getElementById('commercial-form-header').style.display = 'none';
 }
 
 function submissionSucceed() {
-    document.getElementById('commercial-form').style.display = 'none'
-    document.getElementById('form-submission-succeed').style.display = 'block'
+    document.getElementById('commercial-form').style.display = 'none';
+    document.getElementById('form-submission-succeed').style.display = 'block';
+    document.getElementById('commercial-form-header').style.display = 'none';
 }

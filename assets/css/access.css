@@ -159,13 +159,13 @@
     margin-bottom: 15px;
     width: 100%;
     border: 1px solid #FFFFFF;
-    font-size: 11pt;
+    font-size: 10pt;
     padding:6px;
 }
 
 .head {
-    font-size: 16px;
-    text-align: left;
+    font-size: 10pt;
+    text-align: center;
 }
 
 #form-submission-failed, #form-submission-succeed {
