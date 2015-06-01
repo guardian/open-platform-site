@@ -2,7 +2,7 @@
 
 body
 {
-  background: rgba(51,51,51,0.05);
+  background-color: #f6f6f6;
   font-family: 'Merriweather', serif;
 }
 
@@ -140,7 +140,10 @@ header .navbar-nav>li>a
 
 .main
 {
-    margin-top: 70px;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+      background-color: #f6f6f6;
 }
 
 .page
@@ -222,8 +225,8 @@ body.home .btn{
 footer
 {
     /* color: #aaaaaa;*/
-    background-color: #484848;
-    color: #dcdcdc;
+    background-color: #f6f6f6;
+    color: #666666;
     font-size: 8pt;
     padding: 20px 10px 20px 10px;
 }

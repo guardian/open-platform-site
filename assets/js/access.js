@@ -36,7 +36,6 @@ $(document).ready(function() {
           $.ajax({
             type: 'POST',
             url: "https://docs.google.com/forms/d/1ZERA3871uk83C5-k8Cahg3Nc3JLi3N-5WpbZIC0BnXI/formResponse",
-            dataType:"json",
             data: {
                         'entry.308009798':contactName,
                         'entry.1638018966':email,
@@ -50,7 +49,6 @@ $(document).ready(function() {
                         'entry.971566646':howManyArticles,
                         'pageHistory': 0
             }
-
           })
           .done(function(data, textStatus, jqXHR) {
               if (jqXHR.status === 200) {
