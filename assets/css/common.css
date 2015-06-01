@@ -49,6 +49,25 @@ h2
     margin-top: 30px;
 }
 
+.page h2
+{
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #eeeeee;
+}
+
+.page h3
+{
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.page h4
+{
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
 h3
 {
     font-size: 1.5rem;
@@ -286,4 +305,9 @@ pre
     color: #BBBBBB;
     padding: 10px;
     border: 1px solid #eeeeee;
+}
+
+code
+{
+    color: #333333;
 }
