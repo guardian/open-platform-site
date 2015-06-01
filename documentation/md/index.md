@@ -1,7 +1,7 @@
-Getting started
+Overview
 ===============
 
-The Content API is a public service for accessing all the content the Guardian creates and the collections we have of that content (tags and sections). There are over one and a half million items available published as far back as 1999. This overview will give you some idea of what data is available, how to find what you need, and what you will see when you make a request to us.
+This overview will give you some idea of what data is available, how to find what you need, and what you will see when you make a request to us.
 
 To access the API, you will need to [sign up for an API key](../access), which should be sent with every request. Plus, once we have your contact details we will be able to give you notice of any upcoming changes.
 
@@ -106,19 +106,18 @@ For example:
 
 The response contains minimal detail by default but more data can be exposed by passing parameters in your request. Many (though not all) of these parameters are shared with the Content endpoint.
 
-## Other
 
-### Polling guide
+## Polling guide
 
 The key that you are assigned is rate-limited and as such any applications that depend on making large numbers of requests on a polling basis are likely to exceed their daily quota and thus be prevented from making further requests until the next period begins.
 
 If you require an elevated limit on requests-per-day or requests-per-second this may be possible to arrange. Please contact us to discuss the nature of your application and the requests you are intending to make.
 
-### HTTPS support
+## HTTPS support
 
 The Content API is also available over HTTPS at [https://content.guardianapis.com/](https://content.guardianapis.com/) you are welcome to use this for example where you need to call the Content API on the client-side as part of a secure application.
 
-### Client libraries
+## Client libraries
 
 We maintain and support officially only one client, the [Scala client library](https://github.com/guardian/content-api-scala-client).
 
@@ -128,7 +127,7 @@ There is however other client, supported by the community:
  * [Ruby client library](https://github.com/tomtt/contentapi-ruby)
 
 
-### Resources
+## Support
 
 
 The [Guardian API talk board](http://groups.google.com/group/guardian-api-talk/) is the best place for questions or to speak to other developers working with the Content API.

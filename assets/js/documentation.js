@@ -22,7 +22,7 @@ $(document).ready(function() {
         var name = $('#doccontent').attr('data-file');
 
         $('#doccontent').empty();
-        $('#doccontent').append('<a href="https://github.com/guardian/open-platform-site/edit/gh-pages/documentation/md/' + name + '.md">Edit me </a>');   
+        $('#doccontent').append('<a class="edit-me" href="https://github.com/guardian/open-platform-site/edit/gh-pages/documentation/md/' + name + '.md">edit</a>');   
         $('#doccontent').append(html);
         /* include common content */
         if (common !== undefined) {$('#doccontent h2').eq(2).after(common);}

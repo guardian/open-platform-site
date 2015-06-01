@@ -17,7 +17,7 @@ body
 .hero.home {
     -webkit-font-smoothing: antialiased;
     background: #262626 url('../img/guardian.jpg') no-repeat center;
-    background-position: top;
+    background-position: center;
     background-size: cover;
     color: white;
     height: 750px;
@@ -191,6 +191,13 @@ header .navbar-nav>li>a
     color: #FFFFFF;
 }
 
+.nav.nav-pills.nav-stacked li a.active
+{
+    background-color: #005689;
+    color: #FFFFFF;
+    border-radius: 0px;
+}
+
 .btn {
     margin-top: 10px;
     padding: 10px 30px 10px 30px;
@@ -250,4 +257,26 @@ pre
     border: 1px solid #cccccc !important;
 }
 
+.get-started li
+{
+    line-height: 2.5;
+}
 
+.get-started ol
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navbar-fixed-top
+{
+    border-width: 0 0 0px;
+}
+
+.edit-me
+{
+    float: right;
+    color: #BBBBBB;
+    padding: 10px;
+    border: 1px solid #eeeeee;
+}

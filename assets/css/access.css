@@ -11,16 +11,10 @@
     border: 3px solid #FFFFFF;
     display: block;
     color: black;
-    padding:20px;
+    padding:0px;
     margin-top:20px;
     margin-bottom:20px;
 }
-
-#boxes
-{
-     text-align: center;
-}
-
 #boxes p
 {
      text-align: left;
@@ -28,7 +22,7 @@
 
 .box-grey
 {
-     background-color: #f6f6f6;
+     background-color: #fafafa;
 }
 
 .box ul
@@ -48,16 +42,16 @@
 }
 
 
-.box.selectable:hover {
-    border: 3px solid #4bc6df;
+.box.selectable:hover ul {
+    background-color: #eaeaea;
 }
 
-.box.selectable.featured:hover {
-    border: 3px solid #951c55;
+.box.selectable.featured ul:hover {
+    background-color: #eaeaea;
 }
 
 .box.padded {
-    padding: 30px;
+    padding: 15px;
 }
 
 .box h1 {
@@ -145,7 +139,7 @@
 
 .form {
     text-align: left;
-    font-size: 11pt;
+    font-size: 9pt;
     width: 100%;
 }
 
