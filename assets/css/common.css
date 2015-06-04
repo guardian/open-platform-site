@@ -118,43 +118,69 @@ h4
   background-repeat: repeat-x;
 }
 
-header
+nav.navbar-default
 {
   background-color: #005689;
 }
 
-header.navbar
+nav.navbar-default.navbar
 {
   margin-bottom: 0px;
   padding: 0px;
 }
 
-header .navbar-brand img
-{
-  height:26px;
-  display: inline;
-}
-
-header .navbar-brand span
-{
-  height:26px;
-  display: inline;
-}
-
-header .navbar-brand:hover
-{
-  color: #4bc6df;
-}
-
-header a
+nav.navbar-default a
 {
   color: #FFFFFF;
 }
 
-header .navbar-nav>li>a
+nav.navbar-default .navbar-brand 
+{
+  color: #FFFFFF;
+}
+
+nav.navbar-default .navbar-brand img
+{
+  height:26px;
+  display: inline;
+}
+
+nav.navbar-default .navbar-brand span
+{
+  height:26px;
+  display: inline;
+}
+
+nav.navbar-default .navbar-brand:hover
+{
+  color: #4bc6df;
+}
+
+nav.navbar-default .navbar-nav>li>a
 {
     padding-bottom: 18px;
     padding-top: 18px;
+    color: #FFFFFF;
+}
+
+nav.navbar-default .navbar-nav>li>a:hover
+{
+    color: #4bc6df;
+}
+
+nav.navbar-default .navbar-toggle .icon-bar
+{
+    background-color: #FFFFFF;
+}
+
+.navbar-toggle
+{
+    border: 0px;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #00456e;
 }
 
 .main
@@ -162,7 +188,7 @@ header .navbar-nav>li>a
     margin-top: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
-      background-color: #f6f6f6;
+    background-color: #f6f6f6;
 }
 
 .page

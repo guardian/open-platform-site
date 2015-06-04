@@ -12,17 +12,25 @@
     <link rel="stylesheet" type="text/css" href="../public/css/common.css"></link>
  	<link rel="stylesheet" type="text/css" href="../public/css/access.css">
  	<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,400italic">
-	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type='text/javascript' src='../public/js/lib-knockout-3.1.0.js'></script>
   	<script type='text/javascript' src='../public/js/access.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../public/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<header class="navbar navbar-fixed-top" id="top" role="banner">
+	<nav class="navbar navbar-default navbar-fixed-top" id="top" role="banner">
         <div class="container" style="margin-bottom: 0px">
             <div class="navbar-header">
               <a href="../" class="navbar-brand"><img src="../public/img/guardian-logo.svg" alt="Guardian"/> <span>/ open platform</span></a>
+            
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
             </div>
-            <nav class="collapse navbar-collapse bs-navbar-collapse float-right">
+            <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav navbar-right">
                 <li>
                   <a href="../access">get started</a>
@@ -35,16 +43,13 @@
                 </li>
                 <li><a href="https://groups.google.com/forum/#!forum/guardian-api-talk">support forum</a></li>
               </ul>
-            </nav>
+            </div>
         </div>
-    </header>
+      </nav>
     <div class="main">
-      <div class="container ">
+ <div class="container ">
         <div class="row">
-            <div class="col-md-12">
-            
-	  	
-
+        <div class="col-md-12">
         <div id="container">    
         <div id="boxes">
             <div class="row page get-started">
@@ -55,10 +60,9 @@
               <ol>
                 <li>Read through our <a href="/documentation">documentation</a></li>
                 <li>Familiarise yourself with the API using our <a href="/explore">explorer</a></li>
-                <li>Get access by <a href="#get-access">registering for a key</a> and reviewing our terms and conditions</li>
-                <li>Follow us on twitter - <a href="https://twitter.com/openplatform" target="_blank">@openplatform</a></li>
+                <li>Get access by <a href="#get-access">registering for a key</a> and reviewing our terms and conditions</li>               
                 <li>Ask for advice and send us your feedback using through our <a href="https://groups.google.com/forum/#!forum/guardian-api-talk">support forum</a></li>
-                <li>Send us a tweet when your app has gone live - <a href="https://twitter.com/openplatform" target="_blank">@openplatform</a></li>
+                <li>Follow us on twitter and tweet us when your app has gone live - <a href="https://twitter.com/openplatform" target="_blank">@openplatform</a></li>
               </ol>
             </div>
             </div>    
@@ -97,6 +101,9 @@
 
 
        <div id="developer" class="page"> 
+         <div class="container ">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
           <h1>Register for developer key</h1>
           <div class="box padded box-grey">              
               <p class="head" style="text-align: center">
@@ -107,8 +114,17 @@
               </p>
           </div>
         </div>
+      </div>
+    </div>
+    </div>
+
+    </div>
+        </div>
 
         <div id="commercial" class="page">
+           <div class="container ">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
             <div id="commercial-form-header">
             <h1>Register for commercial key</h1>
             <p>If you'd like to request a commercial API key or want to discuss commercial opportunities, please complete this form and we'll get in touch shortly!</p>
@@ -174,10 +190,12 @@
                   Please contact us by email <a href="mailto:openplatform@guardian.co.uk" class="link" >openplatform@guardian.co.uk</a>
                   </p>
             </div>
-
+           </div>
+                  </div>
+                </div>
         </div>
 	</div>
-  </div>
+ </div>
         </div>
       </div>
   </div>
