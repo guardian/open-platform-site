@@ -6,14 +6,6 @@ body
   font-family: 'Merriweather', serif;
 }
 
-/*body.home {
-    -webkit-font-smoothing: antialiased;
-    background: #262626 url('../img/guardian.jpg') no-repeat center;
-    background-position: top;
-    background-size: cover;
-    color: white;
-}*/
-
 .hero.home {
     -webkit-font-smoothing: antialiased;
     background: #262626 url('../img/guardian.jpg') no-repeat center;
@@ -105,17 +97,6 @@ h4
 .hero.home h3 {
     font-size: 20px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-}
-
-.bs-docs-header, .bs-docs-masthead {
-  position: relative;
-  padding: 30px 15px;
-  color: rgb(205, 191, 227);
-  text-align: center;
-  text-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 0px;
-  background-color: rgb(111, 84, 153);
-  background-image: linear-gradient(rgb(86, 61, 124) 0px, rgb(111, 84, 153) 100%);
-  background-repeat: repeat-x;
 }
 
 nav.navbar-default
@@ -229,6 +210,12 @@ nav.navbar-default .navbar-toggle .icon-bar
     margin-bottom: 15px;
 }
 
+@media (min-width: 950px) {
+  .nav.nav-pills.nav-stacked {
+    width: 160px;
+  }         
+}
+
 .nav.nav-pills.nav-stacked li a:hover
 {
     border-radius: 0px;
@@ -336,4 +323,9 @@ pre
 code
 {
     color: #333333;
+}
+
+pre code
+{
+    font-size: 90%;
 }
