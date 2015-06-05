@@ -242,9 +242,9 @@ nav.navbar-default .navbar-toggle .icon-bar
     border-radius: 0px;
 }
 
-.btn {
-    color: #fff;
-    background-color: #CCCCCC;
+.btn.full-width
+{
+     width: 100%;
 }
 
 .btn:enabled {
@@ -252,7 +252,17 @@ nav.navbar-default .navbar-toggle .icon-bar
     background-color: #4bc6df;
 }
 
-.btn:hover:enabled {
+.btn:enabled:hover {
+    background: #005689;
+    color: #FFFFFF;
+}
+
+.btn.inactive {
+    color: #fff;
+    background-color: #CCCCCC;
+}
+
+.btn.inactive:hover:enabled {
     background: #005689;
     color: #FFFFFF;
 }
@@ -282,12 +292,6 @@ pre
     padding: 5px;
     background-color: #f8f8ff;
     border: 1px solid #eeeeee;
-}
-
-#doccontent a:first
-{
-    float: right;
-    padding-right: 20px;
 }
 
 .form input, .form textarea
