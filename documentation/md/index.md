@@ -17,6 +17,7 @@ We provide several endpoints to retrieve different items:
   * Content
   * Tags
   * Sections
+  * Editions
   * Single item
 
 For each endpoint:
@@ -50,6 +51,16 @@ The AND operator has a higher precedence than OR, but you can use parentheses to
 `debate AND (economy OR immigration OR education)` (<http://content.guardianapis.com/search?q=debate%20AND%20(economy%20OR%20immigration%20education)&tag=politics/politics&from-date=2014-01-01&api-key=test>) returns only content that contains both "debate" and either "economy" or "immigration".
 
 Note that OR is the default operator, so you can omit it if you like. `debate AND (economy immigration education)` will behave the same as the above query.
+
+#### Filters operators
+
+Some filters support AND, OR and NOT operators through a a specific syntax:
+
+* AND: `,`
+* OR: `|`
+* NOT: `-`
+
+Expressions can be grouped using `()`.
 
 #### Phrase search
 
@@ -93,6 +104,12 @@ For example, [this article](http://beta.content.guardianapis.com/technology/2014
 Each section in sections endpoint response has its own id value, and you can see how this can be appended to either our website url (`webUrl`) to see the web representation, or the api url (`apiUrl`) to see the API's representation of that content.
 
 If you request `apiUrl` value, the API would recognise them as single item requests for sections and respond with the content that we store for those sections.
+
+### Editions
+
+The [editions endpoint](./editions)(`/editions`) returns all editions in the API.
+
+Editions are the different front main pages of the Guardian site we have. At current we have editions for the United Kingdom, the United States and Australia.
 
 ### Single item
 
