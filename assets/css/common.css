@@ -267,6 +267,17 @@ nav.navbar-default .navbar-toggle .icon-bar
     color: #FFFFFF;
 }
 
+.btn-help
+{
+    padding: 5px 10px 5px 10px;
+    margin-left: 10px;
+    text-align: center;
+    border: 1px solid #333333;
+    background-color: #FFFFFF;
+    color: #333333;
+    display: inline;
+}
+
 body.home .btn{
     padding: 10px 50px 10px 50px;
 }

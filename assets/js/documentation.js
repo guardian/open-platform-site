@@ -50,26 +50,22 @@ $(document).ready(function() {
     }
 
     function enhanceAppearance() {
-        $('table').addClass('ui basic table');
+        $('table').addClass('ui basic table'); 
 
         var tables5 = $( "tr").filter(function() {return $(this).children().length == 5 });
         var tables4 = $( "tr").filter(function() {return $(this).children().length <= 4 });
 
         
-        renderDoc('types', function(html){
-            $('tr th:contains("Type")').attr('data-html', html).attr('data-title', ' ');
-            $('tr th:contains("Type")').append('<div class="ui mini icon button"><i class="down triangle basic icon"></i></div>');
-            $('th[data-html]').popup({
-                on: 'click'
-            });
+        renderDoc('types', function(html){ 
+            $('tr th:contains("Type")').attr('data-content', html);
+            $('tr th:contains("Type")').append('<div class="btn btn-default btn-help">?</div>');
+            $('th[data-content]').popover({ placement : 'bottom', html: true});
         });
 
         renderDoc('boolean_operators', function(html) {
-            $('tr th:contains("Boolean operators")').attr('data-html', html).attr('data-title', ' ');
-            $('tr th:contains("Boolean operators")').append('<div class="ui mini icon button"><i class="down triangle basic icon"></i></div>');
-            $('th[data-html]').popup({
-                on: 'click'
-            });
+            $('tr th:contains("Boolean operators")').attr('data-content', html);
+            $('tr th:contains("Boolean operators")').append('<div class="ui btn-help">?</div>');
+            $('th[data-content]').popover({ placement : 'bottom', html: true});
 
             $('tr td').filter(function() {return $(this).text() === 'false'}).empty().append('<i class="icon close"></i>');
             $('tr td').filter(function() {return $(this).text() === 'true'}).empty().append('<i class="icon checkmark"></i>');
