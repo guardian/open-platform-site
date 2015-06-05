@@ -269,13 +269,20 @@ nav.navbar-default .navbar-toggle .icon-bar
 
 .btn-help
 {
-    padding: 5px 10px 5px 10px;
+    padding: 3px 5px 3px 5px;
     margin-left: 10px;
     text-align: center;
-    border: 1px solid #333333;
+    border: 1px solid #BBBBBB;
     background-color: #FFFFFF;
-    color: #333333;
+    color: #BBBBBB;
     display: inline;
+    border-radius: 3px;
+    font-size: 9pt;
+}
+
+.btn-help:hover
+{
+    color: #666666;
 }
 
 body.home .btn{
@@ -343,4 +350,14 @@ code
 pre code
 {
     font-size: 90%;
+}
+
+.table>thead>tr>th, .table>thead>tr>td,.table>tbody>tr>th, .table>tbody>tr>td
+{
+    border-top: 1px solid #EEEEEE;
+}
+
+.table>thead>tr>th
+{
+  border-bottom: 1px solid #EEEEEE;
 }

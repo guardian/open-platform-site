@@ -50,25 +50,32 @@ $(document).ready(function() {
     }
 
     function enhanceAppearance() {
-        $('table').addClass('ui basic table'); 
+        $('table').addClass('table table-condensed'); 
 
         var tables5 = $( "tr").filter(function() {return $(this).children().length == 5 });
         var tables4 = $( "tr").filter(function() {return $(this).children().length <= 4 });
 
+        tables4.find( "th:nth-child(1)" ).addClass('col-xs-2');
+        tables4.find( "th:nth-child(2)" ).addClass('col-xs-5');
+        tables4.find( "th:nth-child(3)" ).addClass('col-xs-2');
+        tables4.find( "th:nth-child(4)" ).addClass('col-xs-3');
+
+
+        tables5.find( "th:nth-child(1)" ).addClass('col-xs-2');
+        tables5.find( "th:nth-child(2)" ).addClass('col-xs-5');
+        tables5.find( "th:nth-child(3)" ).addClass('col-xs-2');
+        tables5.find( "th:nth-child(4)" ).addClass('col-xs-1');
+        tables5.find( "th:nth-child(5)" ).addClass('col-xs-1');
         
         renderDoc('types', function(html){ 
-            $('tr th:contains("Type")').attr('data-content', html);
-            $('tr th:contains("Type")').append('<div class="btn btn-default btn-help">?</div>');
-            $('th[data-content]').popover({ placement : 'bottom', html: true});
+            $('tr th:contains("Type")').append('<div class="btn btn-default btn-help"><i class="glyphicon glyphicon-triangle-bottom"></i></div>').find('.btn-help').attr('data-content', html).popover({ placement : 'bottom', html: true});
         });
 
         renderDoc('boolean_operators', function(html) {
-            $('tr th:contains("Boolean operators")').attr('data-content', html);
-            $('tr th:contains("Boolean operators")').append('<div class="ui btn-help">?</div>');
-            $('th[data-content]').popover({ placement : 'bottom', html: true});
+            $('tr th:contains("Boolean operators")').append('<div class="btn btn-default btn-help"><i class="glyphicon glyphicon-triangle-bottom"></i></div>').find('.btn-help').attr('data-content', html).popover({ placement : 'bottom', html: true});
 
-            $('tr td').filter(function() {return $(this).text() === 'false'}).empty().append('<i class="icon close"></i>');
-            $('tr td').filter(function() {return $(this).text() === 'true'}).empty().append('<i class="icon checkmark"></i>');
+            $('tr td').filter(function() {return $(this).text() === 'false'}).empty().append('<i class="glyphicon glyphicon-remove"></i>');
+            $('tr td').filter(function() {return $(this).text() === 'true'}).empty().append('<i class="glyphicon glyphicon-ok"></i>');
         }); 
 
         /* display beautiful json */
