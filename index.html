@@ -1,33 +1,101 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Guardian Open Platform</title>
+    <title>theguardian / open platform</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <mate name="description" content="The Guardian Open Platform is a public service for accessing over 1.7 million pieces of high quality content"/>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" type="image/png" href="http://assets.guim.co.uk/images/favicons/32x32.250fc306bef36914fafcac2d6cfdef51.ico"></link>
+    <link rel="stylesheet" type="text/css" href="../public/css/bootstrap.min.css">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="../public/bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./public/css/lib-normalize.css"></link>
-    <link rel="stylesheet" type="text/css" href="../public/css/font.css">
-    <link rel="stylesheet" type="text/css" href="./public/css/index.css"></link>
-    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,400italic"></link>
+    <link rel="stylesheet" type="text/css" href="./public/css/common.css"></link>
 </head>
-    <body>
-        <div class="landing">
-        <h1><span class="gfont">g</span>Open Platform</h1>
-            <p>API access to the Guardian's journalism.</p>
-            <p>Updated in real-time.</p>
-            <p>Open to all.</p>
+    <body class="home">
+        <nav class="navbar navbar-default navbar-fixed-top" id="top" role="banner">
+        <div class="container" style="margin-bottom: 0px">
+            <div class="navbar-header">
+              <a href="../" class="navbar-brand"><img src="../public/img/guardian-logo.svg" alt="Guardian"/> <span>/ open platform</span></a>
+            
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <a href="../access">get started</a>
+                </li>
+                <li>
+                  <a href="../explore">explore</a>
+                </li>
+                <li>
+                  <a href="../documentation">documentation</a>
+                </li>
+                <li><a href="https://groups.google.com/forum/#!forum/guardian-api-talk">support</a></li>
+              </ul>
+            </div>
+        </div>
+      </nav>
+    <div>
+        <div class=" hero home" >
+            <div class="container" >
+              <div class="row">
+                <div class="col-sm-12 hero-text" >
+                  <h1>Award winning journalism open to everyone</h1>
+                  <h3>Build apps with over 1.7 million pieces of content</h3>
+                  <br/>           
+                    <a class="btn btn-info btn-lg" href="../access">
+                      Get Started
+                    </a>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="container">
+          <div class="row">
+          <div class="col-md-12">
+          <div class="page">
 
-        <ul class="nav">
-            <li><a href="explore">Explore</a></li>
-            <li><a href="access">Get Access</a></li>
-            <li><a href="documentation">Documentation</a></li>
-        </ul>
-    </div>
-    <div class="footer">
-        <p>Crafted with ♥ by <a href="http://developers.theguardian.com">guardian developers</a></p>
-        <p>Photo from <a href="https://twitter.com/TroyHarrisOz">Troy Harris</a></p>
-    </div>
+          <div class="row">
+              <div class="col-md-6">
+                  <h1>Shared knowledge</h1>
+                  <p>We're up against big challenges at scale and strive to change to the world of digitalism journalism. </p>
+                  <p>Read about our journey and what we've learned on the way.</p>
+              </div>
+              <div class="col-md-6 btn-col">
+                  <a class="btn btn-info" href="http://www.theguardian.com/info/developer-blog">View our blog</a>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-6">
+                  <h1>Join our team</h1>
+                  <p>We're always in need of talented engineers whom are passionate about journalism.</p>
+              </div>
+              <div class="col-md-6 btn-col">
+                  <a class="btn btn-info" href="http://developers.theguardian.com/join-the-team.html">View open positions</a>
+              </div>
+          </div>
+          </div>
+          </div>
+          </div>
+        </div>
+        <footer class="home">
+             <div class="container" >
+              <div class="row">
+                <div class="col-sm-12">
+                    © 2015 Guardian News and Media Limited or its affiliated companies. All rights reserved.
+                    <div style="float:right" >Photo by <a href="https://twitter.com/TroyHarrisOz">Troy Harris</a></div>
+                 </div>
+             </div>
+         </div>
+        </footer>
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
