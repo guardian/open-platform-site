@@ -99,6 +99,17 @@ h4
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
+.center-align
+{
+    text-align: center;
+}
+
+.row.home-panel:last-child
+{
+    border-bottom: 0px solid #EEEEEE;
+}
+
+
 nav.navbar-default
 {
   background-color: #005689;
@@ -168,7 +179,6 @@ nav.navbar-default .navbar-toggle .icon-bar
 {
     margin-top: 50px;
     padding-top: 20px;
-    padding-bottom: 20px;
     background-color: #f6f6f6;
 }
 
@@ -179,29 +189,26 @@ nav.navbar-default .navbar-toggle .icon-bar
     margin-bottom: 20px;
 }
 
-.home .page
+.home .page .row
 {
-    margin-bottom: 0px;
-    padding:0px;
-    background: rgba(51,51,51,0.05);
-}
-
-.home .page .container
-{
-    padding-bottom: 20px;
-    border-bottom: 1px solid #4bc6df;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-bottom: 1px solid #eee;
     background-color: #FFFFFF;
 }
-
-.home .page .container .col-md-6
+.home .page .row:last-child
 {
-    padding-left: 50px;
-    padding-right: 50px;
+    border-bottom: 0px solid #eee;
 }
 
-.home .page .container:last-child
+.home .page .btn{
+    padding: 10px 50px 10px 50px;
+}
+
+.home .page .col-md-6
 {
-    border-bottom: 0px solid #4bc6df;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 .nav.nav-pills.nav-stacked
@@ -233,13 +240,28 @@ nav.navbar-default .navbar-toggle .icon-bar
 .btn {
     margin-top: 10px;
     padding: 10px 30px 10px 30px;
-    text-transform: uppercase;
     font-size: 12pt;
     font-family: 'Source Sans Pro',sans-serif;
     color: #fff;
     background-color: #4bc6df;
     border: 0;
-    border-radius: 0px;
+    border-radius: 30px;
+}
+
+.btn-lg {
+    margin-top: 30px;
+    font-size: 14pt;
+}
+
+.btn-col {
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+.hero .btn-lg {
+
+    box-shadow: 1px 1px 2px rgba(0,0,0,.5);
 }
 
 .btn.full-width
@@ -285,10 +307,6 @@ nav.navbar-default .navbar-toggle .icon-bar
     color: #666666;
 }
 
-body.home .btn{
-    padding: 10px 50px 10px 50px;
-}
-
 footer
 {
     /* color: #aaaaaa;*/
@@ -298,11 +316,9 @@ footer
     padding: 20px 10px 20px 10px;
 }
 
-footer.home
+footer a
 {
-    /* color: #aaaaaa;*/
-    background-color: #333333;
-    color: #dddddd;
+    color: #aaaaaa;
 }
 
 pre
