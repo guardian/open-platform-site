@@ -98,100 +98,18 @@
             </div>
        </div>
 
-
        <div id="developer" class="page"> 
-         <div class="container ">
-        <div class="row">
-            <div class="col-sm-6 col-sm-offset-3">
-          <h1>Register for developer key</h1>
-          <div class="box padded box-grey">              
-              <p class="head" style="text-align: center">
-              <label><input type="checkbox" data-bind="checked: acceptedTerms"> I accept the <a class="link" href="http://www.theguardian.com/open-platform/terms-and-conditions">Guardian Open Platform terms and conditions</a></label><br />
-              </p>
-              <p>
-                <button class="btn inactive full-width" data-bind="enable: acceptedTerms, click: registerDeveloper">Register</button>
-              </p>
-          </div>
+        <div class="row" style="height: 550px">
+                <iframe id="developerIframeId" class="col-sm-12" src="http://bonobo.capi.gutools.co.uk/register/developer" width="100%" height="100%" style="border: none;"></iframe>
         </div>
-      </div>
-    </div>
-    </div>
+       </div>
 
     </div>
         </div>
-
         <div id="commercial" class="page">
-           <div class="container ">
-            <div class="row">
-                <div class="col-sm-6 col-sm-offset-3">
-            <div id="commercial-form-header">
-            <h1>Register for commercial key</h1>
-            <p>If you'd like to request a commercial API key or want to discuss commercial opportunities, please complete this form and we'll get in touch shortly!</p>
+            <div class="row" style="height: 800px">
+                <iframe id="commercialIframeId" class="col-sm-12" src="http://bonobo.capi.gutools.co.uk/register/commercial" width="100%" height="100%" style="border: none;"></iframe>
             </div>
-            <form id="commercial-form" data-bind="submit: postForm" class="form box padded box-grey">
-                  <div class="form-group">
-                    <label for="contactName">Name *</label>
-                    <input type="text"  data-bind="value: contactName"  class="form-control" id="contactName" required="true"/>
-                  </div>
-                  <div class="form-group">
-                    <label for="emailAddress">Email Address *</label>
-                    <input type="email"  data-bind="value: email"  class="form-control" id="emailAddress" required="true"/>
-                  </div>
-                  <div class="form-group">
-                    <label for="productDetails">Product Name *</label>
-                    <input type="text"  data-bind="value: productDetails"  class="form-control" id="productDetails" required="true" />
-                  </div>
-                  <div class="form-group">
-                    <label for="productUrl">Product URL</label>
-                    <input type="text"  data-bind="value: productUrl"  class="form-control" id="productUrl" />
-                  </div>
-                  <div class="form-group">
-                    <label for="companyName">Company Name *</label>
-                    <input type="text"  data-bind="value: company"  class="form-control" id="companyName" required="true"/>
-                  </div>
-                  <div class="form-group">
-                    <label for="businessArea">Business Area</label>
-                    <input type="text"  data-bind="value: businessArea"  class="form-control" id="businessArea" />
-                  </div>
-                  <br/>
-                  <p class="mute">To understand your requirements, it would be great if you could answer the following upfront:</p>
-                  <div class="form-group">
-                    <label for="monthlyUsers">Current monthly users</label>
-                    <input type="text"  data-bind="value: monthlyUsers"  class="form-control" id="monthlyUsers"/>
-                  </div>
-                  <div class="form-group">
-                    <label for="commercialModel">What is your commercial model?</label>
-                    <input type="text"  data-bind="value: commercialModel"  class="form-control" id="commercialModel" placeholder="e.g. display advertising" />
-                  </div>
-                  <div class="form-group">
-                    <label for="whatContent">What content do you intend to display?</label>
-                    <textarea class="form-control" rows="3" data-bind="value: whatContent" id="whatContent" placeholder="e.g. sport, music" ></textarea>
-                  </div>
-                  <div class="form-group">
-                    <label for="howManyArticles">How many articles will you display per day on average?</label>
-                    <input type="text"  data-bind="value: howManyArticles"  class="form-control" id="howManyArticles" />
-                  </div>
-                  <p>* required field</p>
-                  <button class="btn full-width" type="submit">Send</button>
-            </form>
-
-            <div id="form-submission-succeed">
-                  <p class="head">
-                  <span class="big">Thanks! We'll contact you soon.</span>
-                   If you do not hear from us, or have any question, please contact us by email <a href="mailto:openplatform@guardian.co.uk" class="link">openplatform@guardian.co.uk</a>
-                  </p>
-            </div>
-
-            <div id="form-submission-failed">
-                  <p class="head">
-                  <span class="big">Sorry! An error occured.</span>
-                  <br>
-                  Please contact us by email <a href="mailto:openplatform@guardian.co.uk" class="link" >openplatform@guardian.co.uk</a>
-                  </p>
-            </div>
-           </div>
-                  </div>
-                </div>
         </div>
 	</div>
  </div>

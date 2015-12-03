@@ -98,41 +98,6 @@
     text-decoration: underline;
 }
 
-.form {
-    text-align: left;
-    font-size: 9pt;
-    width: 100%;
-}
-
-.form label {
-  display: inline-block;
-  max-width: 100%;
-  margin-bottom: 5px;
-  font-weight: 700;
-}
-
-
-.form input, .form textarea {
-    display: block;
-    letter-spacing: 2px;
-    color: #666666;
-    margin-top: 0px;
-    margin-bottom: 15px;
-    width: 100%;
-    border: 1px solid #FFFFFF;
-    font-size: 10pt;
-    padding:6px;
-}
-
-.head {
-    font-size: 10pt;
-    text-align: center;
-}
-
-#form-submission-failed, #form-submission-succeed {
-    display: none;
-}
-
 span.big {
     display:block;
     text-align: center;
