@@ -13,7 +13,6 @@
  	  <link rel="stylesheet" type="text/css" href="../public/css/access.css">
     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 	  <script type='text/javascript' src='../public/js/lib-knockout-3.1.0.js'></script>
-  	<script type='text/javascript' src='../public/js/access.js'></script>
     <script src="../public/js/bootstrap.min.js"></script>
 </head>
 <body>
@@ -70,46 +69,39 @@
             <div class="col-md-12">
             <h1 id="get-access">Get Access</h1>
             <p>Choose the level of access required for your application:</p>
-            <div id="developerBox" class="col-md-6 box selectable">
-              <div>
-                  <h1 class="developer">Developer</h1>
-                  <ul>
-                      <li>Free</li>
-                      <li>Up to 12 calls per second</li>
-                      <li>Up to 5,000 calls per day</li>
-                      <li>Access to article text</li>
-                      <li>Access to over 1,740,000 pieces of content</li>
-                  </ul>
+            <a href="http://bonobo.capi.gutools.co.uk/register/developer">
+              <div id="developerBox" class="col-md-6 box selectable">
+                <div>
+                    <h1 class="developer">Developer</h1>
+                    <ul>
+                        <li>Free</li>
+                        <li>Up to 12 calls per second</li>
+                        <li>Up to 5,000 calls per day</li>
+                        <li>Access to article text</li>
+                        <li>Access to over 1,740,000 pieces of content</li>
+                    </ul>
+                </div>
               </div>
-            </div>
-            <div id="commercialBox" class="col-md-6 box selectable featured" >
-              <div >
-                  <h1 class="commercial">Commercial</h1>
-                  <ul>
-                      <li>On request</li>
-                      <li>Custom throttle limit</li>
-                      <li>Custom quota limit</li>
-                      <li>Access to article text, images, audio and videos</li>
-                      <li>Access to entire Guardian content store</li>
-                  </ul>
+            </a>
+            
+            <a href="http://bonobo.capi.gutools.co.uk/register/commercial">
+              <div id="commercialBox" class="col-md-6 box selectable featured" >
+                <div >
+                    <h1 class="commercial">Commercial</h1>
+                    <ul>
+                        <li>On request</li>
+                        <li>Custom throttle limit</li>
+                        <li>Custom quota limit</li>
+                        <li>Access to article text, images, audio and videos</li>
+                        <li>Access to entire Guardian content store</li>
+                    </ul>
+                </div>
               </div>
-            </div>
+            </a>
             </div>
             </div>
        </div>
-
-       <div id="developer" class="page"> 
-        <div class="row" style="height: 550px">
-                <iframe id="developerIframeId" class="col-sm-12" src="http://bonobo.capi.gutools.co.uk/register/developer" width="100%" height="100%" style="border: none;"></iframe>
-        </div>
-       </div>
-
     </div>
-        </div>
-        <div id="commercial" class="page">
-            <div class="row" style="height: 800px">
-                <iframe id="commercialIframeId" class="col-sm-12" src="http://bonobo.capi.gutools.co.uk/register/commercial" width="100%" height="100%" style="border: none;"></iframe>
-            </div>
         </div>
 	</div>
  </div>
