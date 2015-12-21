@@ -9,7 +9,6 @@ The easiest way to see what data is included is to [explore the data](../explore
 
 If your application needs to regularly poll the API for updated content, there are a few things you should know. Please ensure that you read the guide for polling applications below before starting.
 
-
 ## Endpoints
 
 We provide several endpoints to retrieve different items:
@@ -25,7 +24,6 @@ For each endpoint:
   * results can be filtered using parameters
   * response contains minimal detail by default but more data can be exposed using parameters
   * results are returned as paginated list of containing, by default, 10 entries per page
-
 
 ### Content
 
@@ -92,7 +90,6 @@ Finally, tags have types:
 * `type` -- the media type, such as article, poll, video, etc
 * `blog` -- the name of one of the Guardian's blogs
 
-
 ### Sections
 
 The [sections endpoint](./section)(`/sections`) returns all sections in the API.
@@ -107,7 +104,7 @@ If you request `apiUrl` value, the API would recognise them as single item reque
 
 ### Editions
 
-The [editions endpoint](./editions)(`/editions`) returns all editions in the API.
+The [editions endpoint](./edition)(`/editions`) returns all editions in the API.
 
 Editions are the different front main pages of the Guardian site we have. At current we have editions for the United Kingdom, the United States and Australia.
 
@@ -123,7 +120,6 @@ For example:
 
 The response contains minimal detail by default but more data can be exposed by passing parameters in your request. Many (though not all) of these parameters are shared with the Content endpoint.
 
-
 ## Polling guide
 
 The key that you are assigned is rate-limited and as such any applications that depend on making large numbers of requests on a polling basis are likely to exceed their daily quota and thus be prevented from making further requests until the next period begins.
@@ -138,14 +134,12 @@ The Content API is also available over HTTPS at [https://content.guardianapis.co
 
 We maintain and support officially only one client, the [Scala client library](https://github.com/guardian/content-api-scala-client).
 
-There is however other client, supported by the community:
+There are however other clients, supported by the community:
 
  * [Haskell client library](https://github.com/guardian/content-api-haskell-client)
  * [Ruby client library](https://github.com/tomtt/contentapi-ruby)
 
-
 ## Support
-
 
 The [Guardian API talk board](http://groups.google.com/group/guardian-api-talk/) is the best place for questions or to speak to other developers working with the Content API.
 

@@ -60,5 +60,5 @@ Name  | Description | Type | Accepted values
 `q` | Return edition based on the query term specified | *String* | e.g. UK
 
 ## Example
-[http://content.guardianapis.com/editions?q=UK](http://content.guardianapis.com/editions?q=UK)
+[http://content.guardianapis.com/editions?q=uk&api-key=test](http://content.guardianapis.com/editions?q=uk)
 
