@@ -66,6 +66,7 @@ Name  | Description | Type | Accepted values | Boolean operators
 `rights` | Return only content with those rights | *String* | syndicatable \| subscription-databases | false
 `ids` | Return only content with those IDs | *String* | e.g. technology/2014/feb/17/flappy-bird-clones-apple-google | false
 `production-office` | Return only content from those production offices | *String* | e.g. aus | true
+`lang` | Return only content in those languages | *String* | ISO language codes, e.g. en, fr | true
 
 #### Date options
 
