@@ -67,6 +67,7 @@ Name  | Description | Type | Accepted values | Boolean operators
 `ids` | Return only content with those IDs | *String* | e.g. technology/2014/feb/17/flappy-bird-clones-apple-google | false
 `production-office` | Return only content from those production offices | *String* | e.g. aus | true
 `lang` | Return only content in those languages | *String* | ISO language codes, e.g. en, fr | true
+`star-rating` | Return only content with a given star rating | *Integer* | 1 to 5 | false
 
 #### Date options
 
