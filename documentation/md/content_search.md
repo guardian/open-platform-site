@@ -165,6 +165,15 @@ Name  | Description | Type | Accepted values
 * `main`
 * `body`
 * `all`
+* `body:latest`
+* `body:latest` (limit defaults to 20)
+* `body:latest:10`
+* `body:oldest`
+* `body:oldest:10`
+* `body:<block ID>` (only the block with that ID)
+* `body:around:<block ID>` (the specified block and 20 blocks either side of it)
+* `body:around:<block ID>:10` (the specified block and 10 blocks either side of it)
+* `body:key-events`
 
 Name  | Description | Type | Accepted values
 ----- | ----------- | ---- | ---------------
