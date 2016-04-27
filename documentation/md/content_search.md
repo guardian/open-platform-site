@@ -80,7 +80,8 @@ Name  | Description | Type | Accepted values
 ----- | ----------- | ---- | ---------------
 `use-date` | Changes which type of date is used to filter the results using `from-date` and `to-date` | *String* | See list below
 
-* `published` - The date the content appeared on the web - __Default__
+* `published` - The date the content has been last published  - __Default__
+* first-publication` - The date the content has been first published 
 * `newspaper-edition` - The date the content appeared in print
 * `last-modified` - The date the content was last updated
 
