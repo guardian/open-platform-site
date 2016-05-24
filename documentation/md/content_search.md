@@ -161,6 +161,11 @@ Name  | Description | Type | Accepted values
 
 Name  | Description | Type | Accepted values
 ----- | ----------- | ---- | ---------------
+`show-section` | Add associated metadata section | *String (boolean)* | e.g. true
+
+
+Name  | Description | Type | Accepted values
+----- | ----------- | ---- | ---------------
 `show-blocks` | Add associated blocks (single block for content, one or more for liveblogs) | *String list* | See list below
 
 * `main`
