@@ -142,6 +142,7 @@ There are however other clients, supported by the community:
 
  * [Haskell client library](https://github.com/guardian/content-api-haskell-client)
  * [Ruby client library](https://github.com/tomtt/contentapi-ruby)
+ * [Python client library](https://github.com/prabhath6/theguardian-api-python)
 
 ## Support
 
