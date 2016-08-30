@@ -144,6 +144,7 @@ There are however other clients, supported by the community:
  * [Ruby client library](https://github.com/tomtt/contentapi-ruby)
  * [Python client library](https://github.com/prabhath6/theguardian-api-python)
  * [Javascript client library](https://github.com/PorterK/GuardianJSClient)
+ * [Golang client library](https://github.com/guardian/gocapiclient)
 
 ## Support
 
