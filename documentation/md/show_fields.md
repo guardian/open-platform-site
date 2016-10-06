@@ -8,13 +8,14 @@ Field  | Description | Type |  |
 `headline` |  |  *String (HTML)*
 `showInRelatedContent` | Whether this content can appear in automatically generated Related Content | *String (boolean)*
 `body` |  |  *String (HTML)*
+`bodyText` | All text content without any formatting or style |  *String*
 `lastModified`  |  |  *Datetime*
 `hasStoryPackage` | Has related content selected by editors | *String (boolean)*
-`score` | A relevance score based on the search query used | *String (float)*
 `standfirst` |  | *String (HTML)*
 `shortUrl`  |  | *String*
 `thumbnail` |  | *String*
-`wordcount`  |  |  *String (Integer)*
+`charCount`  | Number of chars in the text content   |  *String (Integer)*
+`wordcount`  | Number of words in the text content   |  *String (Integer)*
 `commentable`  |  | *String (Boolean)*
 `isPremoderated` | Comments will be checked by a moderator prior to publication if `true` | *String (Boolean)*
 `allowUgc` | May have associated User Generated Content. This typically means the content has an associated [Guardian Witness](http://witness.theguardian.com/) assignment which can be accessed by querying `show-references=witness-assignment` | *String (Boolean)*
