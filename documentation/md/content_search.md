@@ -201,6 +201,7 @@ Name  | Description | Type | Accepted values
 * esa-football-team
 * esa-football-tournament
 * isbn
+* imdb
 * musicbrainz
 * musicbrainzgenre
 * opta-cricket-match
