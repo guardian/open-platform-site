@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>theguardian / open platform - get started</title>
+	<title>The Guardian - Open Platform - Get Started</title>
 	<meta charset="utf-8" />
   	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
@@ -16,107 +16,115 @@
     <script src="../public/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<nav class="navbar navbar-default navbar-fixed-top" id="top" role="banner">
-        <div class="container" style="margin-bottom: 0px">
-            <div class="navbar-header">
-              <a href="../" class="navbar-brand"><img src="../public/img/guardian-logo.svg" alt="Guardian"/> <span>/ open platform</span></a>
-            
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
+  <!-- Navigation -->
+	<div class="navbar-wrapper">
+      <div class="container">
+        <nav class="navbar navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">           
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav navbar-right">
+              <ul class="nav navbar-nav ">
+                <li><a href="../" id="house-icon"><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17"><path class="st0" d="M13.1 16.6H9.2v-5.7H4.8v5.7H.9l-.9-.8V6.5L6.5 0h1L14 6.5v9.3l-.9.8z"></path></svg></a></li>
                 <li>
-                  <a href="../access">get started</a>
+                  <a href="../access">Get Started</a>
                 </li>
                 <li>
-                  <a href="../explore">explore</a>
+                  <a href="../explore">Explore</a>
                 </li>
                 <li>
-                  <a href="../documentation">documentation</a>
+                  <a href="../documentation">Documentation</a>
                 </li>
-                <li><a href="https://groups.google.com/forum/#!forum/guardian-api-talk">support</a></li>
+                <li><a href="https://groups.google.com/forum/#!forum/guardian-api-talk">Support</a></li>
               </ul>
+               <a href="../" class="navbar-brand"><img src="../public/img/guardian-logo.svg" alt="Guardian"/></a>
             </div>
+          </div>
+        </nav>
+      </div>
+  </div>
+  <!-- Header -->
+  <div class="container full blue page-header">
+    <div class="container">
+      <div class="row">
+      <div class="col-sm-12">
+      <h1>
+        Get Started
+      </h1>
+      <h3>Choose the level of access you need</h3>
+      <div class="chevron">
+       <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><title>chevron</title><desc>Created with Sketch.</desc><g transform="translate(-120 -425) translate(120 425)" fill="none"><circle fill="#A8D8F2" cx="25" cy="25" r="25"/><path fill="#484F53" d="M35.933 20l-10.936 8.781-10.931-8.781-1.067 1.024 9.868 9.471h-.002l1.575 1.505h1.119l1.573-1.505 9.866-9.471z"/></g></svg>
+      </div>
+      </div>
+      </div>
+    </div>    
+  </div>
+  <!-- Body -->
+  <div class="container">    
+  <div class="page">
+      <div class="row">
+      <div class="col-md-12">
+        <h1>How it works</h1>
+        <p>The Open Platform is a public web service for accessing all the content the Guardian creates, categorised by tags and section. To get started, You need an key to successfully authenticate against the API. </p>
+        <p>Choose the level of access required for your application:</p>
+      </div>
+      </div>     
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="key-choice">
+          <h1 class="developer">Developer</h1>
+          <ul>
+              <li><p>Up to 12 calls per second</p></li>
+              <li><p>Up to 5,000 calls per day</p></li>
+              <li><p>Access to article text</p></li>
+              <li><p>Access to over 1,740,000 pieces of content</p></li>
+              <li><p>Free for non-commercial usage</p></li>
+          </ul>
+          <a href="https://bonobo.capi.gutools.co.uk/register/developer" class="button grey">Register for a developer key</a> 
+          </div>
         </div>
-      </nav>
-    <div class="main">
- <div class="container ">
-        <div class="row">
-        <div class="col-md-12">
-        <div id="container">    
-        <div id="boxes">
-            <div class="row page get-started">
-            <div class="col-md-12">
-              <h1>Get Started</h1>
-              <p>The open platform is a public service for accessing all the content the theguardian creates, categorised by tag and section. There are over one and a half million items available published as far back as 1999. </p>
-              <p>To get up and running, follow these simple steps:</p>
-              <ol>
-                <li>Read through our <a href="/documentation">documentation</a></li>
-                <li>Familiarise yourself with the API using our <a href="/explore">explorer</a></li>
-                <li>Get access by <a href="#get-access">registering for a key</a> and reviewing our terms and conditions</li>               
-                <li>Ask for advice and send us your feedback using through our <a href="https://groups.google.com/forum/#!forum/guardian-api-talk">support forum</a></li>
-                <li>Follow us on twitter and tweet us when your app has gone live - <a href="https://twitter.com/openplatform" target="_blank">@openplatform</a></li>
-              </ol>
-            </div>
-            </div>    
-            
-            <div class="row page">
-            <div class="col-md-12">
-            <h1 id="get-access">Get Access</h1>
-            <p>Choose the level of access required for your application:</p>
-            <a href="https://bonobo.capi.gutools.co.uk/register/developer">
-              <div id="developerBox" class="col-md-6 box selectable">
-                <div>
-                    <h1 class="developer">Developer</h1>
-                    <ul>
-                        <li>Free</li>
-                        <li>Up to 12 calls per second</li>
-                        <li>Up to 5,000 calls per day</li>
-                        <li>Access to article text</li>
-                        <li>Access to over 1,740,000 pieces of content</li>
-                    </ul>
-                </div>
-              </div>
-            </a>
-            
-            <a href="https://bonobo.capi.gutools.co.uk/register/commercial">
-              <div id="commercialBox" class="col-md-6 box selectable featured" >
-                <div >
-                    <h1 class="commercial">Commercial</h1>
-                    <ul>
-                        <li>On request</li>
-                        <li>Custom throttle limit</li>
-                        <li>Custom quota limit</li>
-                        <li>Access to article text, images, audio and videos</li>
-                        <li>Access to entire Guardian content store</li>
-                    </ul>
-                </div>
-              </div>
-            </a>
-            </div>
-            </div>
-       </div>
-    </div>
-        </div>
-	</div>
- </div>
+        <div class="col-sm-6">
+          <div class="key-choice">
+          <h1 class="commercial">Commercial</h1>
+          <ul>
+              <li><p>Custom throttle limit</p></li>
+              <li><p>Custom quota limit</p></li>
+              <li><p>Access to article text, images, audio and videos</p></li>
+              <li><p>Access to entire Guardian content store</p></li>
+              <li><p>Price dependent on usage</p></li>
+          </ul>
+          <a href="https://bonobo.capi.gutools.co.uk/register/commercial" class="button grey">Request a commercial key</a> 
+          </div>
         </div>
       </div>
   </div>
-  <footer>
-       <div class="container" >
+  </div>
+      
+<!-- Footer -->
+<footer class="home">
+   <div class="container" >
+       <div class="row">
+          <div class="col-sm-12">
+               <ul class="nav navbar ">
+                  <li><a href="https://groups.google.com/forum/#!forum/guardian-api-talk">Support</a></li>
+                  <li><a href="https://www.theguardian.com/info/developer-blog">Developer Blog</a></li>
+                  <li><a href="https://developers.theguardian.com/join-the-team.html">Join Us</a></li>
+              </ul>
+           </div>
+       </div>
         <div class="row">
           <div class="col-sm-12">
-              © 2015 Guardian News and Media Limited or its affiliated companies. All rights reserved.
+              <p>© 2015 Guardian News and Media Limited or its affiliated companies. All rights reserved.</p>
            </div>
        </div>
    </div>
-  </footer>
+</footer>
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

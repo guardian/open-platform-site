@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>chevron</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2" transform="translate(-120.000000, -425.000000)">
+            <g id="chevron" transform="translate(120.000000, 425.000000)">
+                <circle id="circle" fill="#A8D8F2" cx="25" cy="25" r="25"></circle>
+                <polygon id="chevronShape" fill="#484F53" points="35.9334467 20 24.9974484 28.7808461 14.0665533 20 13 21.0235342 22.867744 30.4948987 22.866043 30.4948987 24.4412077 32 25.5604933 32 27.133957 30.4948987 37 21.0235342"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
