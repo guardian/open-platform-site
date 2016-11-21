@@ -10,8 +10,8 @@ body
 .hero.home {
     -webkit-font-smoothing: antialiased;
     background: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
     ), url('../img/photo-1460891053196-b9d4d9483d9b.jpeg') no-repeat center;
     background-position: top;
     background-size: cover;
@@ -206,7 +206,7 @@ h4
 
 .promo-text
 {
-    padding: 30px 30px 30px 0px;
+    padding: 0px 30px 50px 30px;
 }
 
 .promo-text p
@@ -214,9 +214,10 @@ h4
     padding-bottom: 30px;
 }
 
+@media (min-width:768px) 
 .promo-text.right
 {
-    padding: 30px;
+    padding-top: 50px;
     margin-left: 40px;
 }
 
@@ -236,6 +237,10 @@ h4
 }
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
+
+@media (min-width:400px) {
+    .navbar-wrapper{width:380px; left:10px;}
+}
 
 @media (min-width:768px) {
     .navbar-wrapper{width:750px; left:10px;}
@@ -267,9 +272,9 @@ h4
   width: auto;
 }
 
-.navbar-toggle
-{
+.navbar-toggle {
     border: 0px;
+    float: left;
 }
 
 .navbar-default .navbar-toggle:hover,
@@ -277,34 +282,31 @@ h4
   background-color: #00456e;
 }
 
-.navbar-brand
-{
-     float: right;
+.navbar-brand {
+    float: right;
+    position: absolute;
+    right: 20px;
+    top: 0px;
 }
 
-.navbar-brand img
-{
+.navbar-brand img {
     height: 25px;
 }
-.navbar li a
-{
+
+.navbar li a {
     color:#FFFFFF;
     font-size: 16px;
     line-height: 16px;
 }
 
-.navbar li a:hover
-{
+.navbar li a:hover {
     color:#FFFFFF;
     background: none;
     border-bottom: 1px solid #FFFFFF;
 }
 
-.main
-{
-    margin-top: 50px;
-    padding-top: 20px;
-    background-color: #f6f6f6;
+.navbar-collapse.in, .navbar-collapse.collapsing {
+    background-color: #0D7CAD;
 }
 
 .page {
