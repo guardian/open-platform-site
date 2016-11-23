@@ -311,14 +311,12 @@ body
   color: #484F53;
   -webkit-font-smoothing: antialiased;
   font-family: "Guardian Egyptian Web";
+  font-size: 16px;
 }
 
 .hero.home {
     -webkit-font-smoothing: antialiased;
-    background: linear-gradient(
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
-    ), url('../img/backgroundImage.jpg') no-repeat center;
+    background: url('../img/backgroundImage.jpg') no-repeat center;
     background-position: bottom;
     background-size: cover;
     color: white;
@@ -403,15 +401,15 @@ h4
     font-weight: 800;
 }
 
-.page-header
+.container.full.page-header
 {
     margin-top: 0px;
+    padding: 20px 0px 60px 0px;
 }
 
 .page-header h1 
 {
     font-size: 32px;
-    line-height: 36px;
     margin: 0px;
     margin-top: 100px;
     font-weight: 800;
@@ -530,6 +528,12 @@ h4
     margin-left: 40px;
 }
 
+.promo-text h3
+{
+    font-family: "Guardian Titlepiece Web";
+    font-weight: normal;
+}
+
 .container.light-blue .promo-text p, .container.light-blue .promo-text h3
 {
     color: #0D7CAD;
@@ -548,19 +552,30 @@ h4
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 
 @media (min-width:400px) {
-    .navbar-wrapper{width:380px; left:10px;}
+    .navbar-wrapper{width:380px; left:0px;}
 }
 
 @media (min-width:768px) {
     .navbar-wrapper{width:750px; left:10px;}
 }
 
+@media (min-width:800px) {
+    .navbar-wrapper{width:800px; left:10px;}
+    .container {width:800px;}
+}
+
 @media (min-width:992px) {
-    .navbar-wrapper{width:970px; left:40px;}
+    .navbar-wrapper{width:970px; left:10px;}
+    .container {width:970px; }
 }
 
 @media (min-width:1200px) {
-    .navbar-wrapper{width:1170px; left:110px;}
+    .navbar-wrapper{width:1170px; left:10px;}
+    .container {width:1170px;}
+}
+
+@media (min-width:1350px) {
+    .navbar-wrapper{ left:110px;}
 }
 
 .navbar-wrapper {
@@ -585,6 +600,7 @@ h4
     border: 0px;
     padding: 2px 0px 0px 0px;
     float: left;
+    margin-top: 3px;
 }
 
 .navbar-default .navbar-toggle:hover,
@@ -596,7 +612,7 @@ h4
     float: right;
     position: absolute;
     right: 20px;
-    top: 0px;
+    top: -5px;
 }
 
 .navbar-brand img {
@@ -657,7 +673,7 @@ h4
 }
 
 .nav.nav-pills.nav-stacked {
-    width: 160px;
+    width: 100%;
 }         
 
 .nav.nav-pills.nav-stacked li a, .nav.nav-pills.nav-stacked li a:hover, .nav.nav-pills.nav-stacked li a.active {
@@ -757,9 +773,15 @@ footer
     padding: 20px 10px 20px 10px;
 }
 
+footer img
+{
+    margin: 15px; 
+}
+
 footer p
 {
     padding-left: 0px;
+    margin: 15px; 
 }
 
 footer a
@@ -862,6 +884,7 @@ svg .st0 {
 img.bordered
 {
     border-left: 3px solid #0D7CAD;
+    width: 100%;
 }
 
 .align-right img.bordered
@@ -871,6 +894,12 @@ img.bordered
 }
 
 .chevron
+{
+    position: absolute;
+    bottom:-90px;
+}
+
+.hero.home .chevron
 {
     position: absolute;
     bottom:-50px;
