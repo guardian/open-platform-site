@@ -326,7 +326,7 @@ body
 
 .hero-text
 {
-    margin-top: 180px;
+    margin-top: 160px;
     text-align: left;
 }
 
@@ -411,7 +411,7 @@ h4
 {
     font-size: 32px;
     margin: 0px;
-    margin-top: 100px;
+    margin-top: 120px;
     font-weight: 800;
 }
 
@@ -511,9 +511,17 @@ h4
     color:#0D7CAD;
 }
 
-.promo-text
-{
-    padding: 0px 30px 50px 30px;
+@media (min-width:320px){
+  .promo-text
+  {
+      padding: 0px 5px 50px 5px;
+  }
+}
+@media (min-width:400px){
+  .promo-text
+  {
+      padding: 0px 30px 50px 30px;
+  }
 }
 
 .promo-text p
@@ -551,36 +559,40 @@ h4
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 
-@media (min-width:400px) {
-    .navbar-wrapper{width:380px; left:0px;}
+@media (min-width:320px)  {
+    .navbar-wrapper{width:310px; left:0px; top: 10px;}
+}
+
+
+@media (min-width:375px) {
+    .navbar-wrapper{width:380px; left:0px; top: 10px;}
 }
 
 @media (min-width:768px) {
-    .navbar-wrapper{width:750px; left:10px;}
+    .navbar-wrapper{width:750px; left:10px; top: 20px;}
 }
 
 @media (min-width:800px) {
-    .navbar-wrapper{width:800px; left:10px;}
+    .navbar-wrapper{width:800px; left:10px; top: 30px;}
     .container {width:800px;}
 }
 
 @media (min-width:992px) {
-    .navbar-wrapper{width:970px; left:10px;}
+    .navbar-wrapper{width:970px; left:10px; top: 30px;}
     .container {width:970px; }
 }
 
 @media (min-width:1200px) {
-    .navbar-wrapper{width:1170px; left:10px;}
+    .navbar-wrapper{width:1170px; left:10px; top: 30px;}
     .container {width:1170px;}
 }
 
 @media (min-width:1350px) {
-    .navbar-wrapper{ left:110px;}
+    .navbar-wrapper{ left:110px; top: 30px;}
 }
 
 .navbar-wrapper {
   position: absolute;
-  top: 30px;
 }
 
 /* Flip around the padding for proper display in narrow viewports */
@@ -591,6 +603,7 @@ h4
 .navbar-wrapper .navbar {
   padding-right: 15px;
   padding-left: 15px;
+  z-index: 1;
 }
 .navbar-wrapper .navbar .container {
   width: auto;
@@ -601,6 +614,7 @@ h4
     padding: 2px 0px 0px 0px;
     float: left;
     margin-top: 3px;
+    z-index: 1;
 }
 
 .navbar-default .navbar-toggle:hover,
@@ -608,11 +622,31 @@ h4
   background-color: #00456e;
 }
 
-.navbar-brand {
+@media (min-width:320px)  {
+  .navbar-brand {
     float: right;
     position: absolute;
-    right: 20px;
-    top: -5px;
+    left: 0px;
+    right: auto;
+    top: 40px;
+    z-index: 2;
+  }
+   .navbar-collapse.in, .navbar-collapse.collapsing .navbar-brand{
+      z-index: 2;
+  }
+}
+@media (min-width:375px)  {
+  .navbar-brand {
+      float: right;
+      position: absolute;
+      right: 10px;
+      left: auto;
+      top: -5px;
+      z-index: 2;
+  }
+  .navbar-collapse.in, .navbar-collapse.collapsing .navbar-brand{
+      z-index: -1;
+  }
 }
 
 .navbar-brand img {
