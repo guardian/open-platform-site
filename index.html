@@ -1,100 +1,148 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>theguardian / open platform</title>
+    <title>The Guardian - Open Platform</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <mate name="description" content="The Guardian Open Platform is a public service for accessing over 1.7 million pieces of high quality content"/>
-    <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" type="image/png" href="http://assets.guim.co.uk/images/favicons/32x32.250fc306bef36914fafcac2d6cfdef51.ico"></link>
     <link rel="stylesheet" type="text/css" href="../public/css/bootstrap.min.css">
     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="../public/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./public/css/lib-normalize.css"></link>
+    <link rel="stylesheet" type="text/css" href="./public/css/_fonts.scss"></link>
     <link rel="stylesheet" type="text/css" href="./public/css/common.css"></link>
 </head>
-    <body class="home">
-        <nav class="navbar navbar-default navbar-fixed-top" id="top" role="banner">
-        <div class="container" style="margin-bottom: 0px">
-            <div class="navbar-header">
-              <a href="../" class="navbar-brand"><img src="../public/img/guardian-logo.svg" alt="Guardian"/> <span>/ open platform</span></a>
-            
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav navbar-right">
-                <li>
-                  <a href="../access">get started</a>
-                </li>
-                <li>
-                  <a href="../explore">explore</a>
-                </li>
-                <li>
-                  <a href="../documentation">documentation</a>
-                </li>
-                <li><a href="https://groups.google.com/forum/#!forum/guardian-api-talk">support</a></li>
-              </ul>
-            </div>
+<body class="home">
+<!-- Navigation -->
+<div class="navbar-wrapper">
+  <div class="container">
+    <nav class="navbar navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32; color: #FFFFFF" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="#FFFFFF" d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg>          
+          </button>
+          <a href="../" class="navbar-brand"><img src="../public/img/theguardian%20openplatform.svg" alt="Guardian"/></a>
         </div>
-      </nav>
-    <div>
-        <div class=" hero home" >
-            <div class="container" >
-              <div class="row">
-                <div class="col-sm-12 hero-text" >
-                  <h1>Award winning journalism open to everyone</h1>
-                  <h3>Build apps with over 1.7 million pieces of content</h3>
-                  <br/>           
-                    <a class="btn btn-info btn-lg" href="../access">
-                      Get Started
-                    </a>
-                </div>
-              </div>
-            </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav ">
+            <li>
+               <a href="../" id="house-icon"><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17"><path class="st0" d="M13.1 16.6H9.2v-5.7H4.8v5.7H.9l-.9-.8V6.5L6.5 0h1L14 6.5v9.3l-.9.8z"></path></svg></a>
+            </li>
+            <li>
+              <a href="../access">Get Started</a>
+            </li>
+            <li>
+              <a href="../explore">Explore</a>
+            </li>
+            <li>
+              <a href="../documentation">Documentation</a>
+            </li>
+            <li><a href="https://groups.google.com/forum/#!forum/guardian-api-talk">Support</a></li>
+          </ul>      
         </div>
-        <div class="container">
-          <div class="row">
-          <div class="col-md-12">
-          <div class="page">
-
-          <div class="row">
-              <div class="col-md-6">
-                  <h1>Shared knowledge</h1>
-                  <p>We’re shaping the future of digital journalism. Read about our journey and what we've learned on the way.</p>
-              </div>
-              <div class="col-md-6 btn-col">
-                  <a class="btn btn-info" href="http://www.theguardian.com/info/developer-blog">View our blog</a>
-              </div>
+      </div>
+    </nav>
+  </div>
+</div>
+<!-- Body -->
+<div class=" hero home" >
+  <div class="container" >
+    <div class="row">
+      <div class="col-sm-12 hero-text" >
+        <h1 class="blue">Award-winning journalism</h1><h1>Open to everyone</h1>
+        <h3>Access over 1.9 million pieces of content</h3>
+        <br/>           
+          <div class="chevron">
+              <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-120 -425) translate(120 425)" fill="none"><circle cx="25" cy="25" r="24" style="stroke: #FFFFFF; fill:none"/>
+              <path fill="#FFFFFF" d="M35.933 20l-10.936 8.781-10.931-8.781-1.067 1.024 9.868 9.471h-.002l1.575 1.505h1.119l1.573-1.505 9.866-9.471z"/></g></svg>
           </div>
-          <div class="row">
-              <div class="col-md-6">
-                  <h1>Join our team</h1>
-                  <p>We're always in need of talented engineers who are passionate about journalism.</p>
-              </div>
-              <div class="col-md-6 btn-col">
-                  <a class="btn btn-info" href="http://developers.theguardian.com/join-the-team.html">View open positions</a>
-              </div>
-          </div>
-          </div>
-          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container full blue">
+  <div class="container">
+     <div class="row">
+        <div class="col-sm-6" >
+          <div class="promo-text">
+          <h3>Build incredible apps with our rich archive of content</h3>
+          <p>Our API stores all articles, images, audio and videos dating back to 1999. All accessible with a single open platform  key.</p>
+          <a href="../access" class="button">Get Started</a>
           </div>
         </div>
-        <footer class="home">
-             <div class="container" >
-              <div class="row">
-                <div class="col-sm-12">
-                    © 2015 Guardian News and Media Limited or its affiliated companies. All rights reserved.
-                    <div style="float:right" >Photo by <a href="https://twitter.com/TroyHarrisOz">Troy Harris</a></div>
-                 </div>
-             </div>
-         </div>
-        </footer>
+        <div class="col-sm-6 align-right" >
+          <img src="../public/img/Phones.svg" alt="" class="bordered"/>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="container full light-blue">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6" >
+        <img src="../public/img/macWatch.svg" alt="" class="bordered"/>
+      </div>
+      <div class="col-sm-6" >
+        <div class="promo-text right">
+        <h3>Free instant access for developers</h3>
+        <p>We believe in the open source community. That's why any non-profit project can use our content for <b>free</b>.</p>
+        <a href="https://bonobo.capi.gutools.co.uk/register/developer" class="button">Register for a developer key</a>
+        </div>
+      </div>
+    </div> 
+  </div>          
+</div>
+<div class="container full blue">
+  <div class="container">
+  <div class="row">
+      <div class="col-sm-6" >
+        <div class="promo-text">
+        <h3>Commercial packages available</h3>    
+        <p>We're always looking to collaborate with new partners and create new ways to distribute our content. Request a commercial key and our team will be in touch to discuss your needs.</p>
+        <a href="https://bonobo.capi.gutools.co.uk/register/commercial" class="button">Request a commercial key</a> 
+        </div>       
+      </div>
+      <div class="col-sm-6 align-right" >
+        <img src="../public/img/windows.svg" alt="" class="bordered"/>
+      </div>
+    </div>
+  </div> 
+</div>
+<div class="container full light-blue">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12" >
+        <div class="promo-text right">
+        <h3>Already using the Open Platform? We want to hear from you!</h3>
+        <p>Please share with us what you created, how you used our API and any ideas you have. We will try our best to promote your work.</p>
+        <a href="mailto:openplatform@theguardian.com" class="button">Email the team</a>
+        </div>
+      </div>
+    </div> 
+  </div>          
+</div>
+<!-- Footer -->
+<footer class="home">
+   <div class="container" >
+   <div class="row">
+      <div class="col-sm-11">
+           <ul class="nav navbar ">
+              <li><a href="https://groups.google.com/forum/#!forum/guardian-api-talk">Support</a></li>
+              <li><a href="https://www.theguardian.com/info/developer-blog">Developer Blog</a></li>
+              <li><a href="https://developers.theguardian.com/join-the-team.html">Join Us</a></li>
+              <li><a href="https://twitter.com/openplatform">Follow Us</a></li>
+          </ul>
+          <p>© 2016 Guardian News and Media Limited or its affiliated companies. All rights reserved.</p>
+       </div>
+       <div class="col-sm-1">
+        <img src="../public/img/roundel.svg" alt=""/>
+       </div>
+   </div>
+</div>
+</footer>
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

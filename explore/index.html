@@ -12,54 +12,84 @@
     <link rel="stylesheet" type="text/css" href="../public/css/common.css"></link>
     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="../public/js/bootstrap.min.js"></script>
-     <style type="text/css">
-            body
-            {
-              overflow: hidden;
-            }
-
-            #content
-            {
-                position:absolute; 
-                left: 0; 
-                right: 0; 
-                bottom: 0; 
-                top: 57px; 
-                height:100%;
-                width: 100%;
-            }
-        </style>
 </head>
 <body>
-<nav class="navbar navbar-default navbar-fixed-top" id="top" role="banner">
-        <div class="container" style="margin-bottom: 0px">
-            <div class="navbar-header">
-              <a href="../" class="navbar-brand"><img src="../public/img/guardian-logo.svg" alt="Guardian"/> <span>/ open platform</span></a>
-            
+  <!-- Navigation -->
+  <div class="navbar-wrapper">
+    <div class="container">
+      <nav class="navbar navbar-static-top">
+        <div class="container">
+          <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+            <svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32; color: #FFFFFF" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="#FFFFFF" d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg>          
             </button>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav navbar-right">
-                <li>
-                  <a href="../access">get started</a>
-                </li>
-                <li>
-                  <a href="../explore">explore</a>
-                </li>
-                <li>
-                  <a href="../documentation">documentation</a>
-                </li>
-                <li><a href="https://groups.google.com/forum/#!forum/guardian-api-talk">support</a></li>
-              </ul>
-            </div>
+            <a href="../" class="navbar-brand"><img src="../public/img/theguardian%20openplatform.svg" alt="Guardian"/></a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav ">
+              <li>
+                 <a href="../" id="house-icon"><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17"><path class="st0" d="M13.1 16.6H9.2v-5.7H4.8v5.7H.9l-.9-.8V6.5L6.5 0h1L14 6.5v9.3l-.9.8z"></path></svg></a>
+              </li>
+              <li>
+                <a href="../access">Get Started</a>
+              </li>
+              <li>
+                <a href="../explore">Explore</a>
+              </li>
+              <li>
+                <a href="../documentation">Documentation</a>
+              </li>
+              <li><a href="https://groups.google.com/forum/#!forum/guardian-api-talk">Support</a></li>
+            </ul>      
+          </div>
         </div>
       </nav>
-  <div id="content"><iframe id="explorer" src="http://explorer.capi.gutools.co.uk" width="100%" height="100%" seamless="true" marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" allowtransparency="false" style="background: #FFFFFF;" onload="updateExplorer()"> </iframe></div>
+    </div>
+  </div>
+  <!-- Header -->
+  <div class="container full blue page-header">
+    <div class="container">
+      <div class="row">
+      <div class="col-sm-12">
+      <h1>
+        Explore
+      </h1>
+      <h3>Take a look at the requests and responses from the API</h3>
+      <div class="chevron">
+       <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><title>chevron</title><desc>Created with Sketch.</desc><g transform="translate(-120 -425) translate(120 425)" fill="none"><circle fill="#A8D8F2" cx="25" cy="25" r="25"/><path fill="#484F53" d="M35.933 20l-10.936 8.781-10.931-8.781-1.067 1.024 9.868 9.471h-.002l1.575 1.505h1.119l1.573-1.505 9.866-9.471z"/></g></svg>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+    <div class="col-sm-12">
+        <div class="page-explorer">
+        <iframe id="explorer" src="http://explorer.capi.gutools.co.uk" width="100%" height="100%" seamless="true" marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" allowtransparency="false" style="background: #FFFFFF;" onload="updateExplorer()"> </iframe>
+        </div>
+    </div>
+    </div>
+  </div>
+<!-- Footer -->
+<footer class="home">
+   <div class="container" >
+   <div class="row">
+      <div class="col-sm-11">
+           <ul class="nav navbar ">
+              <li><a href="https://groups.google.com/forum/#!forum/guardian-api-talk">Support</a></li>
+              <li><a href="https://www.theguardian.com/info/developer-blog">Developer Blog</a></li>
+              <li><a href="https://developers.theguardian.com/join-the-team.html">Join Us</a></li>
+              <li><a href="https://twitter.com/openplatform">Follow Us</a></li>
+          </ul>
+          <p>© 2016 Guardian News and Media Limited or its affiliated companies. All rights reserved.</p>
+       </div>
+       <div class="col-sm-1">
+        <img src="../public/img/roundel.svg" alt=""/>
+       </div>
+   </div>
+</div>
+</footer>
   <script>
     function updateExplorer() {
         var root = "http://explorer.capi.gutools.co.uk";
