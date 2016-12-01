@@ -2,7 +2,7 @@ Editions
 =======
 
 ## Endpoint URL
-* `http://content.guardianapis.com/editions`
+* `https://content.guardianapis.com/editions`
 
 ## Example response
 
@@ -17,24 +17,24 @@ Editions
             "path": "au",
             "edition": "AU",
             "id": "au",
-            "webUrl": "http://www.theguardian.com/au",
-            "apiUrl": "http://content.guardianapis.com/au"
+            "webUrl": "https://www.theguardian.com/au",
+            "apiUrl": "https://content.guardianapis.com/au"
           },
           {
             "webTitle": "new guardian us front page",
             "path": "us",
             "edition": "US",
             "id": "us",
-            "webUrl": "http://www.theguardian.com/us",
-            "apiUrl": "http://content.guardianapis.com/us"
+            "webUrl": "https://www.theguardian.com/us",
+            "apiUrl": "https://content.guardianapis.com/us"
           },
           {
             "webTitle": "new guardian uk front page",
             "path": "uk",
             "edition": "UK",
             "id": "uk",
-            "webUrl": "http://www.theguardian.com/uk",
-            "apiUrl": "http://content.guardianapis.com/uk"
+            "webUrl": "https://www.theguardian.com/uk",
+            "apiUrl": "https://content.guardianapis.com/uk"
           }
         ]
       }
@@ -60,5 +60,5 @@ Name  | Description | Type | Accepted values
 `q` | Return edition based on the query term specified | *String* | e.g. UK
 
 ## Example
-[http://content.guardianapis.com/editions?q=uk&api-key=test](http://content.guardianapis.com/editions?q=uk)
+[https://content.guardianapis.com/editions?q=uk&api-key=test](http://content.guardianapis.com/editions?q=uk)
 
