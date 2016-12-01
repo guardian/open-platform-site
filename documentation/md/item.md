@@ -2,13 +2,13 @@ Single Item
 =======
 
 ## Endpoint URL
-* `http://content.guardianapis.com/`
+* `https://content.guardianapis.com/`
 
 ## Example
 
 ### Query
 
-`http://content.guardianapis.com/business/2014/feb/18/uk-inflation-falls-below-bank-england-target`
+`https://content.guardianapis.com/business/2014/feb/18/uk-inflation-falls-below-bank-england-target`
 
 ### Response
 
@@ -23,8 +23,8 @@ Single Item
           "sectionName":"Business",
           "webPublicationDate":"2014-02-18T11:02:45Z",
           "webTitle":"UK inflation falls below Bank of England's 2% target",
-          "webUrl":"http://www.theguardian.com/business/2014/feb/18/uk-inflation-falls-below-bank-england-target",
-          "apiUrl":"http://content.guardianapis.com/business/2014/feb/18/uk-inflation-falls-below-bank-england-target"
+          "webUrl":"https://www.theguardian.com/business/2014/feb/18/uk-inflation-falls-below-bank-england-target",
+          "apiUrl":"https://content.guardianapis.com/business/2014/feb/18/uk-inflation-falls-below-bank-england-target"
         }
       }
     }
