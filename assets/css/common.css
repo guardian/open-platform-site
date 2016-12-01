@@ -557,42 +557,29 @@ h4
     border-bottom: 0px solid #EEEEEE;
 }
 
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
-
-@media (min-width:320px)  {
-    .navbar-wrapper{width:310px; left:0px; top: 10px;}
-}
-
-
-@media (min-width:375px) {
-    .navbar-wrapper{width:380px; left:0px; top: 10px;}
-}
-
-@media (min-width:768px) {
-    .navbar-wrapper{width:750px; left:10px; top: 20px;}
-}
-
-@media (min-width:800px) {
-    .navbar-wrapper{width:800px; left:10px; top: 30px;}
-    .container {width:800px;}
-}
-
-@media (min-width:992px) {
-    .navbar-wrapper{width:970px; left:10px; top: 30px;}
-    .container {width:970px; }
-}
-
-@media (min-width:1200px) {
-    .navbar-wrapper{width:1170px; left:10px; top: 30px;}
-    .container {width:1170px;}
-}
-
-@media (min-width:1350px) {
-    .navbar-wrapper{ left:110px; top: 30px;}
-}
-
 .navbar-wrapper {
   position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
 }
 
 /* Flip around the padding for proper display in narrow viewports */
@@ -608,6 +595,35 @@ h4
 .navbar-wrapper .navbar .container {
   width: auto;
 }
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+}
+
+@media (min-width: 300px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 10px;
+  }
+}
+
 
 .navbar-toggle {
     border: 0px;
