@@ -2,7 +2,7 @@ Sections
 =======
 
 ## Endpoint URL
-* `http://content.guardianapis.com/sections`
+* `https://content.guardianapis.com/sections`
 
 ## Example response
 
@@ -15,14 +15,14 @@ Sections
       {
         "id": "football",
         "webTitle": "Football",
-        "webUrl": "http://www.theguardian.com/football",
-        "apiUrl": "http://content.guardianapis.com/football",
+        "webUrl": "https://www.theguardian.com/football",
+        "apiUrl": "https://content.guardianapis.com/football",
         "editions": [
           {
             "id": "football",
             "webTitle": "Football",
-            "webUrl": "http://www.theguardian.com/football",
-            "apiUrl": "http://content.guardianapis.com/football",
+            "webUrl": "https://www.theguardian.com/football",
+            "apiUrl": "https://content.guardianapis.com/football",
             "code": "default"
           }
         ]
@@ -50,5 +50,5 @@ Name  | Description | Type | Accepted values
 `q` | Return section based on the query term specified | *String* | e.g. business
 
 ## Example
-[http://content.guardianapis.com/sections?q=business&api-key=test](http://content.guardianapis.com/sections?q=business)
+[https://content.guardianapis.com/sections?q=business&api-key=test](http://content.guardianapis.com/sections?q=business)
 
