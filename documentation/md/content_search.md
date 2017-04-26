@@ -72,7 +72,7 @@ Name  | Description | Type | Accepted values | Boolean operators
 #### Date options
 
 Name  | Description | Type | Accepted values
------ | ----------- | ---- | ---------------
+----- | ----------- | ---- | ---------------/
 `from-date` | Return only content published on or after that date | *Date* | e.g.  2014-02-16
 `to-date` | Return only content published on or before that date | *Date* | e.g.  2014-02-17
 
@@ -81,7 +81,7 @@ Name  | Description | Type | Accepted values
 `use-date` | Changes which type of date is used to filter the results using `from-date` and `to-date` | *String* | See list below
 
 * `published` - The date the content has been last published  - __Default__
-* first-publication` - The date the content has been first published 
+* `first-publication` - The date the content has been first published 
 * `newspaper-edition` - The date the content appeared in print
 * `last-modified` - The date the content was last updated
 
