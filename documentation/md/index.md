@@ -46,7 +46,7 @@ The `q` parameter supports AND, OR and NOT operators. For example:
 
 The AND operator has a higher precedence than OR, but you can use parentheses to override this behavior. For example:
 
-`debate AND (economy OR immigration OR education)` (<https://content.guardianapis.com/search?q=debate%20AND%20(economy%20OR%20immigration%20education)&tag=politics/politics&from-date=2014-01-01&api-key=test>) returns only content that contains both "debate" and either "economy" or "immigration".
+`debate AND (economy OR immigration OR education)` (<https://content.guardianapis.com/search?q=debate%20AND%20(economy%20OR%20immigration%20education)&tag=politics/politics&from-date=2014-01-01&api-key=test>) returns only content that contains both "debate" and and at least one of the following "economy", "immigration", "education".
 
 Note that OR is the default operator, so you can omit it if you like. `debate AND (economy immigration education)` will behave the same as the above query.
 
