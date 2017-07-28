@@ -55,7 +55,7 @@ Name  | Description | Type | Accepted values
 
 Name  | Description | Type | Accepted values | Boolean operators
 ----- | ----------- | ---- | ------------------------------------
-`type` | Return only tags of those types | *String list* |  | false
+`type` | Return only tags of that type | *String* |  | false
 `section` | Return only tags in those sections | *String* | e.g. football | true
 `reference` | Return only tags with those references | *String* | e.g. isbn/9780349108391 | true
 `reference-type` | Return only tags with references of those types | *String* | e.g. isbn | true
