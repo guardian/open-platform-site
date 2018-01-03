@@ -145,6 +145,8 @@ There are however other clients, supported by the community:
  * [Python client library](https://github.com/prabhath6/theguardian-api-python)
  * [Javascript client library](https://github.com/PorterK/GuardianJSClient)
  * [Golang client library](https://github.com/guardian/gocapiclient)
+ * [.NET client library](https://github.com/l7ssha/GuardianNet)
+
 
 ## Support
 
