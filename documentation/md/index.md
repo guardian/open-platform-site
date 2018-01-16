@@ -132,7 +132,7 @@ If you require an elevated limit on requests-per-day or requests-per-second this
 
 ## HTTPS support
 
-The Content API is also available over HTTPS at [https://content.guardianapis.com/](https://content.guardianapis.com/) you are welcome to use this for example where you need to call the Content API on the client-side as part of a secure application.
+The Content API is also available over HTTPS at [https://content.guardianapis.com/](https://content.guardianapis.com/) you are encouraged to use this for example where you need to call the Content API on the client-side as part of a secure application.
 
 ## Client libraries
 
@@ -146,6 +146,8 @@ There are however other clients, supported by the community:
  * [Javascript client library](https://github.com/PorterK/GuardianJSClient)
  * [Golang client library](https://github.com/guardian/gocapiclient)
  * [.NET client library](https://github.com/l7ssha/GuardianNet)
+ * [Java client library](https://github.com/matarrese/content-api-the-guardian)
+
 
 
 ## Support
