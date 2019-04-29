@@ -180,6 +180,7 @@ Name  | Description | Type | Accepted values
 * `body:around:<block ID>` (the specified block and 20 blocks either side of it)
 * `body:around:<block ID>:10` (the specified block and 10 blocks either side of it)
 * `body:key-events`
+* `body:published-since:1556529318000` (only blocks since given timestamp)
 
 Name  | Description | Type | Accepted values
 ----- | ----------- | ---- | ---------------
