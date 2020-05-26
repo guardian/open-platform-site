@@ -54,6 +54,8 @@ Field  | Description | Type |  |
 Name  | Description | Type | Accepted values
 ----- | ----------- | ---- | ---------------
 `q` | Request content containing this free text. Supports AND, OR and NOT operators, and exact phrase queries using double quotes. | *String* | e.g. `sausages`, `"pork sausages"`, `sausages AND (mash OR chips)`, `sausages AND NOT (saveloy OR battered)`
+`query-fields` | Specify in which indexed fields query terms should be searched on | *String list* | e.g. `body`, `body,thumbnail`
+
 
 ### Filters
 
