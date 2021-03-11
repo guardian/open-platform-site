@@ -24,6 +24,12 @@ For each endpoint:
   * results can be filtered using parameters
   * response contains minimal detail by default but more data can be exposed using parameters
   * results are returned as paginated list of containing, by default, 10 entries per page
+  
+### Paging Through Results
+
+Results are returned as a paginated list, with a default of 10 results. In order to page through the results, you can add the `page` keyword to your query.
+
+Example: <https://content.guardianapis.com/search?page=2&q=debate&api-key=test>
 
 ### Content
 
