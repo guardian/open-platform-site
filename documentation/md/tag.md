@@ -54,7 +54,7 @@ Name  | Description | Type | Accepted values
 ### Filters
 
 Name  | Description | Type | Accepted values | Boolean operators
------ | ----------- | ---- | ------------------------------------
+----- | ----------- | ---- | --------------- | -----------------
 `type` | Return only tags of that type | *String* |  | false
 `section` | Return only tags in those sections | *String* | e.g. football | true
 `reference` | Return only tags with those references | *String* | e.g. isbn/9780349108391 | true
