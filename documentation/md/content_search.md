@@ -74,7 +74,7 @@ Name  | Description | Type | Accepted values | Boolean operators
 #### Date options
 
 Name  | Description | Type | Accepted values
------ | ----------- | ---- | ---------------/
+----- | ----------- | ---- | --------------- 
 `from-date` | Return only content published on or after that date | *Date* | e.g.  2014-02-16
 `to-date` | Return only content published on or before that date | *Date* | e.g.  2014-02-17
 
