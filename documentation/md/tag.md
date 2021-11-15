@@ -50,7 +50,7 @@ Field  | Description | Type |  |
 Name  | Description | Type | Accepted values
 ----- | ----------- | ---- | ---------------
 `q` | Request tags containing exactly this free text | *String* | e.g. sausages
-`web-title` | Request tags containing starting with this free text | *String* | e.g. sausa 
+`web-title` | Request tags starting with this free text | *String* | e.g. sausa 
 
 ### Filters
 
