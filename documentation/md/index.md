@@ -153,6 +153,7 @@ There are however other clients, supported by the community:
  * [Golang client library](https://github.com/guardian/gocapiclient)
  * [.NET client library](https://github.com/l7ssha/GuardianNet)
  * [Java client library](https://github.com/matarrese/content-api-the-guardian)
+ * [Rust client library](https://github.com/MarSavar/aletheia)
 
 
 
