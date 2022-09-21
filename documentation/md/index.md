@@ -116,7 +116,7 @@ If you request `apiUrl` value, the API would recognise them as single item reque
 
 The [editions endpoint](./edition) (`/editions`) returns all editions in the API.
 
-Editions are the different front main pages of the Guardian site we have. At current we have editions for the United Kingdom, the United States and Australia.
+Editions are the regionalised front pages of the Guardian site. At current we have editions for the United Kingdom, the United States, Australia and Europe.
 
 ### Single item
 

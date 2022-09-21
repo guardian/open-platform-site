@@ -7,37 +7,53 @@ Editions
 ## Example response
 
     {
-      "response": {
-        "status": "ok",
-        "userTier": "free",
-        "total": 3,
-        "results": [
-          {
-            "webTitle": "new guardian australia front page",
-            "path": "au",
-            "edition": "AU",
-            "id": "au",
-            "webUrl": "https://www.theguardian.com/au",
-            "apiUrl": "https://content.guardianapis.com/au"
-          },
-          {
-            "webTitle": "new guardian us front page",
-            "path": "us",
-            "edition": "US",
-            "id": "us",
-            "webUrl": "https://www.theguardian.com/us",
-            "apiUrl": "https://content.guardianapis.com/us"
-          },
-          {
-            "webTitle": "new guardian uk front page",
-            "path": "uk",
-            "edition": "UK",
-            "id": "uk",
-            "webUrl": "https://www.theguardian.com/uk",
-            "apiUrl": "https://content.guardianapis.com/uk"
-          }
-        ]
-      }
+		"response": {
+			"status": "ok",
+			"userTier": "internal",
+			"total": 5,
+			"results": [
+				{
+					"id": "au",
+					"path": "au",
+					"edition": "AU",
+					"webTitle": "new guardian australia front page",
+					"webUrl": "https://www.theguardian.com/au",
+					"apiUrl": "https://content.guardianapis.com/au"
+				},
+				{
+					"id": "europe",
+					"path": "europe",
+					"edition": "Europe",
+					"webTitle": "new guardian europe front page",
+					"webUrl": "https://www.theguardian.com/europe",
+					"apiUrl": "https://content.guardianapis.com/europe"
+				},
+				{
+					"id": "international",
+					"path": "international",
+					"edition": "International",
+					"webTitle": "new guardian international front page",
+					"webUrl": "https://www.theguardian.com/international",
+					"apiUrl": "https://content.guardianapis.com/international"
+				},
+				{
+					"id": "uk",
+					"path": "uk",
+					"edition": "UK",
+					"webTitle": "new guardian uk front page",
+					"webUrl": "https://www.theguardian.com/uk",
+					"apiUrl": "https://content.guardianapis.com/uk"
+				},
+				{
+					"id": "us",
+					"path": "us",
+					"edition": "US",
+					"webTitle": "new guardian us front page",
+					"webUrl": "https://www.theguardian.com/us",
+					"apiUrl": "https://content.guardianapis.com/us"
+				}
+			]
+		}
     }
 
 Field  | Description | Type |  |
