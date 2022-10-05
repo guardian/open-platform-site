@@ -9,7 +9,7 @@ Editions
     {
 		"response": {
 			"status": "ok",
-			"userTier": "internal",
+			"userTier": "developer",
 			"total": 5,
 			"results": [
 				{
@@ -71,9 +71,9 @@ Field  | Description | Type |  |
 
 ### Query term
 
-Name  | Description | Type | Accepted values
------ | ----------- | ---- | ---------------
-`q` | Return edition based on the query term specified | *String* | e.g. UK
+| Name | Description                                      | Type     | Accepted values |
+|------|--------------------------------------------------|----------|-----------------|
+| `q`  | Return edition based on the query term specified | *String* | e.g. UK         |
 
 ## Example
 [https://content.guardianapis.com/editions?q=uk&api-key=test](http://content.guardianapis.com/editions?q=uk)
