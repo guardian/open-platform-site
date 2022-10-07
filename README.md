@@ -5,13 +5,14 @@ open-platform-site
 
 ### Install gulp
 ```
-npm install -g gulp
+cd build
+npm install gulp
 ```
 
 ### Run gulp
 ```
 cd build
-gulp
+npx gulp
 ```
 
 ## Viewing documentation locally
