@@ -11,7 +11,8 @@ npm install gulp
 
 ### Run gulp
 ```
-gulp
+cd build
+npx gulp
 ```
 
 ## Viewing documentation locally
