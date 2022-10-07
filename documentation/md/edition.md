@@ -9,7 +9,7 @@ Editions
     {
 		"response": {
 			"status": "ok",
-			"userTier": "internal",
+			"userTier": "developer",
 			"total": 5,
 			"results": [
 				{

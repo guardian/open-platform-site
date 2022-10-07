@@ -9,7 +9,7 @@ Sections
     {
     "response": {
     "status": "ok",
-    "userTier": "free",
+    "userTier": "developer",
     "total": 1,
     "results": [
       {
@@ -45,9 +45,9 @@ Field  | Description | Type |  |
 
 ### Query term
 
-Name  | Description | Type | Accepted values
------ | ----------- | ---- | ---------------
-`q` | Return section based on the query term specified | *String* | e.g. business
+| Name | Description                                      | Type     | Accepted values |
+|------|--------------------------------------------------|----------|-----------------|
+| `q`  | Return section based on the query term specified | *String* | e.g. business   |
 
 ## Example
 [https://content.guardianapis.com/sections?q=business&api-key=test](http://content.guardianapis.com/sections?q=business)
