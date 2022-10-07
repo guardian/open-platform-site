@@ -4,7 +4,6 @@ import imagemin from 'gulp-imagemin';
 import minifyCSS from 'gulp-minify-css';
 import connect from 'gulp-connect';
 import opn from 'opn';
-import concat from 'gulp-concat';
 
 var src = {
   scripts: '../assets/js/*',
@@ -25,7 +24,6 @@ gulp.task('scripts', gulp.series(function() {
   /* Minify and concat */
   return gulp.src(src.scripts)
     .pipe(uglify())
-    //.pipe(concat('all.min.js'))
     .pipe(gulp.dest(out.scripts))
     .pipe(connect.reload());
 }));
@@ -41,7 +39,6 @@ gulp.task('images', gulp.series(function() {
 gulp.task('css', gulp.series(function() {
   return gulp.src(src.css)
     .pipe(minifyCSS())
-    //.pipe(concat('all.min.css'))
     .pipe(gulp.dest(out.css))
     .pipe(connect.reload());
 }));
