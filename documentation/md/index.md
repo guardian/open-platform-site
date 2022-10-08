@@ -154,6 +154,7 @@ There are however other clients, supported by the community:
  * [.NET client library](https://github.com/l7ssha/GuardianNet)
  * [Java client library](https://github.com/matarrese/content-api-the-guardian)
  * [Rust client library](https://github.com/MarSavar/aletheia)
+ * [Php client library](https://github.com/rohit-chouhan/theguardian-api-php)
 
 
 
