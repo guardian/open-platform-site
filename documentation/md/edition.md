@@ -76,5 +76,5 @@ Field  | Description | Type |  |
 | `q`  | Return edition based on the query term specified | *String* | e.g. UK         |
 
 ## Example
-[https://content.guardianapis.com/editions?q=uk&api-key=test](http://content.guardianapis.com/editions?q=uk)
+[https://content.guardianapis.com/editions?q=uk&api-key=test](http://content.guardianapis.com/editions?q=uk&api-key=test)
 

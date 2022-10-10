@@ -50,5 +50,5 @@ Field  | Description | Type |  |
 | `q`  | Return section based on the query term specified | *String* | e.g. business   |
 
 ## Example
-[https://content.guardianapis.com/sections?q=business&api-key=test](http://content.guardianapis.com/sections?q=business)
+[https://content.guardianapis.com/sections?q=business&api-key=test](http://content.guardianapis.com/sections?q=business&api-key=test)
 
