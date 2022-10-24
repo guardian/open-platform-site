@@ -8,7 +8,7 @@ Tags
     {
     "response": {
     "status": "ok",
-    "userTier": "free",
+    "userTier": "developer",
     "total": 65,
     "startIndex": 1,
     "pageSize": 10,
@@ -47,32 +47,32 @@ Field  | Description | Type |  |
 
 ### Query term
 
-Name  | Description | Type | Accepted values
------ | ----------- | ---- | ---------------
-`q` | Request tags containing exactly this free text | *String* | e.g. sausages
-`web-title` | Request tags starting with this free text | *String* | e.g. sausa 
+| Name        | Description                                    | Type     | Accepted values |
+|-------------|------------------------------------------------|----------|-----------------|
+| `q`         | Request tags containing exactly this free text | *String* | e.g. sausages   |
+| `web-title` | Request tags starting with this free text      | *String* | e.g. sausa      |
 
 ### Filters
 
-Name  | Description | Type | Accepted values | Boolean operators
------ | ----------- | ---- | --------------- | -----------------
-`type` | Return only tags of that type | *String* |  | false
-`section` | Return only tags in those sections | *String* | e.g. football | true
-`reference` | Return only tags with those references | *String* | e.g. isbn/9780349108391 | true
-`reference-type` | Return only tags with references of those types | *String* | e.g. isbn | true
+| Name             | Description                                     | Type     | Accepted values         | Boolean operators |
+|------------------|-------------------------------------------------|----------|-------------------------|-------------------|
+| `type`           | Return only tags of that type                   | *String* |                         | false             |
+| `section`        | Return only tags in those sections              | *String* | e.g. football           | true              |
+| `reference`      | Return only tags with those references          | *String* | e.g. isbn/9780349108391 | true              |
+| `reference-type` | Return only tags with references of those types | *String* | e.g. isbn               | true              |
 
 #### Page options
 
-Name  | Description | Type | Accepted values
------ | ----------- | ---- | ---------------
-`page`| Returns results only for that page index  | *Integer* | e.g. 5
-`page-size` | Modify the number of items displayed per page | *Integer*  | __Default: *10*__
+| Name        | Description                                   | Type      | Accepted values   |
+|-------------|-----------------------------------------------|-----------|-------------------|
+| `page`      | Returns results only for that page index      | *Integer* | e.g. 5            |
+| `page-size` | Modify the number of items displayed per page | *Integer* | __Default: *10*__ |
 
 ### Additional information
 
-Name  | Description | Type | Accepted values
------ | ----------- | ---- | ---------------
-`show-references` | Show associated reference data such as ISBNs | *String list* | See list below |
+| Name              | Description                                  | Type          | Accepted values |
+|-------------------|----------------------------------------------|---------------|-----------------|
+| `show-references` | Show associated reference data such as ISBNs | *String list* | See list below  |
 
 * author
 * bisac-prefix
