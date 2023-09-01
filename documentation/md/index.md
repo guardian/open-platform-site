@@ -144,18 +144,18 @@ The Content API is also available over HTTPS at [https://content.guardianapis.co
 
 We maintain and support officially only one client, the [Scala client library](https://github.com/guardian/content-api-scala-client).
 
-There are however other clients, supported by the community:
+However, clients for other languages have been created by the developer community and you can find these on github:
 
- * [Haskell client library](https://github.com/guardian/content-api-haskell-client)
- * [Ruby client library](https://github.com/tomtt/contentapi-ruby)
- * [Python client library](https://github.com/prabhath6/theguardian-api-python)
- * [Javascript client library](https://github.com/PorterK/GuardianJSClient)
- * [Golang client library](https://github.com/guardian/gocapiclient)
- * [.NET client library](https://github.com/l7ssha/GuardianNet)
- * [Java client library](https://github.com/matarrese/content-api-the-guardian)
- * [Rust client library](https://github.com/MarSavar/aletheia)
-
-
+ * **Golang** [github.com/guardian/gocapiclient](https://github.com/guardian/gocapiclient)
+ * **Haskell** [github.com/guardian/content-api-haskell-client](https://github.com/guardian/content-api-haskell-client)
+ * **Java** 
+   * (Antonio Matarrese) [github.com/matarrese/content-api-the-guardian](https://github.com/matarrese/content-api-the-guardian)
+   * (Omoniyi Omotoso) [github.com/niyiomotoso/the-guardian-api-java-client](https://github.com/niyiomotoso/the-guardian-api-java-client)
+ * **Javascript** (Kalob Porter) [github.com/PorterK/GuardianJSClient](https://github.com/PorterK/GuardianJSClient)
+ * **PHP** (Omoniyi Omotoso) [github.com/niyiomotoso/the-guardian-api-php-client](https://github.com/niyiomotoso/the-guardian-api-php-client)
+ * **Python** (Prabhath Kiran) [github.com/prabhath6/theguardian-api-python](https://github.com/prabhath6/theguardian-api-python)
+ * **Ruby** (Tom ten Thij) [github.com/tomtt/contentapi-ruby](https://github.com/tomtt/contentapi-ruby)
+ * **Rust** (Mario Savarese) [github.com/MarSavar/aletheia](https://github.com/MarSavar/aletheia)
 
 ## Support
 
