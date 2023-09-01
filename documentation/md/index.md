@@ -144,7 +144,7 @@ The Content API is also available over HTTPS at [https://content.guardianapis.co
 
 We maintain and support officially only one client, the [Scala client library](https://github.com/guardian/content-api-scala-client).
 
-However, clients for other languages have been created by the developer community, and you can find these on github:
+However, clients for other languages have been created by the developer community and you can find these on github:
 
  * Golang: [github.com/guardian/gocapiclient](https://github.com/guardian/gocapiclient)
  * Haskell: [github.com/guardian/content-api-haskell-client](https://github.com/guardian/content-api-haskell-client)
