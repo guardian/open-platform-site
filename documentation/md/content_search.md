@@ -248,48 +248,47 @@ Start your search using the `/search` end point.
 ie.
 `https://content.guardianapis.com/search?q=sausages&page-size-10&order-by=relevance`
 
-```
-{
-    "response": {
-        "status": "ok",
-        "total": 5857,
-        "startIndex": 1,
-        "pageSize": 10,
-        "currentPage": 1,
-        "pages": 586,
-        "orderBy": "relevance",
-        "results": [
-            {
-            "id": "food/2023/mar/22/how-to-make-glamorgan-sausages-recipe-felicity-cloake",
-            "type": "article",
-            "sectionId": "food",
-            "sectionName": "Food",
-            "webPublicationDate": "2023-03-22T12:00:26Z",
-            "webTitle": "How to make Glamorgan sausages | Felicity Cloake's Masterclas",
-            "webUrl": "https://www.theguardian.com/food/2023/mar/22/how-to-make-glamorgan-sausages-recipe-felicity-cloake",
-            "apiUrl": "https://content.guardianapis.com/food/2023/mar/22/how-to-make-glamorgan-sausages-recipe-felicity-cloake",
-            "isHosted": false,
-            "pillarId": "pillar/lifestyle",
-            "pillarName": "Lifestyle"
-            },
-            ... 8 results omitted ...
-            {
-            "id": "food/2022/jul/04/peperonata-sausages-recipe-rachel-roddy",
-            "type": "article",
-            "sectionId": "food",
-            "sectionName": "Food",
-            "webPublicationDate": "2022-07-04T10:00:40Z",
-            "webTitle": "Rachel Roddy’s recipe for peperonata with sausages | A kitchen in Rome",
-            "webUrl": "https://www.theguardian.com/food/2022/jul/04/peperonata-sausages-recipe-rachel-roddy",
-            "apiUrl": "https://content.guardianapis.com/food/2022/jul/04/peperonata-sausages-recipe-rachel-roddy",
-            "isHosted": false,
-            "pillarId": "pillar/lifestyle",
-            "pillarName": "Lifestyle"
-            }
-        ]
+    {
+        "response": {
+            "status": "ok",
+            "total": 5857,
+            "startIndex": 1,
+            "pageSize": 10,
+            "currentPage": 1,
+            "pages": 586,
+            "orderBy": "relevance",
+            "results": [
+                {
+                "id": "food/2023/mar/22/how-to-make-glamorgan-sausages-recipe-felicity-cloake",
+                "type": "article",
+                "sectionId": "food",
+                "sectionName": "Food",
+                "webPublicationDate": "2023-03-22T12:00:26Z",
+                "webTitle": "How to make Glamorgan sausages | Felicity Cloake's Masterclas",
+                "webUrl": "https://www.theguardian.com/food/2023/mar/22/how-to-make-glamorgan-sausages-recipe-felicity-cloake",
+                "apiUrl": "https://content.guardianapis.com/food/2023/mar/22/how-to-make-glamorgan-sausages-recipe-felicity-cloake",
+                "isHosted": false,
+                "pillarId": "pillar/lifestyle",
+                "pillarName": "Lifestyle"
+                },
+                ... 8 results omitted ...
+                {
+                "id": "food/2022/jul/04/peperonata-sausages-recipe-rachel-roddy",
+                "type": "article",
+                "sectionId": "food",
+                "sectionName": "Food",
+                "webPublicationDate": "2022-07-04T10:00:40Z",
+                "webTitle": "Rachel Roddy’s recipe for peperonata with sausages | A kitchen in Rome",
+                "webUrl": "https://www.theguardian.com/food/2022/jul/04/peperonata-sausages-recipe-rachel-roddy",
+                "apiUrl": "https://content.guardianapis.com/food/2022/jul/04/peperonata-sausages-recipe-rachel-roddy",
+                "isHosted": false,
+                "pillarId": "pillar/lifestyle",
+                "pillarName": "Lifestyle"
+                }
+            ]
+        }
     }
-}
-```
+
 
 Note the total, pages and currentPage values. These show you that there are more results than what is shown on the current page.
 
@@ -302,35 +301,35 @@ Preserving your query parameters and ordering, call the content `/next` end poin
 ie.
 `https://content.guardianapis.com/content/food/2022/jul/04/peperonata-sausages-recipe-rachel-roddy/next?q=sausages&page-size=10&order-by=relevance`
 
-```
-{
-    "response": {
-        "status": "ok",
-        "total": 5857,
-        "startIndex": 1,
-        "pageSize": 10,
-        "currentPage": 1,
-        "pages": 586,
-        "orderBy": "relevance",
-        "results": [
-            ... 9 results omitted ...
-            {
-                "id": "commentisfree/2022/jun/20/big-festivals-glastonbury-so-white-lenny-henry-lack-of-diversity-arts-culture",
-                "type": "article",
-                "sectionId": "commentisfree",
-                "sectionName": "Opinion",
-                "webPublicationDate": "2022-06-20T14:00:17Z",
-                "webTitle": "Why are big festivals like Glastonbury so white? | Stephanie Phillips",
-                "webUrl": "https://www.theguardian.com/commentisfree/2022/jun/20/big-festivals-glastonbury-so-white-lenny-henry-lack-of-diversity-arts-culture",
-                "apiUrl": "https://content.guardianapis.com/commentisfree/2022/jun/20/big-festivals-glastonbury-so-white-lenny-henry-lack-of-diversity-arts-culture",
-                "isHosted": false,
-                "pillarId": "pillar/opinion",
-                "pillarName": "Opinion"
-            }
-        ]
+
+    {
+        "response": {
+            "status": "ok",
+            "total": 5857,
+            "startIndex": 1,
+            "pageSize": 10,
+            "currentPage": 1,
+            "pages": 586,
+            "orderBy": "relevance",
+            "results": [
+                ... 9 results omitted ...
+                {
+                    "id": "commentisfree/2022/jun/20/big-festivals-glastonbury-so-white-lenny-henry-lack-of-diversity-arts-culture",
+                    "type": "article",
+                    "sectionId": "commentisfree",
+                    "sectionName": "Opinion",
+                    "webPublicationDate": "2022-06-20T14:00:17Z",
+                    "webTitle": "Why are big festivals like Glastonbury so white? | Stephanie Phillips",
+                    "webUrl": "https://www.theguardian.com/commentisfree/2022/jun/20/big-festivals-glastonbury-so-white-lenny-henry-lack-of-diversity-arts-culture",
+                    "apiUrl": "https://content.guardianapis.com/commentisfree/2022/jun/20/big-festivals-glastonbury-so-white-lenny-henry-lack-of-diversity-arts-culture",
+                    "isHosted": false,
+                    "pillarId": "pillar/opinion",
+                    "pillarName": "Opinion"
+                }
+            ]
+        }
     }
-}
-```
+
 
 Take the `id` of the last result and repeat:
 
@@ -343,47 +342,46 @@ Eventually you will receive a response containing fewer results than the page si
 ie.
 `https://content.guardianapis.com/content/film/1998/mar/23/features/next?q=sausages&page-size=10&order-by=relevance`
 
-```
-{
-    "response": {
-        "status": "ok",
-        "total": 5857,
-        "startIndex": 1,
-        "pageSize": 10,
-        "currentPage": 1,
-        "pages": 586,
-        "orderBy": "relevance",
-        "results": [
-            {
-            "id": "uk/1993/nov/04/bulger",
-            "type": "article",
-            "sectionId": "uk-news",
-            "sectionName": "UK news",
-            "webPublicationDate": "1993-11-04T13:16:14Z",
-            "webTitle": "Film 'shows boy lured to his death'",
-            "webUrl": "https://www.theguardian.com/uk/1993/nov/04/bulger",
-            "apiUrl": "https://content.guardianapis.com/uk/1993/nov/04/bulger",
-            "isHosted": false,
-            "pillarId": "pillar/news",
-            "pillarName": "News"
-            },
-            {
-            "id": "music/1992/jun/29/glastonbury2003.glastonbury",
-            "type": "article",
-            "sectionId": "music",
-            "sectionName": "Music",
-            "webPublicationDate": "1992-06-29T01:34:17Z",
-            "webTitle": "Access triumphs over excess",
-            "webUrl": "https://www.theguardian.com/music/1992/jun/29/glastonbury2003.glastonbury",
-            "apiUrl": "https://content.guardianapis.com/music/1992/jun/29/glastonbury2003.glastonbury",
-            "isHosted": false,
-            "pillarId": "pillar/arts",
-            "pillarName": "Arts"
-            }
-        ]
+    {
+        "response": {
+            "status": "ok",
+            "total": 5857,
+            "startIndex": 1,
+            "pageSize": 10,
+            "currentPage": 1,
+            "pages": 586,
+            "orderBy": "relevance",
+            "results": [
+                {
+                "id": "uk/1993/nov/04/bulger",
+                "type": "article",
+                "sectionId": "uk-news",
+                "sectionName": "UK news",
+                "webPublicationDate": "1993-11-04T13:16:14Z",
+                "webTitle": "Film 'shows boy lured to his death'",
+                "webUrl": "https://www.theguardian.com/uk/1993/nov/04/bulger",
+                "apiUrl": "https://content.guardianapis.com/uk/1993/nov/04/bulger",
+                "isHosted": false,
+                "pillarId": "pillar/news",
+                "pillarName": "News"
+                },
+                {
+                "id": "music/1992/jun/29/glastonbury2003.glastonbury",
+                "type": "article",
+                "sectionId": "music",
+                "sectionName": "Music",
+                "webPublicationDate": "1992-06-29T01:34:17Z",
+                "webTitle": "Access triumphs over excess",
+                "webUrl": "https://www.theguardian.com/music/1992/jun/29/glastonbury2003.glastonbury",
+                "apiUrl": "https://content.guardianapis.com/music/1992/jun/29/glastonbury2003.glastonbury",
+                "isHosted": false,
+                "pillarId": "pillar/arts",
+                "pillarName": "Arts"
+                }
+            ]
+        }
     }
-}
-```
+
 
 This indicates that you have reached the end and can stop querying.
 
