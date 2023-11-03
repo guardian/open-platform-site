@@ -352,36 +352,12 @@ ie.
             "pages": 586,
             "orderBy": "relevance",
             "results": [
-                {
-                "id": "uk/1993/nov/04/bulger",
-                "type": "article",
-                "sectionId": "uk-news",
-                "sectionName": "UK news",
-                "webPublicationDate": "1993-11-04T13:16:14Z",
-                "webTitle": "Film 'shows boy lured to his death'",
-                "webUrl": "https://www.theguardian.com/uk/1993/nov/04/bulger",
-                "apiUrl": "https://content.guardianapis.com/uk/1993/nov/04/bulger",
-                "isHosted": false,
-                "pillarId": "pillar/news",
-                "pillarName": "News"
-                },
-                {
-                "id": "music/1992/jun/29/glastonbury2003.glastonbury",
-                "type": "article",
-                "sectionId": "music",
-                "sectionName": "Music",
-                "webPublicationDate": "1992-06-29T01:34:17Z",
-                "webTitle": "Access triumphs over excess",
-                "webUrl": "https://www.theguardian.com/music/1992/jun/29/glastonbury2003.glastonbury",
-                "apiUrl": "https://content.guardianapis.com/music/1992/jun/29/glastonbury2003.glastonbury",
-                "isHosted": false,
-                "pillarId": "pillar/arts",
-                "pillarName": "Arts"
-                }
+                ... 2 results ommitted ...
+                {...},
+                {...}
             ]
         }
     }
-
 
 This indicates that you have reached the end and can stop querying.
 
