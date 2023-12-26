@@ -6,7 +6,7 @@ open-platform-site
 ### Install gulp
 ```
 cd build
-npm install gulp
+npm install
 ```
 
 ### Run gulp
